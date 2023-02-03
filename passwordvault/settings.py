@@ -32,9 +32,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['password-vault.herokuapp.com', 'localhost']
 
-ALLOWED_ORIGINS = ['http://*', 'https://*']
-CSRF_TRUSTED_ORIGINS = ALLOWED_ORIGINS.copy()
-
 
 # Application definition
 
@@ -47,6 +44,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'django_summernote',
     'blog',
 ]
 
