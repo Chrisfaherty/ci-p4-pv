@@ -2,7 +2,7 @@ from django.forms import ModelForm
 from .models import Contact
 
 
-class ContactForm(ModalForm):
+class ContactForm(ModelForm):
     class Meta:
-        model = Contact()
+        model = Contact
         fields = '__all__'
