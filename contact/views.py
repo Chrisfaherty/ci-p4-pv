@@ -1,18 +1,19 @@
-from django.conf import settings
-from django.core.mail import send_mail
-from django.shortcuts import render
+from django.views.generic import FormView, TemplateView
 from .forms import ContactForm
+from django.urls import reverse_lazy
+# Create your views here.
 
 
-def contact_view(request):
-    if request.method == 'POST':
-        form = ContactForm(request.POST)
-        if form.is_valid():
-            form.save()
-            email_subject = f'New contact {form.cleaned_data["email"]}: {form.cleaned_data["subject"]}'
-            email_message = form.cleaned_data['message']
-            send_mail(email_subject, email_message, settings.CONTACT_EMAIL, settings.ADMIN_EMAIL)
-            return render(request, 'success.html')
-    form = ContactForm()
-    context = {'form': form}
-    return render(request, 'contact.html', context)
+class ContactView(FormView):
+    template_name = 'contact.html'
+    form_class = ContactForm
+    success_url = reverse_lazy('contact:success')
+
+    def form_valid(self, form):
+        # Calls the custom send method
+        form.send()
+        return super().form_valid(form)
+
+
+class ContactSuccessView(TemplateView):
+    template_name = 'success.html'

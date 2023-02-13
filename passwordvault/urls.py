@@ -19,7 +19,7 @@ from contact import views as contact_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('contact/', contact_views.contact_view, name='contact'),
+    path('contact/', include('contact.urls')),
     path('summernote/', include('django_summernote.urls')),
     path('', include('blog.urls'), name='blog_urls'),
     path('accounts/', include('allauth.urls')),
