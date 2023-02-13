@@ -16,4 +16,4 @@ class ContactView(FormView):
 
 
 class ContactSuccessView(TemplateView):
-    template_name = 'success.html'
+    template_name = 'contact/success.html'
