@@ -1,6 +1,11 @@
 from django.shortcuts import render
+from .models import Password
 
 # Create your views here.
 
 def get_passmanager(request):
-    return render(request, 'passmanager.html')
+    passwords = Password.objects.all()
+    context = {
+        'password': passwords
+    }
+    return render(request, 'passmanager.html', context)
