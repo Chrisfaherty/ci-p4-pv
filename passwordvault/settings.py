@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'blog',
     'contact',
+    'passwordmanager',
 ]
 
 SITE_ID = 1
