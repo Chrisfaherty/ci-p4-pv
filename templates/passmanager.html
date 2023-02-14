@@ -13,6 +13,16 @@
 <body>
     <h1> Password manager account </h1>
     {{ passwords }}
+    <table>
+        {% for password in passwords %}
+            <tr>
+                <td>{{ password.name }}</td>
+                <td>{{ password.password }}</td>
+            </tr>
+        {% empty %}
+        <tr><td>You have not added a password yet!</td></tr>
+        {% endfor %}
+    </table>
 </body>
 </html>
 

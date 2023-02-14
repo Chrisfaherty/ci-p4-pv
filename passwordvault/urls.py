@@ -21,8 +21,8 @@ from passwordmanager.views import get_passmanager
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('contact/', include('contact.urls')),
-    path('passwordmanager/', get_passmanager, name='get_passmanager'),
+    path('', get_passmanager, name='get_passmanager'),
     path('summernote/', include('django_summernote.urls')),
-    path('', include('blog.urls'), name='blog_urls'),
+    path('blog/', include('blog.urls'), name='blog_urls'),
     path('accounts/', include('allauth.urls')),
 ]
