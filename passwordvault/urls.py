@@ -15,13 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from contact import views as contact_views
-from passwordmanager.views import get_passmanager
+from contact import views
+from passwordmanager.views import get_passmanager, add_password
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('contact/', include('contact.urls')),
+    path('contact/', include('contact.urls'), name='contact_urls'),
     path('', get_passmanager, name='get_passmanager'),
+    path('add_pass', add_password, name='add_pass'),
     path('summernote/', include('django_summernote.urls')),
     path('blog/', include('blog.urls'), name='blog_urls'),
     path('accounts/', include('allauth.urls')),

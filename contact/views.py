@@ -1,4 +1,5 @@
 from django.views.generic import FormView, TemplateView
+from django.shortcuts import render
 from .forms import ContactForm
 from django.urls import reverse_lazy
 # Create your views here.

@@ -9,3 +9,7 @@ def get_passmanager(request):
         'password': passwords
     }
     return render(request, 'passmanager.html', context)
+
+
+def add_password(request):
+    return render(request, 'add_password.html')
