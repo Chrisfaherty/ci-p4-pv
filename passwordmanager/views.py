@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import Password
+from .forms import ItemForm
 
 # Create your views here.
 
@@ -18,4 +19,8 @@ def add_password(request):
         Password.objects.create(name=name, password=password)
 
         return redirect('get_passmanager')
-    return render(request, 'add_password.html')
+    form = AccountForm()
+    context = {
+        'form': form
+    }
+    return render(request, 'add_password.html', context)
