@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Password
 from .forms import AccountForm
 
@@ -23,3 +23,13 @@ def add_password(request):
         'form': form
     }
     return render(request, 'add_password.html', context)
+
+
+def edit_password(request, password_id):
+    passwords = get_object_or_404(Password, id=password_id)
+    
+    form = AccountForm(instance=passwords)
+    context = {
+        'form': form
+    }
+    return render(request, 'edit_password.html')

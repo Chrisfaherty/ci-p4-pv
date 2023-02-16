@@ -17,8 +17,14 @@
         {% for password in passwords %}
             <tr>
                 <td>{{ password.name }}</td>
+                <td>{{ password.website }}</td>
                 <td>{{ password.password }}</td>
             </tr>
+            <td>
+                <a href="/edit/{{ password.id }}">
+                    <button>Edit</button>
+                </a>
+            </td>
         {% empty %}
         <tr><td>You have not added a password yet!</td></tr>
         {% endfor %}
