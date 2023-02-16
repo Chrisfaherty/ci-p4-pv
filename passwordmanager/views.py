@@ -37,3 +37,9 @@ def edit_password(request, password_id):
         'form': form
     }
     return render(request, 'edit_password.html', context)
+
+
+def delete_password(request, password_id):
+    passwords = get_object_or_404(Password, id=password_id)
+    passwords.delete()
+    return redirect('get_passmanager')
