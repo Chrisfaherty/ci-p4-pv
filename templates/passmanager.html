@@ -21,7 +21,7 @@
                 <td>{{ password.password }}</td>
             </tr>
             <td>
-                <a href="/edit/{{ password.id }}">
+                <a href="{% url 'edit' password.id %}">
                     <button>Edit</button>
                 </a>
             </td>

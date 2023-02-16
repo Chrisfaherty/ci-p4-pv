@@ -27,9 +27,13 @@ def add_password(request):
 
 def edit_password(request, password_id):
     passwords = get_object_or_404(Password, id=password_id)
-    
+    if request.method == 'POST':
+        form = AccountForm(request.POST, instance=passwords)
+        if form.is_valid():
+            form.save()
+            return redirect('get_passmanager')
     form = AccountForm(instance=passwords)
     context = {
         'form': form
     }
-    return render(request, 'edit_password.html')
+    return render(request, 'edit_password.html', context)
