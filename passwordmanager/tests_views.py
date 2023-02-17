@@ -26,12 +26,22 @@ class TestViews(TestCase):
         self.assertRedirect(response, '/')
 
 
-    def test_can_delete_item(self):
+    def test_can_delete_password(self):
         passwords = Password.objects.create(name='Test password')
         response = self.client.get(f'/delete/{password.id}')
         self.assertRedirect(response, '/')
         exsisting_passwords = Password.objects.filter(id=password.id)
         self.assertEqual(len(existing_passwords),0)
+
+
+    def test_can_edit_password(self):
+        passwords = Password.objects.create(name='Test password')
+        response = self.client.post(f'/edit/{password.id}', {'name': 'Updated Name'})
+        self.assertRedirect(response, '/')
+        updated_passwords = Password.objects.get(id=password.id)
+        self.assertEqual(updated_password.name, 'Updated Name')
+
+
 
 
         

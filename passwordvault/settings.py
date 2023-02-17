@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'blog',
     'contact',
     'passwordmanager',
+    'home',
 ]
 
 SITE_ID = 1

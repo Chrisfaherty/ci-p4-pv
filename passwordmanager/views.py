@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Password
 from .forms import AccountForm
+from passwordmanager import encryption
+from cryptography.fernet import Fernet
 
-# Create your views here.
 
 def get_passmanager(request):
     passwords = Password.objects.all()
@@ -16,6 +17,7 @@ def add_password(request):
     if request.method == 'POST':
         form = AccountForm(request.POST)
         if form.is_valid():
+            response.useraccount.Password.set.create(name=n)
             form.save()
             return redirect('get_passmanager')
     form = AccountForm()
@@ -43,3 +45,8 @@ def delete_password(request, password_id):
     passwords = get_object_or_404(Password, id=password_id)
     passwords.delete()
     return redirect('get_passmanager')
+
+
+def view(response):
+    return render(response,'view.html',{})
+

@@ -15,14 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from contact import views
+from contact.views import ContactView, ContactSuccessView
+from home.views import GetHomeView
 from passwordmanager import views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('contact/', include('contact.urls'), name='contact_urls'),
-    path('', views.get_passmanager, name='get_passmanager'),
+    path('', GetHomeView.as_view(), name='home'),
+    path('get_passmanager', views.get_passmanager, name='get_passmanager'),
     path('add', views.add_password, name='add'),
+    path('view', views.view, name='view'),
     path('edit/<password_id>', views.edit_password, name='edit'),
     path('delete/<password_id>', views.delete_password, name='delete'),
     path('summernote/', include('django_summernote.urls')),
