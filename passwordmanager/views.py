@@ -17,8 +17,10 @@ def add_password(request):
     if request.method == 'POST':
         form = AccountForm(request.POST)
         if form.is_valid():
-            response.useraccount.Password.set.create(name=n)
-            form.save()
+            n = form.cleaned_data["name"]
+            t = Password(name=n)
+            t.save()
+            response.useraccount.Password.add(t)
             return redirect('get_passmanager')
     form = AccountForm()
     context = {

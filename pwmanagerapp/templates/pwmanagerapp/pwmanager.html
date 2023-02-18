@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="mx-auto my-4 text-center">
+    <h1>Welcome to the Password Vault</h1>
+</div>
+<div class="container">
+    <h2>{{ ls.name }}</h2>
+</div>
+<div>
+    <ul>
+    {% for td in ls.item_set.all %}
+        <li>{{ item.text}} </li>li>
+    {% endfor %}
+    </ul>
+</div>
+{% endblock %}

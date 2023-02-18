@@ -17,18 +17,16 @@ from django.contrib import admin
 from django.urls import path, include
 from contact.views import ContactView, ContactSuccessView
 from home.views import GetHomeView
-from passwordmanager import views
+from pwmanagerapp.views import create, view, index
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('contact/', include('contact.urls'), name='contact_urls'),
     path('', GetHomeView.as_view(), name='home'),
-    path('get_passmanager', views.get_passmanager, name='get_passmanager'),
-    path('add', views.add_password, name='add'),
-    path('view', views.view, name='view'),
-    path('edit/<password_id>', views.edit_password, name='edit'),
-    path('delete/<password_id>', views.delete_password, name='delete'),
+    path("<int:id>", index, name="index"),
+    path("create/", create, name="create"),
+    path("view/", view, name="view"),
     path('summernote/', include('django_summernote.urls')),
     path('blog/', include('blog.urls'), name='blog_urls'),
     path('accounts/', include('allauth.urls')),

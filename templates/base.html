@@ -38,12 +38,12 @@
                         <a class="nav-link active" aria-current="page" href="">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'get_passmanager' %}">Password Manager</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="/blog">Blog</a>
                     </li>
                     {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'create' %}">Password Manager</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
                     </li>
