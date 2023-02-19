@@ -4,8 +4,9 @@
 {% block content %}
 	<h1>{{ls.name}}</h1>
 	<ul>
-		{% for item in ls.item_set.all %}
-			
-		{% endfor %}
+		<p>Website: {{ls.website}}</p>
+		<p>Email: {{ls.email}}</p>
+		<p>Username: {{ls.username}}</p>
+		<p>Password: {{ls.password}}</p>
 	</ul>
 {% endblock %}

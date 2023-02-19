@@ -58,6 +58,8 @@ INSTALLED_APPS = [
     'pwmanagerapp',
 ]
 
+X_FRAME_OPTIONS = 'SAMEORIGION'
+
 SITE_ID = 1
 
 LOGIN_REDIRECT_URL = '/'

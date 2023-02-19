@@ -1,9 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, reverse, redirect
 from django.http import HttpResponse, HttpResponseRedirect
-from pwmanagerapp.models import ToDoList, Item
+from pwmanagerapp.models import ToDoList
 from pwmanagerapp.forms import CreateNewList
 
-def index(response, id):
+def index(request, id):
     ls = ToDoList.objects.get(id=id)
 
     if ls in response.user.todolist.all():
@@ -24,31 +24,30 @@ def index(response, id):
                     ls.item_set.create(text=txt, complete=False)
                 else:
                     print("invalid")
-        return render(response, "pwmanagerapp/list.html", {"ls":ls})
+        return render(request, "pwmanagerapp/list.html", {"ls":ls})
     
-    return render(response, "home.html", {})
+    return render(request, "home.html", {})
 
 
-def home(response):
-    return render(response, 'pwmanagerapp/pwmanager.html', {})
+#def home(request):
+    #return render(request, 'pwmanagerapp/pwmanager.html', {})
 
 
-def create(response):
-    if response.method == "POST":
-        form = CreateNewList(response.POST)
+def create(request):
+    if request.method == "POST":
+        form = CreateNewList(request.POST)
         
         if form.is_valid():
-            n = form.cleaned_data["name"]
-            t = ToDoList(name=n)
-            t.save()
-            response.user.todolist.add(t)
+            save_form = form.save(commit=False)
+            save_form.user = request.user
+            save_form.save()
 
-            return HttpResponseRedirect("/%i" %t.id)
+            return redirect('view')
     else:
         form = CreateNewList()
 
-    return render(response, "pwmanagerapp/createpw.html", {"form":form})
+    return render(request, "pwmanagerapp/createpw.html", {"form":form})
 
 
-def view(response):
-    return render(response, "pwmanagerapp/viewpw.html", {})
+def view(request):
+    return render(request, "pwmanagerapp/viewpw.html", {})

@@ -1,10 +1,10 @@
 from django import forms
-from .models import Password
+from .models import ToDoList
 
 
 class AccountForm(forms.ModelForm):
     class Meta:
-        model = Password
-        fields = ['name','website','email','username','password','message']
+        model = ToDoList
+        fields = ['name','website','email','username','password']
 
 
