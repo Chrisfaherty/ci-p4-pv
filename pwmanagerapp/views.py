@@ -64,7 +64,7 @@ def edit(request, ls_id):
 
 
 def delete(request, ls_id):
-    ls = get_object_or_404(Password, id=ls_id)
+    ls = get_object_or_404(ToDoList, id=ls_id)
     ls.delete()
     return redirect('view')
 
