@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from contact.views import ContactView, ContactSuccessView
 from home.views import GetHomeView
-from pwmanagerapp.views import create, view, index
+from pwmanagerapp.views import create, view, index, edit, delete
 
 
 urlpatterns = [
@@ -27,6 +27,8 @@ urlpatterns = [
     path("<int:id>", index, name="index"),
     path("create/", create, name="create"),
     path("view/", view, name="view"),
+    path("<int:id>", edit, name="edit"),
+    path("<int:id>", delete, name="delete"),
     path('summernote/', include('django_summernote.urls')),
     path('blog/', include('blog.urls'), name='blog_urls'),
     path('accounts/', include('allauth.urls')),

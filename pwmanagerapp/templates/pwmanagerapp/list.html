@@ -9,4 +9,14 @@
 		<p>Username: {{ls.username}}</p>
 		<p>Password: {{ls.password}}</p>
 	</ul>
+	<td>
+		<a href="{% url 'delete' ls.id %}">
+			<button>Delete</button>
+		</a>
+	</td>
+	<td>
+		<a href="{% url 'edit' ls.id %}">
+			<button>Edit</button>
+		</a>
+	</td>
 {% endblock %}
