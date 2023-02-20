@@ -37,6 +37,7 @@ def create(request):
     if request.method == "POST":
         form = CreateNewList(request.POST)
         
+
         if form.is_valid():
             save_form = form.save(commit=False)
             save_form.user = request.user

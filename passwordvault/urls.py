@@ -18,6 +18,7 @@ from django.urls import path, include
 from contact.views import ContactView, ContactSuccessView
 from home.views import GetHomeView
 from pwmanagerapp.views import create, view, index, edit, delete
+from blog.views import PostList, PostDetail, PostLike
 
 
 urlpatterns = [
@@ -30,6 +31,6 @@ urlpatterns = [
     path("edit/<ls_id>", edit, name="edit"),
     path("delete/<ls_id>", delete, name="delete"),
     path('summernote/', include('django_summernote.urls')),
-    path('blog/', include('blog.urls'), name='blog_urls'),
+    path('blog/', PostList.as_view(), name='blog'),
     path('accounts/', include('allauth.urls')),
 ]
