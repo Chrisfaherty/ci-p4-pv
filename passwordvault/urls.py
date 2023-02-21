@@ -16,20 +16,20 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from contact.views import ContactView, ContactSuccessView
-from home.views import GetHomeView
 from pwmanagerapp.views import create, view, index, edit, delete
+from home.views import GetHomeView
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('contact/', include('contact.urls')),
-    path('', GetHomeView.as_view(), name='home'),
+    path('home/', include('home.urls')),
     path("<int:id>", index, name="index"),
     path("create/", create, name="create"),
     path("view/", view, name="view"),
     path("edit/<ls_id>", edit, name="edit"),
     path("delete/<ls_id>", delete, name="delete"),
     path('summernote/', include('django_summernote.urls')),
-    path("", include("blog.urls"), name="blog-urls"),
+    path("blog/", include("blog.urls"), name="blog-urls"),
     path('accounts/', include('allauth.urls')),
 ]
