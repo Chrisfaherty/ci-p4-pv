@@ -4,13 +4,13 @@ from pwmanagerapp.models import PwAccount
 from pwmanagerapp.forms import CreateNewPwAccount
 
 def index(request, id):
-    ls = PwAccount.objects.get(id=id)
+    acc = PwAccount.objects.get(id=id)
 
-    if ls in request.user.pwaccount.all():
+    if acc in request.user.pwaccount.all():
 
         if request.method == "POST":
             if response.POST.get("save"):
-                for item in ls.item_set.all():
+                for item in acc.item_set.all():
                     if response.POST.get("c" + str(item.id)) == "clicked":
                         item.complete = True
                     else:
@@ -21,10 +21,10 @@ def index(request, id):
                 txt = response.POST.get("new")
 
                 if len(txt) > 2:
-                    ls.item_set.create(text=txt, complete=False)
+                    acc.item_set.create(text=txt, complete=False)
                 else:
                     print("invalid")
-        return render(request, "pwmanagerapp/list.html", {"ls":ls})
+        return render(request, "pwmanagerapp/list.html", {"acc":acc})
     
     return render(request, "home.html", {})
 
@@ -50,23 +50,23 @@ def create(request):
     return render(request, "pwmanagerapp/createpw.html", {"form":form})
 
 
-def edit(request, ls_id):
-    ls = get_object_or_404(PwAccount, id=ls_id)
+def edit(request, acc_id):
+    acc = get_object_or_404(PwAccount, id=ls_id)
     if request.method == 'POST':
-        form = CreateNewPwAccount(request.POST, instance=ls)
+        form = CreateNewPwAccount(request.POST, instance=acc)
         if form.is_valid():
             form.save()
             return redirect('view')
-    form = CreateNewPwAccount(instance=ls)
+    form = CreateNewPwAccount(instance=acc)
     context = {
         'form': form
     }
     return render(request, 'pwmanagerapp/edit_password.html', context)
 
 
-def delete(request, ls_id):
-    ls = get_object_or_404(PwAccount, id=ls_id)
-    ls.delete()
+def delete(request, acc_id):
+    acc = get_object_or_404(PwAccount, id=acc_id)
+    acc.delete()
     return redirect('view')
 
 

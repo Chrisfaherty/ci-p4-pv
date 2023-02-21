@@ -2,20 +2,20 @@
 {% block title %}View List{% endblock %}
 
 {% block content %}
-	<h1>{{ls.name}}</h1>
+	<h1>{{acc.name}}</h1>
 	<ul>
-		<p>Website: {{ls.website}}</p>
-		<p>Email: {{ls.email}}</p>
-		<p>Username: {{ls.username}}</p>
-		<p>Password: {{ls.password}}</p>
+		<p>Website: {{acc.website}}</p>
+		<p>Email: {{acc.email}}</p>
+		<p>Username: {{acc.username}}</p>
+		<p>Password: {{acc.password}}</p>
 	</ul>
 	<td>
-		<a href="/delete/{{ ls.id }}">
+		<a href="/delete/{{ acc.id }}">
 			<button>Delete</button>
 		</a>
 	</td>
 	<td>
-		<a href="/edit/{{ ls.id }}">
+		<a href="/edit/{{ acc.id }}">
 			<button>Edit</button>
 		</a>
 	</td>
