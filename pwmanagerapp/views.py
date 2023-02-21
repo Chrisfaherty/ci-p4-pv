@@ -1,12 +1,12 @@
 from django.shortcuts import render, reverse, redirect, get_object_or_404
 from django.http import HttpResponse, HttpResponseRedirect
-from pwmanagerapp.models import ToDoList
-from pwmanagerapp.forms import CreateNewList
+from pwmanagerapp.models import PwAccount
+from pwmanagerapp.forms import CreateNewPwAccount
 
 def index(request, id):
-    ls = ToDoList.objects.get(id=id)
+    ls = PwAccount.objects.get(id=id)
 
-    if ls in request.user.todolist.all():
+    if ls in request.user.pwaccount.all():
 
         if request.method == "POST":
             if response.POST.get("save"):
@@ -35,7 +35,7 @@ def index(request, id):
 
 def create(request):
     if request.method == "POST":
-        form = CreateNewList(request.POST)
+        form = CreateNewPwAccount(request.POST)
         
 
         if form.is_valid():
@@ -45,19 +45,19 @@ def create(request):
 
             return redirect('view')
     else:
-        form = CreateNewList()
+        form = CreateNewPwAccount()
 
     return render(request, "pwmanagerapp/createpw.html", {"form":form})
 
 
 def edit(request, ls_id):
-    ls = get_object_or_404(ToDoList, id=ls_id)
+    ls = get_object_or_404(PwAccount, id=ls_id)
     if request.method == 'POST':
-        form = CreateNewList(request.POST, instance=ls)
+        form = CreateNewPwAccount(request.POST, instance=ls)
         if form.is_valid():
             form.save()
             return redirect('view')
-    form = CreateNewList(instance=ls)
+    form = CreateNewPwAccount(instance=ls)
     context = {
         'form': form
     }
@@ -65,7 +65,7 @@ def edit(request, ls_id):
 
 
 def delete(request, ls_id):
-    ls = get_object_or_404(ToDoList, id=ls_id)
+    ls = get_object_or_404(PwAccount, id=ls_id)
     ls.delete()
     return redirect('view')
 

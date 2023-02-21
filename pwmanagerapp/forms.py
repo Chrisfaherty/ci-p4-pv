@@ -1,11 +1,11 @@
 from django import forms
 from django.db import models
-from .models import ToDoList
+from .models import PwAccount
 
 
-class CreateNewList(forms.ModelForm):
+class CreateNewPwAccount(forms.ModelForm):
     class Meta:
-        model = ToDoList
+        model = PwAccount
         fields = ['name','website','email','username','password']
 
 
