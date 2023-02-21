@@ -22,7 +22,7 @@ from pwmanagerapp.views import create, view, index, edit, delete
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('contact/', include('contact.urls'), name='contact_urls'),
+    path('contact/', include('contact.urls')),
     path('', GetHomeView.as_view(), name='home'),
     path("<int:id>", index, name="index"),
     path("create/", create, name="create"),
