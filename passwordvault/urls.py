@@ -23,7 +23,7 @@ from home.views import GetHomeView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('contact/', include('contact.urls')),
-    path('home/', include('home.urls')),
+    path('', include('home.urls')),
     path("<int:id>", index, name="index"),
     path("create/", create, name="create"),
     path("view/", view, name="view"),
