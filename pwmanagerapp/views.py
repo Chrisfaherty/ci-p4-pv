@@ -5,6 +5,7 @@ from pwmanagerapp.forms import CreateNewPwAccount
 
 def index(request, id):
     acc = PwAccount.objects.get(id=id)
+    pwuser = PwAccount.objects.get(user=user)
 
     if acc in request.user.pwaccount.all():
 

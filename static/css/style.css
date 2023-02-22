@@ -140,3 +140,8 @@ body {
     background: transparent;
     border: none;
 }
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
