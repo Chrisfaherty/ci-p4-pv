@@ -5,15 +5,28 @@
     <h1>Password Vault | Security is key!</h1>
 </div>
 <article class="container mt-3">
+    {% if user.is_authenticated %}
+    <div class="row">
+        <div class="col-12">
+            <section class="callout">
+                <h1>Securly store a unique password for each of your accounts.</h1>
+                <p>It looks like you already made the right decission.</p>
+                <button type="button" class="btn btn-success btn-lg"><a href="{% url 'view' %}">View Accounts</a></button>
+            </section>
+        </div>
+    </div>
+    {% else %}
     <div class="row">
         <div class="col-12">
             <section class="callout">
                 <h1>Securly store a unique password for each of your accounts.</h1>
                 <p>Create an account today to live a more secure tomorrow.</p>
-                <button class="btn btn-success btn-lg">Sign Up</button>
+                <button type="button" class="btn btn-success btn-lg"><a href="{% url 'account_signup' %}">Sign Up</a></button>
             </section>
         </div>
     </div>
+    {% endif %}
+
     <hr>
     <section class="features">
         <div class="row">
