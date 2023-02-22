@@ -33,7 +33,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'home:home' %}">Home</a>
                     </li>
@@ -44,6 +44,15 @@
                         <a class="nav-link" href="{% url 'contact:contact' %}">Contact</a>
                     </li>
                     {% if user.is_authenticated %}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Password Manager
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="{% url 'view' %}">View Accounts</a>
+                            <a class="dropdown-item" href="{% url 'create' %}">Add Account</a>
+                        </div>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'view' %}">View Account</a>
                     </li>
@@ -62,9 +71,6 @@
                     </li>
                     {% endif %}
                 </ul>
-                <span class="navbar-text text-muted">
-                    Security is Key
-                </span>
             </div>
         </div>
     </nav>
