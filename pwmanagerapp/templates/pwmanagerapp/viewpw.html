@@ -1,14 +1,17 @@
 {% extends "base.html" %}
 
+{% block title %}
+View
+{% endblock %}
 {% block content %}
 <div class="mx-auto my-4 text-center">
-    <h1>Welcome {{ pwuser }} to Your Password account</h1>
+    <h1>Welcome to Your Password account</h1>
 </div>
 <div class="container">
-    <h2>{{ acc.name }}</h2>
-</div>
+    <h3>List of stored password accounts.</h3>
     {% for pw in user.pwaccount.all %}
-	<p><a href="/{{pw.id}}">{{pw.name}}</a></p>
+	    <p><a href="{% url 'index' pw.id %}">{{ pw.name }}</a></p>
     {% endfor %}
+</div>
 {% endblock %}
 
