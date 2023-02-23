@@ -4,10 +4,18 @@
 {% block content %}
 	<h1>{{acc.name}}</h1>
 	<ul>
-		<p>Website: {{acc.website}}</p>
-		<p>Email: {{acc.email}}</p>
-		<p>Username: {{acc.username}}</p>
-		<p>Password: {{acc.password}}</p>
+		<label>Website:</label>
+		<p>{{acc.website}}</p>
+		<label>Email:</label>
+		<p>{{acc.email}}</p>
+		<label>Username:</label>
+		<p>{{acc.username}}</p>
+		<button style="background:green; text-align:center;" onclick="CopyAccUser()"><i class="fas fa-copy"></i></button>
+		<input style="text-align:center;" type="text" value="{{acc.username}}"id="accusername">
+		<label>Password:</label>
+		<button style="background:green; text-align:center;" onclick="CopyAccPass()"><i class="fas fa-copy"></i></button>
+     	<input style="text-align:center;" type="text" value="{{acc.password}}"id="accpassword">
+
 	</ul>
 	<td>
 		<a href="/delete/{{ acc.id }}">
@@ -19,4 +27,20 @@
 			<button>Edit</button>
 		</a>
 	</td>
+
+{% block scripts %}
+	<script>
+		function CopyAccUser() {
+		var accuser = document.getElementById('accusername')
+		accuser.select();
+		document.execCommand('copy')
+		}
+		function CopyAccPass() {
+		var accpass = document.getElementById('accpassword')
+		accpass.select();
+		document.execCommand('copy')
+		}
+	</script>
+{% endblock scripts %}
 {% endblock %}
+
