@@ -1,0 +1,15 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class=" container">
+    <div class="text-center">
+            <h4 style="background:rgb(249, 250, 249)" >500 Server Error</h4>
+            <h5 style="background:rgb(249, 250, 249)"  >Ooops, something went wrong</h5>
+            <div>
+                <img src="https://res.cloudinary.com/djiqea4sz/image/upload/v1677179670/500_error_nvprra.jpg" alt="Broken glass image" style="max-width:80%;">
+            </div>
+            <a href="{% url 'home' %}" class="link-button">Return Home</a>
+    </div>
+</div>
+{% endblock %}
