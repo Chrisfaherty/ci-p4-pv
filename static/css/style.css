@@ -1,5 +1,5 @@
 body {
-    background-color: #0851e4;
+
 }
 
 .brand {
@@ -196,4 +196,16 @@ a {
 .feature{
     margin-left: 5%;
     margin-right: 5%;
+}
+
+/* Font Media Querys */
+
+@media (max-width: 500px){
+    
+}
+
+/* LOGOUT PAGE */
+
+.container-logout{
+    width:30%;
 }
