@@ -1,38 +1,41 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="mx-auto my-4 text-center">
+<div class="container mx-auto text-center heading-container">
     <h1>Password Vault | Security is key!</h1>
 </div>
-<article class="container mt-3">
-    {% if user.is_authenticated %}
-    <div class="row">
-        <div class="col-12">
-            <section class="callout">
-                <h1>Securly store a unique password for each of your accounts.</h1>
-                <p>It looks like you already made the right decission.</p>
-                <button type="button" class="btn btn-success btn-lg"><a href="{% url 'view' %}">View Accounts</a></button>
-            </section>
-        </div>
-    </div>
-    {% else %}
-    <div class="row">
-        <div class="col-12">
-            <section class="callout">
-                <h1>Securly store a unique password for each of your accounts.</h1>
-                <p>Create an account today to live a more secure tomorrow.</p>
-                <button type="button" class="btn btn-success btn-lg"><a href="{% url 'account_signup' %}">Sign Up</a></button>
-            </section>
-        </div>
-    </div>
-    {% endif %}
+<div class="container-fluid callout-container">
 
-    <hr>
-
+    <article class="container mt-3">
+        {% if user.is_authenticated %}
+        <div class="row">
+            <div class="col-12">
+                <section class="callout-text">
+                    <h2>Securly store a unique password</h2>
+                    <h2> for each of your accounts.</h2>
+                    <p>It looks like you already made the right decission.</p>
+                    <button style="background:#c3ec0e"  type="button" class="btn btn-success btn-lg"><a href="{% url 'view' %}">View Accounts</a></button>
+                </section>
+            </div>
+        </div>
+        {% else %}
+        <div class="row">
+            <div class="col-12">
+                <section class="callout">
+                    <h1>Securly store a unique password for each of your accounts.</h1>
+                    <p>Create an account today to live a more secure tomorrow.</p>
+                    <button style="background:#c3ec0e" type="button" class="btn btn-success btn-lg"><a href="{% url 'account_signup' %}">Sign Up</a></button>
+                </section>
+            </div>
+        </div>
+        {% endif %}
+</div>
+    <hr >
+<div class="container-fluid blog-container ">
     <div class="col-12 mt-3 left">
         <div class="row">
             {% for post in post_list %}
-                <div class="col-md-4">
+                <div class="col-md-12 col-lg-4">
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">
@@ -58,17 +61,16 @@
                 </div>
                 {% if forloop.counter|divisibleby:3 %}
             </div>
-            <div class="row">
             {% endif %}
             {% endfor %}
         </div>
     </div>
-
+</div>
     <hr>
-    
+<div class="container-fluid features-container">
     <section class="features">
         <div class="row">
-            <div class="col-12 my-5">
+            <div class=" my-5">
                 <h2 class="text-uppercase">Features:</h2>
             </div>
         </div>
@@ -96,6 +98,7 @@
             </div>
         </div>
     </section>
+</div>   
     <hr>
 </article>
 {% endblock %}
