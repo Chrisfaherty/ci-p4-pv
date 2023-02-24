@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container mx-auto text-center heading-container">
+<div class="container-fluid mx-auto text-center heading-container">
     <h1>Password Vault | Security is key!</h1>
 </div>
 <div class="container-fluid callout-container">
@@ -32,6 +32,11 @@
 </div>
     <hr >
 <div class="container-fluid blog-container ">
+    <div class="row">
+        <div>
+            <h2 class="text-uppercase text-center">Blog:</h2>
+        </div>
+    </div>
     <div class="col-12 mt-3 left">
         <div class="row">
             {% for post in post_list %}
@@ -67,38 +72,37 @@
     </div>
 </div>
     <hr>
-<div class="container-fluid features-container">
+<div class="container-fluid features-container container-wrapper--green">
     <section class="features">
         <div class="row">
             <div class=" my-5">
-                <h2 class="text-uppercase">Features:</h2>
+                <h2 class="text-uppercase text-center">Features:</h2>
             </div>
         </div>
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="feature">
-                    <h3><i class="fas fa-blog d-none d-sm-inline"></i> Blog <span class="badge badge-success">New!</span></h3>
+                    <h3><i class="fas fa-blog d-none d-sm-inline"></i> Blog </h3>
                     <p>Stay up to date on the latest trends in security with our built in blog. Monthly security blogposts will be created and posted for all the members providing insight and guidance on how to best protect yourself in the digital world. Comment and like the posts that resonate the most with you.  </p>
-                    <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
+                    <p><a class="btn btn-sm btn-light" href="{% url 'blog:blog' %}">Check it out!</a></p>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="feature">
                     <h3><i class="fas fa-lock d-none d-sm-inline"></i> Password Manager </h3>
                     <p> Store all your passwords for each of your online accounts. You can creat several different accounts and save your username email and password. This imporves your secirity and reduces your risk of reusing the same password several times.</p>
-                    <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
+                    <p><a class="btn btn-sm btn-light" href="{% url 'create' %}">Check it out!</a></p>
                 </div>
             </div>
             <div class="col-12 d-md-none d-lg-block col-lg-4">
                 <div class="feature">
                     <h3><i class="fas fa-envelope d-none d-sm-inline"></i> Contact </h3>
                     <p>Feel free to reach out to us with any issues you have and we will be sure to follow up. Also if you have any good blog ideas that you would like us to write about and post we are happy to hear you out.</p>
-                    <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
+                    <p><a class="btn btn-sm btn-light" href="{% url 'contact:contact' %}">Check it out!</a></p>
                 </div>
             </div>
         </div>
     </section>
 </div>   
-    <hr>
 </article>
 {% endblock %}

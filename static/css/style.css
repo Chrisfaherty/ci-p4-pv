@@ -150,11 +150,11 @@ a {
 
 .heading-container{
     background: rgba(195, 236, 14, 0.3);
-    margin: 0;
+    width: 100%;
     padding: 0;
 }
 .heading-container h1 {
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .callout-container{
@@ -189,3 +189,11 @@ a {
 
 }
 
+.container-wrapper--green{
+    background-color: rgba(195, 236, 14, 0.3);
+}
+
+.feature{
+    margin-left: 5%;
+    margin-right: 5%;
+}
