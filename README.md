@@ -42,17 +42,20 @@ With the pace of everything going digital and everyone having different accounts
 ## Project Goals
 
 ### User Goals
-* Storing my account details (Username, Email & Password),
-* View all my account details,
+* Storing their account details (Username, Email & Password),
+* View all their account details,
 * Add new accounts as required,
-* View all of my account details,
-* Edit the account details.
+* Edit the account details,
+* Delete accounts,
+* Be able to contact the admin,
+* Be able to stay uptodate on the latest Security trends.
 
 
 ### Site Owner Goals
-* Create a password managar that I would use myself,
-* Create an easy flow for the user to navigate the terminal,
-* Provide feedback when the user inputs incorrect information.
+* Create a product that would improve the online security and awareness of its users,
+* Create a design and ease of use flow that entices the users to return,
+* Provide the ability to recieve feedback from its users,
+* Provide a responsive design.
 
 
 ## User Experience
