@@ -144,25 +144,16 @@ The main navigation for the site is at the top of the page. It is on the left ha
   - This allows the user to see the website, email, username & password,
   - The user name and password have copy to clipboard links to make it easy for them to get their details,
   - There is also a delete button where the user can delete their account, 
-  - there is an edit button where the user can edit the details in their account and save it again,
+  - There is an edit button where the user can edit the details in their account and save it again,
   - The add account page allows the user to add a new account to their profile,
-  - Exercises list page with catalogue of exercises and a filter option to find a specific exercise.
-  - Exercise detail page where user can see a description of a chosen exercise.
-  - Login page for returning user to log in.
-  - Register page allowing a new user to sign up.
-  - Profile page where user can view details of their account and created plans and also delete their account.
-  - Logout page allowing user to log out of the website.
-  - Contact page with contact form which allows users to send an email to the developer and provide their feedback.
+  - Login page for returning user to log in,
+  - Logout page Brings the user to log out,
+  - Contact page with contact form which allows users to send an email to the admin and provide their feedback.
   - 404 error page.
 
 #### Database
 
-- The backend consists of Python built with the Django framework with a database of a Postgres for the deployed version
-- Two database models contain all fields stored in the database and mimics the structure of what is actually stored in the Postgres database
-
-<details><summary>Show diagram</summary>
-<img src="docs/readme/database-diagram.png">
-</details>
+- The backend consists of Python built with the Django framework with a database of a Postgres for the deployed version.
 
 The following models were created to represent the database model structure for the website:
 
@@ -173,10 +164,18 @@ The following models were created to represent the database model structure for 
 - Stores the images for the posts in cloudinary with a (CloudinaryField),
 - Contains a ForeignKey Field to select the author of the blog post.
 
+<details><summary>Show Model</summary>
+<img src="/static/image/readme/post-model.png">
+</details>
+
 ##### blog/Comment Model
 - Contains all the input fields required to comment on the blog posts (Char, Email, Text & DateTime),
 - Contains a ForeignKey to send the comment to the admin panel for approval,
 - Contains a BooleanField to see if the comment is approved before it is posted.
+
+<details><summary>Show Model</summary>
+<img src="/static/image/readme/comment-model.png">
+</details>
 
 ##### pwmanagerapp/PwAccount Model
 - Contains a User ForeignKey to connect a user to the account being stored,
@@ -185,6 +184,9 @@ The following models were created to represent the database model structure for 
 - Uses django_cryptography_fields to encrypt the password in the database and decrypt when it is being viewed by the user,
 - Removed the password field from the admin panel to keep the users passwords secure.
 
+<details><summary>Show Model</summary>
+<img src="/static/image/readme/pwaccount-model.png">
+</details>
 
 ### Wireframes
 
