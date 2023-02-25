@@ -103,7 +103,17 @@ With the pace of everything going digital and everyone having different accounts
 19. I want to be able to get product feedback from users,
 20. I want users to be able to follow my socials.
 
-## Technical Design
+## Design
+
+### Colours
+
+The colour scheme was chosen to be easy on the eye but also highlight the seperate sections of the project. This allows the users to easly navigate the site. This color scheme was used for the entire project. 
+
+The color scheme was created with the use of <a href="https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557">Coolors</a>
+
+<details><summary>Coolor Pallet</summary>
+<img src="static/image/Coolor Pallet.png">
+</details>
 
 ### Flowchart
 
