@@ -79,19 +79,29 @@ With the pace of everything going digital and everyone having different accounts
 ### User Stories
 
 #### First-time  User
-1. I want to the password manager to flow and be easy to follow,
-2. I want to be able to create a master username and password to protect my passwords,
-3. I want to have clear options displayed when dicisions are to be made,
-4. I want to be able to view all my passwords in an organised form,
-5. I want to be able to easly add new passwords,
-6. I want to be able to edit my master password or user passwords if required,
-7. I want to be able to get feedback if i enter something incorrectly, 
+1. I want to the password vault product to flow and be easy to follow,
+2. I want to be able to create a user account and store my username & passwords for several online accounts,
+3. I want to be able to navagate the silt with ease and only relevent options being displayed to me,
+4. I want to be able to view a list of all my stored accounts,
+5. I want to be able to access my accounts to get the stored details,
+6. I want to be able to edit and delete my stored accounts,
+7. I want to be able to contact admin if i need to change my user details,
+8. I want to be able to contact admin with blog sugestions,
+9. I want to be able to read like and comment on the security blogs.
+
 
 #### Site Owner
-8. I want users to enjoy the experiance to make their personal password manager,
-9. I want users to easily navigate the site,
-10. I want users to be able to use the functions with out an issue,
-11. I want users to know if there was an issue and how to resolve it,
+10. I want users to enjoy the experiance while visiting the Password Vault,
+11. I want users to easily navigate the site,
+12. I want users to be able to use the functions with out an issue,
+13. I want users to know how to contact the admin if there is an issue,
+14. I want users to learn more about online security while on the site,
+15. I want users to be able to interact witht he monthly posts,
+16. I want the site to be responsive,
+17. I want users passwords to be hidden on the admin panel for security purposes,
+18. I want to be able to get blog post sugestions from users,
+19. I want to be able to get product feedback from users,
+20. I want users to be able to follow my socials.
 
 ## Technical Design
 
