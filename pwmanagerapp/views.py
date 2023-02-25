@@ -51,7 +51,7 @@ def create(request):
 
 
 def edit(request, acc_id):
-    acc = get_object_or_404(PwAccount, id=ls_id)
+    acc = get_object_or_404(PwAccount, id=acc_id)
     if request.method == 'POST':
         form = CreateNewPwAccount(request.POST, instance=acc)
         if form.is_valid():

@@ -119,23 +119,85 @@ The color scheme was created with the use of <a href="https://coolors.co/palette
 
 The google fonts used in the project are Roboto and Lato. These were the main fonts. Sans-serif was used as the back up font.
 
-### Flowchart
+### Structure
 
-The following flowchart sumerises the structure of the password manager.
-<details><summary>Overview</summary>
-<img src="docs/features/ppm_flow_main.png">
+#### Website pages
+
+The website was structured to allow for smooth navigation between the different pages.
+
+The main navigation for the site is at the top of the page. It is on the left handside along with the title for the project. The menue collapes into a hamburger menu on small size screens. There is social links in the footer to lead to the github repo and my linkedin page.
+
+- The website consists of the following sections:
+  - Home page with a call to action section, Blog top hits and a features section,
+  - The call to action is Dynamic depending on if the user is Authenticated or not. If the user is autenticated it will bring them to the accounts page, if not it will go to the sign up page,
+  - The blog section on the home page displays the lastest 3 blog posts so when users visit the site they see the most up to date blogs,
+  - The features section highlights the three main features of the site the blog, password vault and contact page with links to access the correct pages to find out more,
+  - Blog page, this is where the users can read like and comment on all security blog posts.
+  - The blog page will display up to 6 blogs and then after that it will paginate and display the rest on the next page. This is to keep the page user friendly,
+  - The user can click into any blog they would like to read. 
+  - Once the user is viewing the blog post they can like it and submit a comment to be reviewed by the admin before posting it, they can also read other comments,
+  - Contact page allows the users to contact the admin, The email will get sent to the admin panel and also directly to the admins email address,
+  - The register page allows new users to sign up for a new account,
+  - The login page allows the users that have already registered to log into their accounts.
+  - There are two pages to the password manager an accounts page where all fo your accounts are displayed,
+  - In the accounts page the user can click on the account they want to view to get all the user details,
+  - This allows the user to see the website, email, username & password,
+  - The user name and password have copy to clipboard links to make it easy for them to get their details,
+  - There is also a delete button where the user can delete their account, 
+  - there is an edit button where the user can edit the details in their account and save it again,
+  - The add account page allows the user to add a new account to their profile,
+  - Exercises list page with catalogue of exercises and a filter option to find a specific exercise.
+  - Exercise detail page where user can see a description of a chosen exercise.
+  - Login page for returning user to log in.
+  - Register page allowing a new user to sign up.
+  - Profile page where user can view details of their account and created plans and also delete their account.
+  - Logout page allowing user to log out of the website.
+  - Contact page with contact form which allows users to send an email to the developer and provide their feedback.
+  - 404 error page.
+
+#### Database
+
+- The backend consists of Python built with the Django framework with a database of a Postgres for the deployed version
+- Two database models contain all fields stored in the database and mimics the structure of what is actually stored in the Postgres database
+
+<details><summary>Show diagram</summary>
+<img src="docs/readme/database-diagram.png">
 </details>
 
-<details><summary>Options</summary>
-<img src="docs/features/ppm_flow_option_1.png">
-<img src="docs/features/ppm_flow_option_2.png">
-<img src="docs/features/ppm_flow_option_3.png">
-<img src="docs/features/ppm_flow_option_4.png">
+The following models were created to represent the database model structure for the website:
+
+##### blog/Post Model
+- Contains all the fields required for posting on the blog (Char, Slug, DateTime & Text),
+- Contains a field to store blog posts in draft or published,
+- Contains the field to add likes to the posts with a (ManyToManyField),
+- Stores the images for the posts in cloudinary with a (CloudinaryField),
+- Contains a ForeignKey Field to select the author of the blog post.
+
+##### blog/Comment Model
+- Contains all the input fields required to comment on the blog posts (Char, Email, Text & DateTime),
+- Contains a ForeignKey to send the comment to the admin panel for approval,
+- Contains a BooleanField to see if the comment is approved before it is posted.
+
+##### pwmanagerapp/PwAccount Model
+- Contains a User ForeignKey to connect a user to the account being stored,
+- Contains the fields for the details a user would want to store for an account (Char & Email),
+- Encrypts the password field while it is stored in the database (encrypt(CharFiedl)),
+- Uses django_cryptography_fields to encrypt the password in the database and decrypt when it is being viewed by the user,
+- Removed the password field from the admin panel to keep the users passwords secure.
+
+
+### Wireframes
+
+<details><summary>Big screens - laptop & desktop</summary>
+<img src="docs/wireframes/wireframes-desktop.png">
+</details>
+<details><summary>Medium screens - tablet</summary>
+<img src="docs/wireframes/wireframes-tablet.png">
+</details>
+<details><summary>Small screens - mobile</summary>
+<img src="docs/wireframes/wireframes-mobile.png">
 </details>
 
-<details><summary>Exit Loop</summary>
-<img src="docs/features/ppm_flow_option_5.png">
-</details>
 
 ## Technologies Used
 
