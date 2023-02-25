@@ -115,6 +115,10 @@ The color scheme was created with the use of <a href="https://coolors.co/palette
 <img src="static/image/Coolor Pallet.png">
 </details>
 
+### Fonts
+
+The google fonts used in the project are Roboto and Lato. These were the main fonts. Sans-serif was used as the back up font.
+
 ### Flowchart
 
 The following flowchart sumerises the structure of the password manager.
