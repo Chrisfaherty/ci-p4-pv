@@ -112,7 +112,7 @@ The colour scheme was chosen to be easy on the eye but also highlight the sepera
 The color scheme was created with the use of <a href="https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557">Coolors</a>
 
 <details><summary>Coolor Pallet</summary>
-<img src="static/image/Coolor Pallet.png">
+<img src="static/image/readme/coolor-pallet.png">
 </details>
 
 ### Fonts
@@ -158,6 +158,7 @@ The main navigation for the site is at the top of the page. It is on the left ha
 The following models were created to represent the database model structure for the website:
 
 ##### blog/Post Model
+
 - Contains all the fields required for posting on the blog (Char, Slug, DateTime & Text),
 - Contains a field to store blog posts in draft or published,
 - Contains the field to add likes to the posts with a (ManyToManyField),
@@ -169,6 +170,7 @@ The following models were created to represent the database model structure for 
 </details>
 
 ##### blog/Comment Model
+
 - Contains all the input fields required to comment on the blog posts (Char, Email, Text & DateTime),
 - Contains a ForeignKey to send the comment to the admin panel for approval,
 - Contains a BooleanField to see if the comment is approved before it is posted.
@@ -178,6 +180,7 @@ The following models were created to represent the database model structure for 
 </details>
 
 ##### pwmanagerapp/PwAccount Model
+
 - Contains a User ForeignKey to connect a user to the account being stored,
 - Contains the fields for the details a user would want to store for an account (Char & Email),
 - Encrypts the password field while it is stored in the database (encrypt(CharFiedl)),
@@ -238,133 +241,227 @@ The following models were created to represent the database model structure for 
 <img src="static/image/readme/logout-wireframe.png">
 </details>
 
+[Back to Table Of Contents](#table-of-contents)
 
 ## Technologies Used
 
 ### Languages and Frameworks
+
 * [HTML]
 * [CSS]
 * [Javascript]
+* [Bootstrap]
 * [Python]
 * [Django]
 
 
 ### Libraries and Tools
+
 * [Git](https://git-scm.com/) Used for version control to push the code to GitHub.
 * [GitHub](https://github.com/) Used as a repository to store the projects code.
-* [lucidchart](https://www.lucidchart.com/) Used to create the project flow.
-* [Google Cloud Platform](https://cloud.google.com/cloud-console/) Used to manage access and permissions Google auth & sheets to google services.
-* [Google Sheets](https://www.google.co.uk/sheets/about/) Used to store the passwords.
 * [Heroku Platform](https://www.heroku.com) Used to deploy the project.
+* [Am I Responsive](https://amiresponsive.co.uk/) Used to get the responsive image at the top of the readme.
+* [Balsamiq](https://balsamiq.com/) Used to create the wireframes.
+* [Cloudinary](https://cloudinary.com/) Used to store the static files.
+* [Favicon](https://favicon.io/) Used to generate a favicon for the site.
+* [Font Awesome](https://fontawesome.com/) Used for the icons in the site.
+* [Google Fonts](https://fonts.google.com/) Used for importing the fonts on the site.
+* [Postgres](https://www.postgresql.org) Used as the database for the deployed site.
+* [Summernote](https://summernote.org/) Used for the fields in the Admin panel.
+* [ChatGPT](https://openai.com/blog/chatgpt/) Used to generate the content for the blog posts.
+* [Cryptography](https://django-cryptography.readthedocs.io/en/latest/) Used to encrypt the users account passwords stored in the db.
+* [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) Used to generate the forms.
 
-### Libraries
+### Validation Tools
 
-#### Python Libraries
-* [Time](https://docs.python.org/3/library/time.html) - Used to delay the user input after the welcome message is displayed.
-* [PrettyPrinter](https://docs.python.org/3/library/pprint.html) - Used pprint to display the passwords in a organised format for option 1.
-* [Pycodestyle](https://pypi.org/project/pycodestyle/) - Used to check Python code against some of the style conventions in PEP 8.
+* [WC3 Validator](https://validator.w3.org/) Used to validate the html code.
+* [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/) Used to validate the css code.
+* [JShint](https://jshint.com/) Used to check the quality of the JavaScript.
+* [PEP8](http://pep8online.com/) Used to check the code follows the coding conventions.
+* [Lighthouse](https://developers.google.com/web/tools/lighthouse/) Used for for performance, accessibility, progressive web apps, SEO analysis.
+* [Wave Validator](https://wave.webaim.org/) Used to evaluate accessibility.
 
-#### Third Party Libraries
-* [colorama](https://pypi.org/project/colorama/) JUSTIFICATION: Colorama was used add color to the Welcome message. It was also used to help the user notice if something was sucessful with green and an error with red.
-* [gspread](https://docs.gspread.org/) JUSTIFICATION: I used gspread to add and manipulate data in my Google spreadsheet and to interact with Google APIs. This was required to store the passwords and user details and edit them.
-* [google.oauth2.service_account](https://google-auth.readthedocs.io/en/master/) JUSTIFICATION: Used to set up the authentification needed to access the Google API and connect my Service Account with the Credentials function. A creds.json file was created with all details the API needs to access the google account.
 
+[Back to Table Of Contents](#table-of-contents)
 
 ## Features
 
 
 ### Existing Features
 
-* Welcome Screen
-    * This welcome screen includes a logo front and center and a place to input your name to make it personal.
-    * User story: 1, 8.
+* Logo and Navigation Bar
+    * Remains consistant on all pages,
+    * The logo is also used as a link back to the home page,
+    * The navbar will change if the user is autenticated to display the logout and password manager links,
+    * The password manager link uses a dropdown menu to save space,
+    * User stories:
 
-![This is an screenshot of the Welcome Screen](docs/ppm_welcome_screen.png)
+<details><summary>Logo & Nav bar Image</summary>
+<img src="static/image/readme/navbar-1.png">
+<img src="static/image/readme/navbar-2.png">
+<img src="static/image/readme/navbar-3.png">
+</details>
 
-* Main Screen
-    * The main screen is where the user is welcomed to the password manager.
-    * Information is displayed to explain what steps the user should take. 
-    * It also asks for the user to input its next step.
-    * User stories: 1, 3, 9.
 
-![This is an screenshot of the main screen](docs/features/main_screen.png)
+* Call to Action
+    * The call to action gives the user an idea of what the site is about "Security is key",
+    * It explains that the user can store passwords for different online accounts,
+    * It has a link to bring a new user to sign up,
+    * If the user is already signed up the call to action changes to bring the user to their stored accounts,
+    * User stories: 
 
-* Create Account Screen & Google Sheet
-    * This is the process flow the user goes down when it selects create account at the main screen.
-    * The user is prompted to create a username and a password. 
-    * The user recieves criteria around what has to be included in the password for it to be valid.
-    * The user then is noitfied if the password is valid.
-    * The user is warned to make sure to remember their account details and it shows the account details for the last time.
-    * User stories: 2, 3, 10.
+<details><summary>Call to Action Image</summary>
+<img src="static/image/readme/cta-logged-out.png">
+<img src="static/image/readme/cta-logged-in.png">
+</details>
 
-![This is an screenshot of the create account screen](docs/features/create_account_screen.png)
+* Blog Highlight
+    * This section gives the user a feel for what the blog is about,
+    * The three most recent blogs will be displayed here for quick access,
+    * Each highlighted blog post can be clicked to enter the main post,
+    * User stories: 
 
-![This is an screenshot of the settings google sheet](docs/features/settings_google_sheet.png)
+<details><summary>Blog Highilght Image</summary>
+<img src="static/image/readme/blog-highlights.png">
+</details>
 
-* Login Function Screen
-    * The login function prompts the user to input the username and password they created.
-    * Then it gives feedback if it was correct.
-    * Then it gives 5 options for the user to choose. 
-    * User stories: 1, 3, 9, 10.
+* Features
+    * The features section is used to display the main features of the website (Blog, Password Manager & Contact),
+    * Each feature has explaination text and a link to the each each section,
+    * By selecting the check it out button it will direct you to the representative page,
+    * User stories:
 
-![This is an screenshot of the login in screen](docs/features/login_screen.png)
+<details><summary>Features Image</summary>
+<img src="static/image/readme/features.png">
+</details>
 
-* Adding a website screen, Option 2:
-    * To get to this point the User input 2 in the login function screen.
-    * The user is prompted to input a website, a username and a password.
-    * The user is presented with the criteria to create a valid password.
-    * User stories: 3, 5, 9, 10.
+* Footer
+    * The footer displays the name of the developer,
+    * Two links are displayed to go to the github depositry or the developers linkedin page,
+    * User stories:
 
-![This is an screenshot of option 2](docs/features/adding_new_website_screen.png)
-![This is an screenshot of the google sheet](docs/features/password_manager_google_sheet.png)
+<details><summary>Footer Image</summary>
+<img src="static/image/readme/footer.png">
+</details>
 
-* Viewing passwords screen, Option 1:
-    * To get to this point the user selected 1 in the login function screen.
-    * This function pulls the passwords that the user stored and displays them in the terminal.
-    * There is also a prompt to store a password if you have not yet done so.
-    * User stories: 3, 4, 9, 10.
+* Blog Overview Page
+    * To get to the blog page you click on the blog link in the nav bar,
+    * The blog can be viewed by autherised and unautherised users,
+    * The blog page displays 6 blog posts at a time,
+    * If there are more than 6 postss a next button will apear at the bottom of the page to move to the next page to see more blog posts,
+    * If you click on the post title it will bring you to the detailed post,
+    * User stories:
 
-![This is an screenshot of the viewing passwords screen](docs/features/view_passwords_screen.png)
+<details><summary>Blog Image</summary>
+<img src="static/image/readme/blog-nav.png">
+<img src="static/image/readme/blog-1.png">
+<img src="static/image/readme/blog-2.png">
+</details>
 
- * Editing passwords screen, Option 3:
-    * To get to this point the user selected 3 in the login function screen.
-    * The function is used to edit / change a password on one of the stored websites.
-    * The user is requested to input the website they want to change the password for.
-    * The user then is prompted to input the new password.
-    * User stories: 3, 6, 9, 10.
+ * Blog Post
+    * To get to this point the user clicks on blog in the nav bar,
+    * The user then clicks on the title of the blog post they want to view,
+    * They are now in the detailed view where they can read the full post,
+    * The user can like the post if they enjoyed it,
+    * The user can add a comment as well and then after the admin approves it will be displayed under comments,
+    * User stories:
 
-![This is an screenshot of the editing passwords screen](docs/features/edit_password_screen.png)
-![This is an screenshot of the updated settings sheet](docs/features/edit_password_example.png)
+<details><summary>Blog Post Image</summary>
+<img src="static/image/readme/blog-nav.png">
+<img src="static/image/readme/blog-post-1.png">
+<img src="static/image/readme/blog-post-2.png">
+<img src="static/image/readme/blog-post-3.png">
+</details>
 
- * Editing master password screen, Option 4:
-    * To get to this point the user selected 4 in the login function screen.
-    * This function is used to edit the master password.
-    * The user is prompted to enter their name,
-    * Then they are prompted to enter the new password.
-    * They are then notified if the password was updated.
-    * User stories: 3, 6, 9, 10.
+ * Contact Page
+    * To get to this point the user selects the contact link in the nav bar,
+    * The user is presented with the contact form, 
+    * This form can be used for requests, sugestions or assistance in changing details,
+    * The email will get stored in the admin panel and will also be sent to the admins inbox,
+    * User stories:
 
-![This is an screenshot of the edit master password screen](docs/features/edit_master_password_screen.png)
-![This is an screenshot of the updated settings excel sheet](docs/features/updated_settings_google_sheet.png)
+<details><summary>Contact Image</summary>
+<img src="static/image/readme/contact-nav.png">
+<img src="static/image/readme/contact-page-1.png">
+</details>
 
- * Exiting to the login screen, Option 5:
-    * To get to this point the user selected 5 in the login function screen.
-    * This function returns the user to the main screen.
-    * User stories: 9, 10.
+ * Add Account Page
+    * To get to this point the user selects the password manager link dropdown in the nav bar,
+    * Then select the add account link in the dropdown, 
+    * This brings the user to the add account page where they can fill out the form to store their account details,
+    * Once the form is filled out the user clicks add password,
+    * The account details are now saved in the db where only the user can access them,
+    * As this is a password manager the password field can't be seen by anyone but the user and it is encrypted in the database,
+    * User stories:
 
-![This is an screenshot of the exit option screen](docs/features/exit_option_5.png)
+<details><summary>Add Account Image</summary>
+<img src="static/image/readme/pwmanager-nav.png">
+<img src="static/image/readme/add-account-nav.png">
+<img src="static/image/readme/add-account-page.png">
+</details>
 
- * Error message for passwords:
-    * This is the prompt that shows if the user does not follow the create password criteria.
-    * User stories: 3, 7, 11.
+ * View Account Page
+    * To get to this point the user selects the password manager link dropdown in the nav bar,
+    * Then select the view account link in the dropdown, 
+    * This brings the user to the view account page where they can see the title of all the accounts they saved,
+    * The user can click on the account title link to see the account details,
+    * User stories:
 
-![This is an screenshot of the exit option screen](docs/features/invalid_password_error_message.png)
+<details><summary>View Account Image</summary>
+<img src="static/image/readme/pwmanager-nav.png">
+<img src="static/image/readme/view-account-nav.png">
+<img src="static/image/readme/view-account-1.png">
+</details>
 
-* Error message for invalid input:
-    * This is the prompt that shows if the user inputs an incorrect value.
-    * User stories: 3, 7, 11.
+ * Account Detail Page
+    * To get to this point the user selects the password manager link dropdown in the nav bar,
+    * Then select the view account link in the dropdown, 
+    * This brings the user to the view account page where they can see the title of all the accounts they saved,
+    * The user can click on the account title link to see the account details,
+    * User stories:
 
-![This is an screenshot of the exit option screen](docs/features/invalid_input_error_message.png)
+<details><summary>Account Detail Image</summary>
+<img src="static/image/readme/pwmanager-nav.png">
+<img src="static/image/readme/view-account-nav.png">
+<img src="static/image/readme/account-detail-1.png">
+<img src="static/image/readme/account-detail-2.png">
+</details>
+
+ * Register Page
+    * To get to this point the user selects the register link in the nav bar,
+    * The user can then fill in their details to register a new account,
+    * The user also has the option to head back to the home page,
+    * This page was restrained to keep it simple for the user with its 2 main options,
+    * User stories:
+
+<details><summary>Register Image</summary>
+<img src="static/image/readme/reg-nav.png">
+<img src="static/image/readme/reg-1.png">
+</details>
+
+ * Login Page
+    * To get to this point the user will click on the login link in the nav bar,
+    * The login link will only be displayed when the user is not logged in,
+    * The login page then allows the user to enter their details and log in,
+    * The user can also select remember me to speed up the login process in the future,
+    * User stories:
+
+<details><summary>Login Image</summary>
+<img src="static/image/readme/login-nav.png">
+<img src="static/image/readme/login-01.png">
+</details>
+
+* Logout Page
+    * To get to this point the user will click on the logout link in the nav bar,
+    * The logout link will only be displayed when the user is logged in,
+    * The logout page then asks the user if they want to logout,
+    * The user can also return to the home page with the return home button,
+    * User stories:
+
+<details><summary>Logout Image</summary>
+<img src="static/image/readme/logout-nav.png">
+<img src="static/image/readme/logout-page.png">
+</details>
 
 [Back to Table Of Contents](#table-of-contents)
 
