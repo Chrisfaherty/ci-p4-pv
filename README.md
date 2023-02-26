@@ -226,6 +226,17 @@ The following models were created to represent the database model structure for 
 <img src="static/image/readme/pwaccount-details.png">
 </details>
 
+##### Autentication
+
+<details><summary>Register</summary>
+<img src="static/image/readme/register-wireframe.png">
+</details>
+<details><summary>Login</summary>
+<img src="static/image/readme/login-wireframe.png">
+</details>
+<details><summary>Logout</summary>
+<img src="static/image/readme/logout-wireframe.png">
+</details>
 
 
 ## Technologies Used
