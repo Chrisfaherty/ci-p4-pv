@@ -214,6 +214,18 @@ The following models were created to represent the database model structure for 
 <img src="static/image/readme/contact-wireframe.png">
 </details>
 
+##### Password Manager
+
+<details><summary>Add Account</summary>
+<img src="static/image/readme/add-account-wireframe.png">
+</details>
+<details><summary>View Accounts</summary>
+<img src="static/image/readme/view-accounts-wireframe.png">
+</details>
+<details><summary>View Account Details</summary>
+<img src="static/image/readme/pwaccount-details.png">
+</details>
+
 
 
 ## Technologies Used
