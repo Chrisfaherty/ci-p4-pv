@@ -205,8 +205,15 @@ The following models were created to represent the database model structure for 
 <img src="static/image/readme/blog-wireframe.png">
 </details>
 <details><summary>Post Page</summary>
-<img src="static/image/readme/logged-out-home-wireframe.png">
+<img src="static/image/readme/blog-post-wireframe.png">
 </details>
+
+##### Contact
+
+<details><summary>Contact Page</summary>
+<img src="static/image/readme/contact-wireframe.png">
+</details>
+
 
 
 ## Technologies Used
