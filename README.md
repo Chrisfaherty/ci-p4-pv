@@ -417,7 +417,10 @@ The following models were created to represent the database model structure for 
     * To get to this point the user selects the password manager link dropdown in the nav bar,
     * Then select the view account link in the dropdown, 
     * This brings the user to the view account page where they can see the title of all the accounts they saved,
-    * The user can click on the account title link to see the account details,
+    * The user then selects one of their saved accounts,
+    * This displays that accounts details the user stored,
+    * The user has copy to clipboard links for the usename and password for easy of use,
+    * The user also has extra options (delete & edit),
     * User stories:
 
 <details><summary>Account Detail Image</summary>
@@ -425,6 +428,43 @@ The following models were created to represent the database model structure for 
 <img src="static/image/readme/view-account-nav.png">
 <img src="static/image/readme/account-detail-1.png">
 <img src="static/image/readme/account-detail-2.png">
+</details>
+
+ * Edit Account Detail Page
+    * To get to this point the user selects the password manager link dropdown in the nav bar,
+    * Then select the view account link in the dropdown, 
+    * This brings the user to the view account page where they can see the title of all the accounts they saved,
+    * The user then selects one of their saved accounts,
+    * This displays that accounts details the user stored,
+    * The user then selects the edit button,
+    * This brings the user to the edit page where they can edit their details,
+    * Once the edits are complete the user can save the new details,
+    * User stories:
+
+<details><summary>Edit Account Detail Image</summary>
+<img src="static/image/readme/pwmanager-nav.png">
+<img src="static/image/readme/view-account-nav.png">
+<img src="static/image/readme/account-detail-1.png">
+<img src="static/image/readme/edit-account-detail-1.png">
+<img src="static/image/readme/edit-account-detail-2.png">
+</details>
+
+ * Delete Account Detail Page
+    * To get to this point the user selects the password manager link dropdown in the nav bar,
+    * Then select the view account link in the dropdown, 
+    * This brings the user to the view account page where they can see the title of all the accounts they saved,
+    * The user then selects one of their saved accounts,
+    * This displays that accounts details the user stored,
+    * The user then selects the delete button,
+    * This deletes that account from the users profile and reverts back to the view accounts page,
+    * User stories:
+
+<details><summary>Delete Account Detail Image</summary>
+<img src="static/image/readme/pwmanager-nav.png">
+<img src="static/image/readme/view-account-nav.png">
+<img src="static/image/readme/account-detail-1.png">
+<img src="static/image/readme/delete-account-details-1.png">
+<img src="static/image/readme/delete-account-details-2.png">
 </details>
 
  * Register Page
