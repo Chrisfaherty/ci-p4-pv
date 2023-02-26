@@ -2,33 +2,41 @@
 {% block title %}View List{% endblock %}
 
 {% block content %}
+<div class="container text-start">
 	<h1>{{acc.name}}</h1>
 	<ul>
-		<label>Website:</label>
-		<p>{{acc.website}}</p>
-		<label>Email:</label>
-		<p>{{acc.email}}</p>
-		<label>Username:</label>
-		<p>{{acc.username}}</p>
+	<div class="mt-2">
+		<label><strong>Website:</strong></label>
+		<p>>>>{{acc.website}}</p>
+	</div>
+	<div class="mt-2">
+		<label><strong>Email:</strong></label>
+		<p>>>>{{acc.email}}</p>
+	</div>
+	<div class="mt-2">
+		<label><strong>Username:</strong></label>
+		<p>>>>{{acc.username}}</p>
 		<button style="background:green; text-align:center;" onclick="CopyAccUser()"><i class="fas fa-copy"></i></button>
 		<input style="text-align:center;" type="text" value="{{acc.username}}"id="accusername">
-		<label>Password:</label>
-		<p>{{acc.password}}</p>
+	</div>
+		<div class="mt-2">
+		<label><strong>Password:</strong></label>
+		<p>>>>{{acc.password}}</p>
 		<button style="background:green; text-align:center;" onclick="CopyAccPass()"><i class="fas fa-copy"></i></button>
      	<input style="text-align:center;" type="text" value="{{acc.password}}"id="accpassword">
-
+	</div>
 	</ul>
 	<td>
 		<a href="/delete/{{ acc.id }}">
-			<button>Delete</button>
+			<button class="btn btn-danger">Delete</button>
 		</a>
 	</td>
 	<td>
 		<a href="/edit/{{ acc.id }}">
-			<button>Edit</button>
+			<button class="btn btn-success">Edit</button>
 		</a>
 	</td>
-
+</div>
 {% block scripts %}
 	<script>
 		function CopyAccUser() {
