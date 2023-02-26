@@ -190,14 +190,22 @@ The following models were created to represent the database model structure for 
 
 ### Wireframes
 
-<details><summary>Big screens - laptop & desktop</summary>
-<img src="docs/wireframes/wireframes-desktop.png">
+##### Home Page
+
+<details><summary>Logged in Page</summary>
+<img src="static/image/readme/loggedin-home-wireframe.png">
 </details>
-<details><summary>Medium screens - tablet</summary>
-<img src="docs/wireframes/wireframes-tablet.png">
+<details><summary>Logged out Page</summary>
+<img src="static/image/readme/logged-out-home-wireframe.png">
 </details>
-<details><summary>Small screens - mobile</summary>
-<img src="docs/wireframes/wireframes-mobile.png">
+
+##### Blog
+
+<details><summary>Main Page</summary>
+<img src="static/image/readme/blog-wireframe.png">
+</details>
+<details><summary>Post Page</summary>
+<img src="static/image/readme/logged-out-home-wireframe.png">
 </details>
 
 
