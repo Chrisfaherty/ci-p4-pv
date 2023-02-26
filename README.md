@@ -241,10 +241,15 @@ The following models were created to represent the database model structure for 
 
 ## Technologies Used
 
-### Languages
-* [Python](https://www.python.org/) The language used for the logic of the project.
+### Languages and Frameworks
+* [HTML]
+* [CSS]
+* [Javascript]
+* [Python]
+* [Django]
 
-### Framework and Tools
+
+### Libraries and Tools
 * [Git](https://git-scm.com/) Used for version control to push the code to GitHub.
 * [GitHub](https://github.com/) Used as a repository to store the projects code.
 * [lucidchart](https://www.lucidchart.com/) Used to create the project flow.
