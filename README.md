@@ -897,14 +897,14 @@ The following models were created to represent the database model structure for 
 ## Bugs
 
 ### Fixed Bugs
-* When editing the master password if you entered the user name instead of the name it would print the new password in the incorrect cell.
-    * FIX: Change the function to focus on the one cell as this cell will not change.
-* When locating the specific row and column for edit password the function would break if the coordinates where past row 9.
-    * FIX: An if else statement was added so the formula changes once the cell is past row 9.
-* When adding websites you could add the same one a few times but then to change the password it would change the first one it found.
-    * FIX: A function was created to search for that website before adding a new one to the spread sheet. If there was one in the sheet already it would give a prompt to change the name so it is different to what is currently stored.
-* When trying to edit a password that is not in the google sheet it would say dose not exsist but also triger the password updated print.
-    * FIX: Moved the "password updated" from the main function to the edit password function.
+* When working to encrypt the users passwords in the database so the admin couldn't see it. It would remain decrypted in the admin panel.
+    * FIX: The password field was excluded from the admin panel so it is not secuer and encrypten in the db as well.
+* When trying to add an email feed back for the contact form I was using twillio but it required a domain name.
+    * FIX: Moved to Google SMTP for the email and edited the settings.py file to work for in the terminal for development and send an email in the deployed version.
+* When adding the 3 blog posts to the home page there was issues connecting the apps together.
+    * FIX: this was salved by adding app names to urls.py for both the blog and home app.
+* When ad ing the encryption to my models it was presenting an error that the column did not exsist in the database.
+    * FIX: the db was deleted along eith the migration files except for the __init__.py file. This is not recomended if your site is deployed with importand data stored in the database.
 
 ## Deployment
 
