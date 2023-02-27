@@ -193,6 +193,15 @@ a {
 
 /* LOGOUT PAGE */
 
+.container-logout{
+    width:70%;
+}
+
+/* Form Styling */
+.form-container{ 
+    width:70%;
+}
+
 .crud-form{
     display: inline-block;
 }

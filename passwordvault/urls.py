@@ -33,3 +33,5 @@ urlpatterns = [
     path("blog/", include("blog.urls"), name="blog-urls"),
     path('accounts/', include('allauth.urls')),
 ]
+
+handler404 = "passwordvault.views.page_not_found_view"
