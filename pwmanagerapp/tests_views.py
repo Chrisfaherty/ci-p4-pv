@@ -1,5 +1,5 @@
 from django.test import TestCase
-from .models import PwAccount
+from . import views
 
 
 class TestViews(TestCase):

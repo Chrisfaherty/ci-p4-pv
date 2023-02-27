@@ -2,6 +2,7 @@ from django.shortcuts import render, reverse, redirect, get_object_or_404
 from django.http import HttpResponse, HttpResponseRedirect
 from pwmanagerapp.models import PwAccount
 from pwmanagerapp.forms import CreateNewPwAccount
+from django.contrib import messages
 
 def index(request, id):
     acc = PwAccount.objects.get(id=id)
@@ -56,7 +57,18 @@ def edit(request, acc_id):
         form = CreateNewPwAccount(request.POST, instance=acc)
         if form.is_valid():
             form.save()
+            messages.add_message(
+                request,
+                messages.SUCCESS,
+                "You have updated your account details have been edited"
+            )
             return redirect('view')
+        else:
+            messages.add_messages(
+                request,
+                messages.ERROR,
+                "Whoops something is wrong!"
+            )
     form = CreateNewPwAccount(instance=acc)
     context = {
         'form': form
@@ -67,6 +79,10 @@ def edit(request, acc_id):
 def delete(request, acc_id):
     acc = get_object_or_404(PwAccount, id=acc_id)
     acc.delete()
+    messages.add_message(
+        request, messages.SUCCESS,
+        "Your account has been deleted"
+    )
     return redirect('view')
 
 

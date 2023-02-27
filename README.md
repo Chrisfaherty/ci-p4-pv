@@ -13,6 +13,10 @@ This password manager allows the user to sign up and store their account details
 
 With the pace of everything going digital and everyone having different accounts for everything, its human nature to take the easy route and use the same password for every account. This has a huge impact on your security and shows why password managers are vital today more than ever.
 
+Superuser details: 
+User: superuser
+Password: PasswordVault@2023
+
 ## Table of Contents
 
 1. [Project Goals](#project-goals)
