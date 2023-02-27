@@ -81,7 +81,7 @@ With the pace of everything going digital and everyone having different accounts
 #### First-time  User
 1. I want to the password vault product to flow and be easy to follow,
 2. I want to be able to create a user account and store my username & passwords for several online accounts,
-3. I want to be able to navigate the silt with ease and only relevant options being displayed to me,
+3. I want to be able to navigate the site with ease and only relevant options being displayed to me,
 4. I want to be able to view a list of all my stored accounts,
 5. I want to be able to access my accounts to get the stored details,
 6. I want to be able to edit and delete my stored accounts,
@@ -556,7 +556,7 @@ The following models were created to represent the database model structure for 
 |-------------|------------|----------------------|-------------------|
 | Main screen | Scroll to the top of the page | User is presented with a Nav Bar and all the page links | Works as expected |
 | Nav bar| Click register | The user is taken to the registeration page | Works as expected |
-| Registeration page | The user inputs their details and clicks sign up | the user is loged in and taken back to the main page | Works as expected |
+| Registeration page | The user inputs their details and clicks sign up | The user is loged in and taken back to the main page | Works as expected |
 | Nav bar | The user views the navbar | Nav bar has changed with the new revelent links | Works as expected |
 
 <details><summary>Screenshots</summary>
@@ -586,55 +586,54 @@ The following models were created to represent the database model structure for 
 <img src="static/image/readme/manual-testing/user-story-2-6.png">
 </details>
 
-3. I want to be able to navigate the silt with ease and only relevant options being displayed to me,
+3. I want to be able to navigate the site with ease and only relevant options being displayed to me,
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
-| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
-| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
-| Login Function screen | Input username & password | User is given 5 options to choose from along with information on what should be done first | Works as expected |
+| Main screen | Scroll to the top of the page | User is presented with a Nav Bar and all the page links and a call to action | Works as expected |
+| Nav bar| Click register | The user is taken to the registeration page | Works as expected |
+| Registeration page | The user inputs their details and clicks sign up | The user is loged in and taken back to the main page | Works as expected |
+| Nav bar | The user views the navbar & call to acction | Nav bar  & call to action has changed with the new revelent links | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/testing/user_story_1_1.png">
-<img src="docs/testing/user_story_1_2.png">
-<img src="docs/testing/user_story_1_3.png">
-<img src="docs/testing/user_story_1_4.png">
+<img src="static/image/readme/manual-testing/user-story-3-1.png">
+<img src="static/image/readme/manual-testing/user-story-3-2.png">
+<img src="static/image/readme/manual-testing/user-story-3-3.png">
 </details>
 
 4. I want to be able to view a list of all my stored accounts,
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
-| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
-| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
-| Login Function screen | Input username & password | User is given 5 options to choose from along with information on what should be done first | Works as expected |
-| Login Function screen | Input option 1 | User is presented with the stored passwords | Works as expected |
+| Main screen | Scroll to the top of the page | User is presented with a Nav Bar and all the page links and a call to action | Works as expected |
+| Login | click the login link | User is taken to the login screen | Works as expected |
+| Login screen | Input username & password | User is taken back to the home page | Works as expected |
+| Main screen | Click view accounts in the call to action | User is taken to the view accounts page | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/testing/user_story_1_1.png">
-<img src="docs/testing/user_story_1_2.png">
-<img src="docs/testing/user_story_1_3.png">
-<img src="docs/testing/user_story_1_4.png">
-<img src="docs/testing/user_story_4_1.png">
+<img src="static/image/readme/manual-testing/user-story-4-1.png">
+<img src="static/image/readme/manual-testing/user-story-4-2.png">
+<img src="static/image/readme/manual-testing/user-story-4-3.png">
+<img src="static/image/readme/manual-testing/user-story-4-4.png">
 </details>
 
 5. I want to be able to access my accounts to get the stored details,
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
-| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
-| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
-| Login Function screen | Input username & password | User is given 5 options to choose from along with information on what should be done first | Works as expected |
-| Login Function screen | Input option 2 | User is presented with the stored passwords | Works as expected |
-| Adding a website screen | Input the website, username & password | notice password stored sucessfully and details displayed | Works as expected |
+| Main screen | Scroll to the top of the page | User is presented with a Nav Bar and all the page links and a call to action | Works as expected |
+| Login | click the login link | User is taken to the login screen | Works as expected |
+| Login screen | Input username & password | User is taken back to the home page | Works as expected |
+| Main screen | Click view accounts in the call to action | User is taken to the view accounts page | Works as expected |
+| View Accounts | Click on the account to view | User is taken to the account details | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/testing/user_story_1_1.png">
-<img src="docs/testing/user_story_1_2.png">
-<img src="docs/testing/user_story_1_3.png">
-<img src="docs/testing/user_story_1_4.png">
-<img src="docs/testing/user_story_5_1.png">
-<img src="docs/testing/user_story_5_2.png">
+<img src="static/image/readme/manual-testing/user-story-4-1.png">
+<img src="static/image/readme/manual-testing/user-story-4-2.png">
+<img src="static/image/readme/manual-testing/user-story-4-3.png">
+<img src="static/image/readme/manual-testing/user-story-4-4.png">
+<img src="static/image/readme/manual-testing/user-story-5-1.png">
+<img src="static/image/readme/manual-testing/user-story-5-2.png">
 </details>
 
 6. I want to be able to edit and delete my stored accounts,
