@@ -689,9 +689,9 @@ The following models were created to represent the database model structure for 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
 | Main screen | Scroll to the top of the page | User is presented with a Nav Bar and all the page links | Works as expected |
-| Navbar| Clock on the blog link | User is taken to the blog page | Works as expected |
-| Blog | click on the blog post title | User is taken to the blog posts page | Works as expected |
-| Blog Post | click on the link heart to like or input a comment and press submit to send it for approval | The heart annimates or a success message is displayed for the comment | Works as expected |
+| Navbar| Click on the blog link | User is taken to the blog page | Works as expected |
+| Blog | Click on the blog post title | User is taken to the blog posts page | Works as expected |
+| Blog Post | Click on the link heart to like or input a comment and press submit to send it for approval | The heart annimates or a success message is displayed for the comment | Works as expected |
 
 <details><summary>Screenshots</summary>
 <img src="static/image/readme/manual-testing/user-story-9-1.png">
@@ -722,180 +722,140 @@ The following models were created to represent the database model structure for 
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
-| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
-| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
-| Login Function screen | Input username & password | User is given 5 options to choose from along with information on what should be done first | Works as expected |
-| Login Function screen | Input option 2 | User is presented with the stored passwords | Works as expected |
-| Adding a website screen | Input a website already stored | Notice the website is already stored and a sugestion to avoid this error | Works as expected |
+| Main screen | Scroll to the top of the page | User is presented with a Nav Bar and all the page links | Works as expected |
+| Nav bar| Click register | The user is taken to the registeration page | Works as expected |
+| Registeration page | The user inputs their details and clicks sign up | The user is loged in and taken back to the main page | Works as expected |
+| Nav bar | The user views the navbar | Nav bar has changed with the new revelent links | Works as expected |
+| Main page | Scroll through | The user is presented with all the features of the site in bite size view | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/testing/user_story_1_1.png">
-<img src="docs/testing/user_story_1_2.png">
-<img src="docs/testing/user_story_1_3.png">
-<img src="docs/testing/user_story_1_4.png">
-<img src="docs/testing/user_story_10_1.png">
+<img src="static/image/readme/manual-testing/user-story-1-1.png">
+<img src="static/image/readme/manual-testing/user-story-1-2.png">
+<img src="static/image/readme/manual-testing/user-story-1-3.png">
+<img src="static/image/readme/manual-testing/user-story-10-1.png">
+<img src="static/image/readme/manual-testing/user-story-10-2.png">
+<img src="static/image/readme/manual-testing/user-story-10-3.png">
 </details>
 
 12. I want users to be able to use the functions with out an issue,
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
-| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
-| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
-| Login Function screen | Input username & password | User is given 5 options to choose from along with information on what should be done first | Works as expected |
-| Login Function screen | Input option 2 | User is presented with the stored passwords | Works as expected |
-| Adding a website screen | Input a website already stored | Notice the website is already stored and a sugestion to avoid this error | Works as expected |
+| Main screen | Scroll to the top of the page | User is presented with a Nav Bar and all the page links | Works as expected |
+| Main page | Scroll through to features | The user is presented with all the features of the and an explanation | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/testing/user_story_1_1.png">
-<img src="docs/testing/user_story_1_2.png">
-<img src="docs/testing/user_story_1_3.png">
-<img src="docs/testing/user_story_1_4.png">
-<img src="docs/testing/user_story_10_1.png">
+<img src="static/image/readme/manual-testing/user-story-12-1.png">
+<img src="static/image/readme/manual-testing/user-story-12-2.png">
 </details>
 
 13. I want users to know how to contact the admin if there is an issue,
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
-| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
-| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
-| Login Function screen | Input username & password | User is given 5 options to choose from along with information on what should be done first | Works as expected |
-| Login Function screen | Input option 2 | User is presented with the stored passwords | Works as expected |
-| Adding a website screen | Input a website already stored | Notice the website is already stored and a sugestion to avoid this error | Works as expected |
+| Main screen | Scroll to the top of the page | User is presented with a Nav Bar and all the page links and a call to action | Works as expected |
+| Contact | Click the contact link | User is taken to the contact screen | Works as expected |
+| Contact | Fill out the form and press send | A success message is displayed | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/testing/user_story_1_1.png">
-<img src="docs/testing/user_story_1_2.png">
-<img src="docs/testing/user_story_1_3.png">
-<img src="docs/testing/user_story_1_4.png">
-<img src="docs/testing/user_story_10_1.png">
+<img src="static/image/readme/manual-testing/user-story-7-1.png">
+<img src="static/image/readme/manual-testing/user-story-7-2.png">
+<img src="static/image/readme/manual-testing/user-story-7-3.png">
 </details>
 
 14. I want users to learn more about online security while on the site,
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
-| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
-| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
-| Login Function screen | Input username & password | User is given 5 options to choose from along with information on what should be done first | Works as expected |
-| Login Function screen | Input option 2 | User is presented with the stored passwords | Works as expected |
-| Adding a website screen | Input a website already stored | Notice the website is already stored and a sugestion to avoid this error | Works as expected |
+| Main screen | Scroll to the top of the page | User is presented with a Nav Bar and all the page links | Works as expected |
+| Navbar| Click on the blog link | User is taken to the blog page | Works as expected |
+| Blog | Click on the blog post title | User is taken to the blog posts page | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/testing/user_story_1_1.png">
-<img src="docs/testing/user_story_1_2.png">
-<img src="docs/testing/user_story_1_3.png">
-<img src="docs/testing/user_story_1_4.png">
-<img src="docs/testing/user_story_10_1.png">
+<img src="static/image/readme/manual-testing/user-story-9-1.png">
+<img src="static/image/readme/manual-testing/user-story-9-2.png">
+<img src="static/image/readme/manual-testing/user-story-14-1.png">
 </details>
 
 15. I want users to be able to interact with the monthly posts,
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
-| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
-| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
-| Login Function screen | Input username & password | User is given 5 options to choose from along with information on what should be done first | Works as expected |
-| Login Function screen | Input option 2 | User is presented with the stored passwords | Works as expected |
-| Adding a website screen | Input a website already stored | Notice the website is already stored and a sugestion to avoid this error | Works as expected |
+| Main screen | Scroll to the top of the page | User is presented with a Nav Bar and all the page links | Works as expected |
+| Navbar| Click on the blog link | User is taken to the blog page | Works as expected |
+| Blog | Click on the blog post title | User is taken to the blog posts page | Works as expected |
+| Blog Post | Click on the link heart to like or input a comment and press submit to send it for approval | The heart annimates or a success message is displayed for the comment | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/testing/user_story_1_1.png">
-<img src="docs/testing/user_story_1_2.png">
-<img src="docs/testing/user_story_1_3.png">
-<img src="docs/testing/user_story_1_4.png">
-<img src="docs/testing/user_story_10_1.png">
+<img src="static/image/readme/manual-testing/user-story-9-1.png">
+<img src="static/image/readme/manual-testing/user-story-9-2.png">
+<img src="static/image/readme/manual-testing/user-story-9-3.png">
 </details>
 
 16. I want the site to be responsive,
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
-| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
-| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
-| Login Function screen | Input username & password | User is given 5 options to choose from along with information on what should be done first | Works as expected |
-| Login Function screen | Input option 2 | User is presented with the stored passwords | Works as expected |
-| Adding a website screen | Input a website already stored | Notice the website is already stored and a sugestion to avoid this error | Works as expected |
+| Main screen | Open on a mobile | User is presented with a responsice design | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/testing/user_story_1_1.png">
-<img src="docs/testing/user_story_1_2.png">
-<img src="docs/testing/user_story_1_3.png">
-<img src="docs/testing/user_story_1_4.png">
-<img src="docs/testing/user_story_10_1.png">
+<img src="static/image/readme/manual-testing/user-story-16-1.png">
 </details>
 
 17. I want users passwords to be hidden on the admin panel for security purposes,
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
-| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
-| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
-| Login Function screen | Input username & password | User is given 5 options to choose from along with information on what should be done first | Works as expected |
-| Login Function screen | Input option 2 | User is presented with the stored passwords | Works as expected |
-| Adding a website screen | Input a website already stored | Notice the website is already stored and a sugestion to avoid this error | Works as expected |
+
+| Admin Screen | Add /admin to the url | User is taken to the admin panel if they are a superuser| Works as expected |
+| Admin Screen | Click on Pw Accounts | User is presented with all the users accounts | Works as expected |
+| Pw Accounts | Click on an account | User is presented with the account details but the passwortd is not displayed | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/testing/user_story_1_1.png">
-<img src="docs/testing/user_story_1_2.png">
-<img src="docs/testing/user_story_1_3.png">
-<img src="docs/testing/user_story_1_4.png">
-<img src="docs/testing/user_story_10_1.png">
+<img src="static/image/readme/manual-testing/user-story-17-1.png">
+<img src="static/image/readme/manual-testing/user-story-17-2.png">
+<img src="static/image/readme/manual-testing/user-story-17-3.png">
 </details>
 
 18. I want to be able to get blog post suggestions from users,
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
-| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
-| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
-| Login Function screen | Input username & password | User is given 5 options to choose from along with information on what should be done first | Works as expected |
-| Login Function screen | Input option 2 | User is presented with the stored passwords | Works as expected |
-| Adding a website screen | Input a website already stored | Notice the website is already stored and a sugestion to avoid this error | Works as expected |
+| Main screen | Scroll to the top of the page | User is presented with a Nav Bar and all the page links and a call to action | Works as expected |
+| Contact | Click the contact link | User is taken to the contact screen | Works as expected |
+| Contact | Fill out the form  with the blog idea and press send | A success message is displayed | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/testing/user_story_1_1.png">
-<img src="docs/testing/user_story_1_2.png">
-<img src="docs/testing/user_story_1_3.png">
-<img src="docs/testing/user_story_1_4.png">
-<img src="docs/testing/user_story_10_1.png">
+<img src="static/image/readme/manual-testing/user-story-7-1.png">
+<img src="static/image/readme/manual-testing/user-story-7-2.png">
+<img src="static/image/readme/manual-testing/user-story-7-3.png">
 </details>
 
 19. I want to be able to get product feedback from users,
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
-| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
-| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
-| Login Function screen | Input username & password | User is given 5 options to choose from along with information on what should be done first | Works as expected |
-| Login Function screen | Input option 2 | User is presented with the stored passwords | Works as expected |
-| Adding a website screen | Input a website already stored | Notice the website is already stored and a sugestion to avoid this error | Works as expected |
+| Main screen | Scroll to the top of the page | User is presented with a Nav Bar and all the page links and a call to action | Works as expected |
+| Contact | Click the contact link | User is taken to the contact screen | Works as expected |
+| Contact | Fill out the form with your feedback and press send | A success message is displayed | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/testing/user_story_1_1.png">
-<img src="docs/testing/user_story_1_2.png">
-<img src="docs/testing/user_story_1_3.png">
-<img src="docs/testing/user_story_1_4.png">
-<img src="docs/testing/user_story_10_1.png">
+<img src="static/image/readme/manual-testing/user-story-7-1.png">
+<img src="static/image/readme/manual-testing/user-story-7-2.png">
+<img src="static/image/readme/manual-testing/user-story-7-3.png">
 </details>
 
 20. I want users to be able to follow my socials.
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
-| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
-| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
-| Login Function screen | Input username & password | User is given 5 options to choose from along with information on what should be done first | Works as expected |
-| Login Function screen | Input option 2 | User is presented with the stored passwords | Works as expected |
-| Adding a website screen | Input a website already stored | Notice the website is already stored and a sugestion to avoid this error | Works as expected |
+| Main screen | Scroll to the bottom of the page | User is presented with a footer and all the social links | Works as expected |
+| Footer | Clicks on a social link | Opens a new page with the social | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/testing/user_story_1_1.png">
-<img src="docs/testing/user_story_1_2.png">
-<img src="docs/testing/user_story_1_3.png">
-<img src="docs/testing/user_story_1_4.png">
-<img src="docs/testing/user_story_10_1.png">
+<img src="static/image/readme/manual-testing/user-story-20-1.png">
+<img src="static/image/readme/manual-testing/user-story-20-2.png">
+
 </details>
 
 [Back to Table Of Contents](#table-of-contents)
