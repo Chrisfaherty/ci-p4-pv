@@ -1,7 +1,7 @@
 # Password Vault
 (Developer: Christopher Faherty)
 
-![This is an screenshot of the responsive design image]()
+![This is an screenshot of the responsive design image](static/image/readme/am-i-responsive-image.png)
 
 [Live Webpage]()
 
@@ -260,7 +260,7 @@ The following models were created to represent the database model structure for 
 * [Git](https://git-scm.com/) Used for version control to push the code to GitHub.
 * [GitHub](https://github.com/) Used as a repository to store the projects code.
 * [Heroku Platform](https://www.heroku.com) Used to deploy the project.
-* [Am I Responsive](https://amiresponsive.co.uk/) Used to get the responsive image at the top of the readme.
+* [Am I Responsive](https://ui.dev/amiresponsive) Used to get the responsive image at the top of the readme.
 * [Balsamiq](https://balsamiq.com/) Used to create the wireframes.
 * [Cloudinary](https://cloudinary.com/) Used to store the static files.
 * [Favicon](https://favicon.io/) Used to generate a favicon for the site.
