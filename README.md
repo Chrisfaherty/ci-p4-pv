@@ -81,25 +81,25 @@ With the pace of everything going digital and everyone having different accounts
 #### First-time  User
 1. I want to the password vault product to flow and be easy to follow,
 2. I want to be able to create a user account and store my username & passwords for several online accounts,
-3. I want to be able to navagate the silt with ease and only relevent options being displayed to me,
+3. I want to be able to navigate the silt with ease and only relevant options being displayed to me,
 4. I want to be able to view a list of all my stored accounts,
 5. I want to be able to access my accounts to get the stored details,
 6. I want to be able to edit and delete my stored accounts,
 7. I want to be able to contact admin if i need to change my user details,
-8. I want to be able to contact admin with blog sugestions,
+8. I want to be able to contact admin with blog suggestions,
 9. I want to be able to read like and comment on the security blogs.
 
 
 #### Site Owner
-10. I want users to enjoy the experiance while visiting the Password Vault,
+10. I want users to enjoy the experience while visiting the Password Vault,
 11. I want users to easily navigate the site,
 12. I want users to be able to use the functions with out an issue,
 13. I want users to know how to contact the admin if there is an issue,
 14. I want users to learn more about online security while on the site,
-15. I want users to be able to interact witht he monthly posts,
+15. I want users to be able to interact with the monthly posts,
 16. I want the site to be responsive,
 17. I want users passwords to be hidden on the admin panel for security purposes,
-18. I want to be able to get blog post sugestions from users,
+18. I want to be able to get blog post suggestions from users,
 19. I want to be able to get product feedback from users,
 20. I want users to be able to follow my socials.
 
@@ -271,6 +271,7 @@ The following models were created to represent the database model structure for 
 * [ChatGPT](https://openai.com/blog/chatgpt/) Used to generate the content for the blog posts.
 * [Cryptography](https://django-cryptography.readthedocs.io/en/latest/) Used to encrypt the users account passwords stored in the db.
 * [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) Used to generate the forms.
+* [Freepik](https://www.freepik.com/) Subscription used for the blog and error page images.
 
 ### Validation Tools
 
@@ -315,6 +316,7 @@ The following models were created to represent the database model structure for 
 <img src="static/image/readme/cta-logged-in.png">
 </details>
 
+
 * Blog Highlight
     * This section gives the user a feel for what the blog is about,
     * The three most recent blogs will be displayed here for quick access,
@@ -324,6 +326,7 @@ The following models were created to represent the database model structure for 
 <details><summary>Blog Highilght Image</summary>
 <img src="static/image/readme/blog-highlights.png">
 </details>
+
 
 * Features
     * The features section is used to display the main features of the website (Blog, Password Manager & Contact),
@@ -335,6 +338,7 @@ The following models were created to represent the database model structure for 
 <img src="static/image/readme/features.png">
 </details>
 
+
 * Footer
     * The footer displays the name of the developer,
     * Two links are displayed to go to the github depositry or the developers linkedin page,
@@ -343,6 +347,7 @@ The following models were created to represent the database model structure for 
 <details><summary>Footer Image</summary>
 <img src="static/image/readme/footer.png">
 </details>
+
 
 * Blog Overview Page
     * To get to the blog page you click on the blog link in the nav bar,
@@ -357,6 +362,7 @@ The following models were created to represent the database model structure for 
 <img src="static/image/readme/blog-1.png">
 <img src="static/image/readme/blog-2.png">
 </details>
+
 
  * Blog Post
     * To get to this point the user clicks on blog in the nav bar,
@@ -373,6 +379,7 @@ The following models were created to represent the database model structure for 
 <img src="static/image/readme/blog-post-3.png">
 </details>
 
+
  * Contact Page
     * To get to this point the user selects the contact link in the nav bar,
     * The user is presented with the contact form, 
@@ -384,6 +391,7 @@ The following models were created to represent the database model structure for 
 <img src="static/image/readme/contact-nav.png">
 <img src="static/image/readme/contact-page-1.png">
 </details>
+
 
  * Add Account Page
     * To get to this point the user selects the password manager link dropdown in the nav bar,
@@ -400,6 +408,7 @@ The following models were created to represent the database model structure for 
 <img src="static/image/readme/add-account-page.png">
 </details>
 
+
  * View Account Page
     * To get to this point the user selects the password manager link dropdown in the nav bar,
     * Then select the view account link in the dropdown, 
@@ -412,6 +421,7 @@ The following models were created to represent the database model structure for 
 <img src="static/image/readme/view-account-nav.png">
 <img src="static/image/readme/view-account-1.png">
 </details>
+
 
  * Account Detail Page
     * To get to this point the user selects the password manager link dropdown in the nav bar,
@@ -429,6 +439,7 @@ The following models were created to represent the database model structure for 
 <img src="static/image/readme/account-detail-1.png">
 <img src="static/image/readme/account-detail-2.png">
 </details>
+
 
  * Edit Account Detail Page
     * To get to this point the user selects the password manager link dropdown in the nav bar,
@@ -449,6 +460,7 @@ The following models were created to represent the database model structure for 
 <img src="static/image/readme/edit-account-detail-2.png">
 </details>
 
+
  * Delete Account Detail Page
     * To get to this point the user selects the password manager link dropdown in the nav bar,
     * Then select the view account link in the dropdown, 
@@ -467,6 +479,7 @@ The following models were created to represent the database model structure for 
 <img src="static/image/readme/delete-account-details-2.png">
 </details>
 
+
  * Register Page
     * To get to this point the user selects the register link in the nav bar,
     * The user can then fill in their details to register a new account,
@@ -478,6 +491,7 @@ The following models were created to represent the database model structure for 
 <img src="static/image/readme/reg-nav.png">
 <img src="static/image/readme/reg-1.png">
 </details>
+
 
  * Login Page
     * To get to this point the user will click on the login link in the nav bar,
@@ -506,7 +520,6 @@ The following models were created to represent the database model structure for 
 [Back to Table Of Contents](#table-of-contents)
 
 
-
 ## Testing
 
 * Testing was condicted in three ways.
@@ -520,24 +533,60 @@ The following models were created to represent the database model structure for 
     * Warnings were noted in the run.py file with the logo. This was due to the code thinking it was an excape sequance when using slashed.
 
     <details><summary>pycodestyle</summary>
-    <img src="docs/testing/pycodestyle_ci_pp3_ppm.png">
+    <img src="">
     </details>
 
     <details><summary>run.py</summary>
-    <img src="docs/testing/run_code_pep8.png">
+    <img src="">
     </details>
 
     <details><summary>validate_password.py</summary>
-    <img src="docs/testing/validate_password_code_pep8.png">
+    <img src="">
     </details>
 
     <details><summary>test_validation.py</summary>
-    <img src="docs/testing/test_validation_code_pep8.png">
+    <img src="">
     </details>
 
 
 ### Testing user stories
-1. I want to the password manager to flow and be easy to follow.
+1. I want to the password vault product to flow and be easy to follow.
+
+| **Feature** | **Action** | **Expected Results** | **Actual Result** |
+|-------------|------------|----------------------|-------------------|
+| Main screen | Scroll to the top of the page | User is presented with a Nav Bar and all the page links | Works as expected |
+| Nav bar| Click register | The user is taken to the registeration page | Works as expected |
+| Registeration page | The user inputs their details and clicks sign up | the user is loged in and taken back to the main page | Works as expected |
+| Nav bar | The user views the navbar | Nav bar has changed with the new revelent links | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="static/image/readme/manual-testing/user-story-1-1.png">
+<img src="static/image/readme/manual-testing/user-story-1-2.png">
+<img src="static/image/readme/manual-testing/user-story-1-3.png">
+</details>
+
+2. I want to be able to create a user account and store my username & passwords for several online accounts.
+
+| **Feature** | **Action** | **Expected Results** | **Actual Result** |
+|-------------|------------|----------------------|-------------------|
+| Main screen | Scroll to the top of the page | User is presented with a Nav Bar and all the page links | Works as expected |
+| Login | Click login in the nav bar | User is taken to the login screen | Works as expected |
+| Login screen | Input login details | User is asked to imput its username and password | Works as expected |
+| Navbar | The navbar now displays the password manager link | The user clicks on the password manager link and it displays two options | Works as expected |
+| Navbar | User clicks add account | User is taken to the add account page | Works as expected |
+| Add account | User can input account details | Users details are stored and user is taken to the view accounts | Works as expected |
+| View Accounts | User is redirected to the view accounts | All stored accounts are displayed | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="static/image/readme/manual-testing/user-story-2-1.png">
+<img src="static/image/readme/manual-testing/user-story-2-2.png">
+<img src="static/image/readme/manual-testing/user-story-2-3.png">
+<img src="static/image/readme/manual-testing/user-story-2-4.png">
+<img src="static/image/readme/manual-testing/user-story-2-5.png">
+<img src="static/image/readme/manual-testing/user-story-2-6.png">
+</details>
+
+3. I want to be able to navigate the silt with ease and only relevant options being displayed to me,
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
@@ -552,36 +601,7 @@ The following models were created to represent the database model structure for 
 <img src="docs/testing/user_story_1_4.png">
 </details>
 
-2. I want to be able to create a master username and password to protect my passwords.
-
-| **Feature** | **Action** | **Expected Results** | **Actual Result** |
-|-------------|------------|----------------------|-------------------|
-| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
-| Login Function screen | Input create account | User is asked to create their user name and password | Works as expected |
-| Create account screen| Create username & password | User is asked to create their username and password. Criteria is given to create a secure password | Works as expected |
-
-<details><summary>Screenshots</summary>
-<img src="docs/testing/user_story_1_1.png">
-<img src="docs/testing/user_story_2_1.png">
-<img src="docs/testing/user_story_2_2.png">
-</details>
-
-3. I want to have clear options displayed when decisions are to be made.
-
-| **Feature** | **Action** | **Expected Results** | **Actual Result** |
-|-------------|------------|----------------------|-------------------|
-| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
-| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
-| Login Function screen | Input username & password | User is given 5 options to choose from along with information on what should be done first | Works as expected |
-
-<details><summary>Screenshots</summary>
-<img src="docs/testing/user_story_1_1.png">
-<img src="docs/testing/user_story_1_2.png">
-<img src="docs/testing/user_story_1_3.png">
-<img src="docs/testing/user_story_1_4.png">
-</details>
-
-4. I want to be able to view all my passwords in an organised form.
+4. I want to be able to view a list of all my stored accounts,
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
@@ -598,7 +618,7 @@ The following models were created to represent the database model structure for 
 <img src="docs/testing/user_story_4_1.png">
 </details>
 
-5. I want to be able to easly add new passwords.
+5. I want to be able to access my accounts to get the stored details,
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
@@ -617,7 +637,7 @@ The following models were created to represent the database model structure for 
 <img src="docs/testing/user_story_5_2.png">
 </details>
 
-6. I want to be able to edit my master password or user passwords if required.
+6. I want to be able to edit and delete my stored accounts,
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
@@ -636,7 +656,7 @@ The following models were created to represent the database model structure for 
 <img src="docs/testing/user_story_6_2.png">
 </details>
 
-7. I want to be able to get feedback if i enter something incorrectly.  
+7. I want to be able to contact admin if i need to change my user details,  
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
@@ -651,7 +671,7 @@ The following models were created to represent the database model structure for 
 <img src="docs/testing/user_story_7_1.png">
 </details>
 
-8. I want users to enjoy the experiance to make their personal password manager.
+8. I want to be able to contact admin with blog suggestions,
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
@@ -662,7 +682,7 @@ The following models were created to represent the database model structure for 
 <img src="docs/testing/user_story_1_2.png">
 </details>
 
-9. I want users to easily navigate the site.
+9. I want to be able to read like and comment on the security blogs.
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
@@ -677,7 +697,7 @@ The following models were created to represent the database model structure for 
 <img src="docs/testing/user_story_1_4.png">
 </details>
 
-10. I want users to be able to use the functions with out an issue.
+10. I want users to enjoy the experience while visiting the Password Vault,
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
@@ -695,7 +715,169 @@ The following models were created to represent the database model structure for 
 <img src="docs/testing/user_story_10_1.png">
 </details>
 
-11. I want users to know if there was an issue and how to resolve it.
+11. I want users to easily navigate the site,
+
+| **Feature** | **Action** | **Expected Results** | **Actual Result** |
+|-------------|------------|----------------------|-------------------|
+| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
+| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
+| Login Function screen | Input username & password | User is given 5 options to choose from along with information on what should be done first | Works as expected |
+| Login Function screen | Input option 2 | User is presented with the stored passwords | Works as expected |
+| Adding a website screen | Input a website already stored | Notice the website is already stored and a sugestion to avoid this error | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/testing/user_story_1_1.png">
+<img src="docs/testing/user_story_1_2.png">
+<img src="docs/testing/user_story_1_3.png">
+<img src="docs/testing/user_story_1_4.png">
+<img src="docs/testing/user_story_10_1.png">
+</details>
+
+12. I want users to be able to use the functions with out an issue,
+
+| **Feature** | **Action** | **Expected Results** | **Actual Result** |
+|-------------|------------|----------------------|-------------------|
+| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
+| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
+| Login Function screen | Input username & password | User is given 5 options to choose from along with information on what should be done first | Works as expected |
+| Login Function screen | Input option 2 | User is presented with the stored passwords | Works as expected |
+| Adding a website screen | Input a website already stored | Notice the website is already stored and a sugestion to avoid this error | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/testing/user_story_1_1.png">
+<img src="docs/testing/user_story_1_2.png">
+<img src="docs/testing/user_story_1_3.png">
+<img src="docs/testing/user_story_1_4.png">
+<img src="docs/testing/user_story_10_1.png">
+</details>
+
+13. I want users to know how to contact the admin if there is an issue,
+
+| **Feature** | **Action** | **Expected Results** | **Actual Result** |
+|-------------|------------|----------------------|-------------------|
+| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
+| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
+| Login Function screen | Input username & password | User is given 5 options to choose from along with information on what should be done first | Works as expected |
+| Login Function screen | Input option 2 | User is presented with the stored passwords | Works as expected |
+| Adding a website screen | Input a website already stored | Notice the website is already stored and a sugestion to avoid this error | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/testing/user_story_1_1.png">
+<img src="docs/testing/user_story_1_2.png">
+<img src="docs/testing/user_story_1_3.png">
+<img src="docs/testing/user_story_1_4.png">
+<img src="docs/testing/user_story_10_1.png">
+</details>
+
+14. I want users to learn more about online security while on the site,
+
+| **Feature** | **Action** | **Expected Results** | **Actual Result** |
+|-------------|------------|----------------------|-------------------|
+| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
+| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
+| Login Function screen | Input username & password | User is given 5 options to choose from along with information on what should be done first | Works as expected |
+| Login Function screen | Input option 2 | User is presented with the stored passwords | Works as expected |
+| Adding a website screen | Input a website already stored | Notice the website is already stored and a sugestion to avoid this error | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/testing/user_story_1_1.png">
+<img src="docs/testing/user_story_1_2.png">
+<img src="docs/testing/user_story_1_3.png">
+<img src="docs/testing/user_story_1_4.png">
+<img src="docs/testing/user_story_10_1.png">
+</details>
+
+15. I want users to be able to interact with the monthly posts,
+
+| **Feature** | **Action** | **Expected Results** | **Actual Result** |
+|-------------|------------|----------------------|-------------------|
+| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
+| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
+| Login Function screen | Input username & password | User is given 5 options to choose from along with information on what should be done first | Works as expected |
+| Login Function screen | Input option 2 | User is presented with the stored passwords | Works as expected |
+| Adding a website screen | Input a website already stored | Notice the website is already stored and a sugestion to avoid this error | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/testing/user_story_1_1.png">
+<img src="docs/testing/user_story_1_2.png">
+<img src="docs/testing/user_story_1_3.png">
+<img src="docs/testing/user_story_1_4.png">
+<img src="docs/testing/user_story_10_1.png">
+</details>
+
+16. I want the site to be responsive,
+
+| **Feature** | **Action** | **Expected Results** | **Actual Result** |
+|-------------|------------|----------------------|-------------------|
+| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
+| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
+| Login Function screen | Input username & password | User is given 5 options to choose from along with information on what should be done first | Works as expected |
+| Login Function screen | Input option 2 | User is presented with the stored passwords | Works as expected |
+| Adding a website screen | Input a website already stored | Notice the website is already stored and a sugestion to avoid this error | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/testing/user_story_1_1.png">
+<img src="docs/testing/user_story_1_2.png">
+<img src="docs/testing/user_story_1_3.png">
+<img src="docs/testing/user_story_1_4.png">
+<img src="docs/testing/user_story_10_1.png">
+</details>
+
+17. I want users passwords to be hidden on the admin panel for security purposes,
+
+| **Feature** | **Action** | **Expected Results** | **Actual Result** |
+|-------------|------------|----------------------|-------------------|
+| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
+| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
+| Login Function screen | Input username & password | User is given 5 options to choose from along with information on what should be done first | Works as expected |
+| Login Function screen | Input option 2 | User is presented with the stored passwords | Works as expected |
+| Adding a website screen | Input a website already stored | Notice the website is already stored and a sugestion to avoid this error | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/testing/user_story_1_1.png">
+<img src="docs/testing/user_story_1_2.png">
+<img src="docs/testing/user_story_1_3.png">
+<img src="docs/testing/user_story_1_4.png">
+<img src="docs/testing/user_story_10_1.png">
+</details>
+
+18. I want to be able to get blog post suggestions from users,
+
+| **Feature** | **Action** | **Expected Results** | **Actual Result** |
+|-------------|------------|----------------------|-------------------|
+| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
+| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
+| Login Function screen | Input username & password | User is given 5 options to choose from along with information on what should be done first | Works as expected |
+| Login Function screen | Input option 2 | User is presented with the stored passwords | Works as expected |
+| Adding a website screen | Input a website already stored | Notice the website is already stored and a sugestion to avoid this error | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/testing/user_story_1_1.png">
+<img src="docs/testing/user_story_1_2.png">
+<img src="docs/testing/user_story_1_3.png">
+<img src="docs/testing/user_story_1_4.png">
+<img src="docs/testing/user_story_10_1.png">
+</details>
+
+19. I want to be able to get product feedback from users,
+
+| **Feature** | **Action** | **Expected Results** | **Actual Result** |
+|-------------|------------|----------------------|-------------------|
+| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
+| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
+| Login Function screen | Input username & password | User is given 5 options to choose from along with information on what should be done first | Works as expected |
+| Login Function screen | Input option 2 | User is presented with the stored passwords | Works as expected |
+| Adding a website screen | Input a website already stored | Notice the website is already stored and a sugestion to avoid this error | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/testing/user_story_1_1.png">
+<img src="docs/testing/user_story_1_2.png">
+<img src="docs/testing/user_story_1_3.png">
+<img src="docs/testing/user_story_1_4.png">
+<img src="docs/testing/user_story_10_1.png">
+</details>
+
+20. I want users to be able to follow my socials.
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
