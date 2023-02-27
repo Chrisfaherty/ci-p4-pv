@@ -1,33 +1,29 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html class="h-100">
-
 <head>
     <title>PasswordVault</title>
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
+<!-- Google fonts code-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+<!-- Font awesome code-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<!-- Favicon code-->
     <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/djiqea4sz/image/upload/v1677533155/apple-touch-icon_duco9d.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/djiqea4sz/image/upload/v1677533155/favicon-32x32_gpbnrp.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/djiqea4sz/image/upload/v1677533155/favicon-16x16_tos3ul.png">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- Bootstrap code-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
-
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
 </head>
-
 <body class="d-flex flex-column min-vh-100 main-bg">
-
-    <!-- Navigation -->
-
+<!-- Navigation Bar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home:home' %}"><span class="brand">Password<span class="red-o">|</span><span
@@ -72,7 +68,7 @@
             </div>
         </div>
     </nav>
-
+<!-- Message tags for loging in and out-->
 <div class="container">
     <div class="row">
         <div class="col-md-8 offset-md-2">
@@ -80,27 +76,25 @@
                 <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
                     {{ message | safe }}
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-
                     </button>
                 </div>
             {% endfor %}
         </div>
     </div>
 </div>
-
     <main class="flex-shrink-0 main-bg">
         {% block content %}
-        <!-- Content Goes here -->
+<!-- Content Goes here -->
         {% endblock %}
     </main>
-
-    <!-- Footer -->
+<!-- Footer -->
     <footer class="footer mt-auto py-3 dark-bg">
         <p class="m-0 text-center ">Made by Christopher Faherty</p>
         <p class="m-0 text-center ">Follow us:
             <a class="btn btn-outline-danger btn-sm ms-3" href="https://www.linkedin.com/in/chris-faherty/" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a class="btn btn-outline-danger btn-sm ms-3" href="https://github.com/Chrisfaherty/ci-p4-pv" target="_blank"><i class="fab fa-github-square"></i></a>
     </footer>
+<!-- JS for the message tag display time-->
     <script>
         setTimeout(function(){
         let messages = document.getElementById("msg");

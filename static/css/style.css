@@ -1,43 +1,35 @@
+/* Body, Site heading, homepage links */
 body {
     background-color: #ffffff;
 }
-
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     color: #E63946;
 }
-
 .red-o {
     color: #1D3557;
 }
-
 .thin {
     font-weight: 300;
 }
-
 .light-bg {
     background-color: #ffffff;
 }
-
 .dark-bg {
     background-color: #457B9D;
 }
-
 .main-bg {
     background-color: #ffffff;
 }
-
 .card {
     border: none;
     background-color: transparent;
 }
-
 .image-container {
     position: relative;
 }
-
 .image-flash {
     position: absolute;
     bottom: 5%;
@@ -45,13 +37,11 @@ body {
     left: -2px;
     background-color: #A8DADC;
 }
-
 .author {
     color: white;
     margin: 4px;
     text-transform: uppercase;
 }
-
 .masthead {
     margin-top: 10px;
     overflow: hidden;
@@ -60,18 +50,15 @@ body {
     height: 33vh;
     width: 100%;
 }
-
 .masthead-text {
     background-color: #445261;
     color: white;
     position: relative;
 }
-
 .masthead-image {
     position: relative;
     overflow: hidden;
 }
-
 .masthead-image:after {
     content: "";
     position: absolute;
@@ -85,69 +72,56 @@ body {
     transform: skew(15deg);
     z-index: 100;
 }
-
 .post-link {
     text-decoration: none;
     color: #457B9D;
 }
-
 .post-link:hover,
 .page-link {
     color: #1D3557;
 }
-
 .post-title {
     margin-top: 20%;
     margin-left: 5%;
 }
-
 .post-subtitle {
     margin-left: 5%;
     color: lightgray;
 }
-
 .btn-signup {
     background-color: #457B9D;
     color: #fff;
 }
-
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
     color: #23BBBB;
 }
-
 .link {
     color: #23BBBB;
     text-decoration: none;
 }
-
 .link:hover,
 .link:active {
     color: #445261;
     text-decoration: underline;
 }
-
 .btn-like {
     color: #1D3557;
     border: none;
     background: transparent;
 }
-
 .btn-like:hover,
 .btn-like:active {
     color: #1D3557;
     background: transparent;
     border: none;
 }
-
 a {
     color: #000000;
     text-decoration: none;
 }
-
 /* Home.html */
-
 .heading-container{
     background: rgba(69, 123, 157, 0.3);
     width: 100%;
@@ -156,7 +130,7 @@ a {
 .heading-container h1 {
     margin: 0;
 }
-
+/* Callout Section */
 .callout-container{
     color: #ffffff;
     height: 60vh;
@@ -165,14 +139,12 @@ a {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: right;
-
 }
-
+/* Footer */
 .footer{
     background-color:#ffffff;
 }
@@ -184,24 +156,19 @@ a {
 .container-wrapper--green{
     background-color: rgba(69, 123, 157, 0.3);
 }
-
+/* Feature Section */
 .feature{
     margin-left: 5%;
     margin-right: 5%;
 }
-
-
 /* LOGOUT PAGE */
-
 .container-logout{
     width:70%;
 }
-
 /* Form Styling */
 .form-container{ 
     width:70%;
 }
-
 .crud-form{
     display: inline-block;
 }

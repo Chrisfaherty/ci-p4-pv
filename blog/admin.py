@@ -2,6 +2,9 @@ from django.contrib import admin
 from .models import Post, Comment
 from django_summernote.admin import SummernoteModelAdmin
 
+# CodeInstitute I Think Therefore I Blog was used as insperation for the blog
+
+# This class is collecting the details required to post a blog
 
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
@@ -12,7 +15,8 @@ class PostAdmin(SummernoteModelAdmin):
     list_filter = ('status', 'created_on')
     summernote_fields = ('content')
 
-
+# This class is collecting the contnt for the comment
+# and sending it for admin approval before posting it
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
 

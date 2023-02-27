@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django_cryptography.fields import encrypt
 
 
-# Create your models here.
+# This is the fields for the password account inputs & the passwod input is encrypted
 class PwAccount(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="pwaccount", null=True)
     name = models.CharField(max_length=200)

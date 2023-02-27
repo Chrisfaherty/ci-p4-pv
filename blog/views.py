@@ -5,13 +5,16 @@ from .models import Post
 from .forms import CommentForm
 
 
+# CodeInstitute I Think Therefore I Blog was used as insperation for the blog
+
+# This view is for the paginated blog page.
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')
     template_name = 'index.html'
     paginate_by = 6
     
-
+# This view is for posting the detail for the blog posts and comments and saving them to the database.
 class PostDetail(View):
 
     def get(self, request, slug, *args, **kwargs):
@@ -65,7 +68,7 @@ class PostDetail(View):
             },
         )
 
-
+# This view is for the the like button that is below each blog.
 class PostLike(View):
 
     def post(self, request, slug):

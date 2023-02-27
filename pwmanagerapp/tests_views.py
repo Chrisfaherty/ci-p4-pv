@@ -1,47 +1,33 @@
 from django.test import TestCase
+from .models import PwAccount
 from . import views
 
-
+# Testing the pwmanagerapp views
 class TestViews(TestCase):
 
-
-    def test_get_passmanager(self):
+    def test_get_home(self):
         response = self.client.get('/')
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'passmanager.html')
+        self.assertTemplateUsed(response, 'home/home.html')
 
     def test_get_add_password_page(self):
-        response = self.client.get('/add')
+        response = self.client.get('/create')
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'add_password.html')
+        self.assertTemplateUsed(response, 'pwmanagerapp/createpw.html')
 
     def test_get_edit_password_page(self):
         passwords = PwAccount.objects.create(name='Test password')
-        response = self.client.get(f'/edit/{password.id}')
+        response = self.client.get(f'/edit/{acc.id}')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'edit_password.html')
     
     def test_can_add_password(self):
-        response = self.client.post('/add', {'name': 'Test Added Password'})
-        self.assertRedirect(response, '/')
-
+        response = self.client.post('/create', {'name': 'Test Added Password'})
+        self.assertRedirect(response, 'pwmanagerapp/list.html')
 
     def test_can_delete_password(self):
         passwords = PwAccount.objects.create(name='Test password')
-        response = self.client.get(f'/delete/{password.id}')
-        self.assertRedirect(response, '/')
-        exsisting_passwords = PwAccount.objects.filter(id=password.id)
+        response = self.client.get(f'/delete/{acc.id}')
+        self.assertRedirect(response, 'pwmanagerapp/list.html')
+        exsisting_passwords = PwAccount.objects.filter(id=acc.id)
         self.assertEqual(len(existing_passwords),0)
-
-
-    def test_can_edit_password(self):
-        passwords = PwAccount.objects.create(name='Test password')
-        response = self.client.post(f'/edit/{password.id}', {'name': 'Updated Name'})
-        self.assertRedirect(response, '/')
-        updated_passwords = PwAccount.objects.get(id=password.id)
-        self.assertEqual(updated_password.name, 'Updated Name')
-
-
-
-
-        

@@ -1,23 +1,16 @@
 {% extends "base.html" %}
-
 {% load i18n %}
 {% load account socialaccount %}
-
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
-
 {% block content %}
-
 <div class="container">
   <div class="row">
     <div class="col-md-8 mt-3 offset-md-2">
       <h3>{% trans "Sign In" %}</h3>
-
-
 <p>{% blocktrans %} Welcome back to the password vault.
   To manage your passwords or contribute to the site blog please log in.
   If you have not created an account yet, them
 <a class="link" href="{{ signup_url }}">sign up</a> .{% endblocktrans %}</p>
-
 </div>
 </div>
 <div class="row">
@@ -32,5 +25,4 @@
     </form>
   </div>
 </div>
-
 {% endblock %}

@@ -1,7 +1,7 @@
 from django.urls import path
 from . import views
 
-
+# This is the urls for the contact createing links for the views
 app_name = 'contact'
 
 urlpatterns = [

@@ -19,7 +19,7 @@ from contact.views import ContactView, ContactSuccessView
 from pwmanagerapp.views import create, view, index, edit, delete
 from home.views import GetHomeView
 
-
+# These are the main urls for the nav links of the site.
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('contact/', include('contact.urls')),
@@ -33,7 +33,3 @@ urlpatterns = [
     path("blog/", include("blog.urls"), name="blog-urls"),
     path('accounts/', include('allauth.urls')),
 ]
-
-handler400 = "passwordvault.views.page_not_found_400_view"
-handler404 = "passwordvault.views.page_not_found_404_view"
-handler500 = "passwordvault.views.page_not_found_500_view"

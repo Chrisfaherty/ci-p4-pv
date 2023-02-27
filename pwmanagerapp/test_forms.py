@@ -2,6 +2,7 @@ from django.test import TestCase
 from .forms import CreateNewPwAccount
 
 
+# Testing the pwmanagerapp forms
 class TestCreateNewPwAccount(TestCase):
 
     def test_password_name_is_required(self):

@@ -3,6 +3,7 @@ from django.conf import settings
 from django.core.mail import send_mail
 
 
+# This is the contact form and is connected to Google smtp
 class ContactForm(forms.Form):
 
     name = forms.CharField(max_length=120)
@@ -11,11 +12,7 @@ class ContactForm(forms.Form):
     message = forms.CharField(widget=forms.Textarea)
 
     def get_info(self):
-        """
-        Method that returns formatted information
-        :return: subject, msg
-        """
-        # Cleaned data
+
         cl_data = super().clean()
 
         name = cl_data.get('name').strip()
