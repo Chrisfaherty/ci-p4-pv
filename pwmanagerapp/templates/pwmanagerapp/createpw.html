@@ -3,7 +3,7 @@
 {% block content %}
 <div class="container text-left border form-container">
 <div class="mx-auto my-4 text-center">
-    <h1>Create a New Password</h1>
+    <h2>Create a New Password</h2>
 </div>
     <form class="form-group crud-form" method="POST" action="/create/">
         {% csrf_token %}
@@ -14,5 +14,6 @@
             </p>
         </div>
     </form>
+
 </div>
 {% endblock %}
