@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container text-center border">
+<div class="container text-left border form-container">
 <div class="mx-auto my-4 text-center">
     <h1>Create a New Password</h1>
 </div>
-    <form class="form-group" method="POST" action="/create/">
+    <form class="form-group crud-form" method="POST" action="/create/">
         {% csrf_token %}
         {{ form.as_p }}
         <div>

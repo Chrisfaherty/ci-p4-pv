@@ -181,21 +181,6 @@ a {
     color: #1D3557;
 }
 
-
-
-.blog-container{
-
-}
-/*@media (max-width: 1000px) {
-    .hidden-mobile {
-      display: none;
-    }
-  }*/
-
-.features-container{
-
-}
-
 .container-wrapper--green{
     background-color: rgba(69, 123, 157, 0.3);
 }
@@ -205,11 +190,6 @@ a {
     margin-right: 5%;
 }
 
-/* Font Media Querys */
-
-@media (max-width: 500px){
-    
-}
 
 /* LOGOUT PAGE */
 
@@ -217,5 +197,12 @@ a {
     width:30%;
 }
 
-/* SIGN UP PAGE */
+/* Form Styling */
+.form-container{ 
+    width:30%;
+}
+
+.crud-form{
+    display: inline-block;
+}
 
