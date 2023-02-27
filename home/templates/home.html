@@ -6,7 +6,6 @@
 </div>
 <!-- This is the call out section of the home page -->
 <div class="container-fluid callout-container">
-    <article class="container mt-3">
         {% if user.is_authenticated %}
         <div class="row">
             <div class="col-12">
@@ -25,13 +24,13 @@
                     <h2>Securly store a unique password</h2>
                     <h2>for each of your accounts.</h2>
                     <p>Create an account today to live a more secure tomorrow.</p>
-                    <button style="background:#E63946" type="button" class="btn btn-success btn-lg"><a href="{% url 'account_signup' %}">Sign Up</a></button>
+                    <button style="background:#E63946" type="button" class="btn btn-success btn-lg" href="{% url 'account_signup' %}">Sign Up</button>
                 </section>
             </div>
         </div>
         {% endif %}
 </div>
-    <hr >
+    <hr>
 <!-- This is the Blog section of the home page -->
 <div class="container-fluid blog-container ">
     <div class="row">
@@ -48,10 +47,10 @@
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
-                                <img class="card-img-top"
+                                <img class="card-img-top" alt="Default laptop image"
                                     src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}">
+                                <img class="card-img-top" alt="chosen blog image" src=" {{ post.featured_image.url }}">
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author }}</p>
@@ -61,7 +60,7 @@
                                 <h2 class="card-title">{{ post.title }}</h2>
                                 <p class="card-text">{{ post.excerpt }}</p>
                             </a>
-                            <hr />
+                            <hr>
                             <p class="card-text text-muted h6">{{ post.created_on}} <i class="far fa-heart"></i>
                                 {{ post.number_of_likes }}</p>
                         </div>
@@ -72,7 +71,6 @@
             {% endif %}
             {% endfor %}
         </div>
-    </div>
 </div>
     <hr>
 <!-- This is the Features section of the home page -->
@@ -108,5 +106,4 @@
         </div>
     </section>
 </div>   
-</article>
 {% endblock %}
