@@ -912,7 +912,6 @@ The following models were created to represent the database model structure for 
 
 ## Deployment
 
-
 ### Deploying to Heroku
 * Go to the heroku.com site.
     <details><summary>Screenshots</summary>
