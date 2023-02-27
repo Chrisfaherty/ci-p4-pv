@@ -6,8 +6,7 @@
 </div>
 <div class="container-fluid">
     <div class="row">
-
-        <!-- Blog Entries Column -->
+        <!-- Blog entry section with place holder image -->
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for post in post_list %}
@@ -43,6 +42,7 @@
             </div>
         </div>
     </div>
+    <!-- Paginated so a new page will be created if there are more than 6 posts -->
     {% if is_paginated %}
     <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center">

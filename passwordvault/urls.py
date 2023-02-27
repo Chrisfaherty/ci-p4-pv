@@ -34,4 +34,6 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
 ]
 
-handler404 = "passwordvault.views.page_not_found_view"
+handler400 = "passwordvault.views.page_not_found_400_view"
+handler404 = "passwordvault.views.page_not_found_404_view"
+handler500 = "passwordvault.views.page_not_found_500_view"
