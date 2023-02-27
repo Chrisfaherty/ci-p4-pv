@@ -908,6 +908,7 @@ The following models were created to represent the database model structure for 
 
 ## Deployment
 
+
 ### Deploying to Heroku
 * Go to the heroku.com site.
     <details><summary>Screenshots</summary>
@@ -966,16 +967,21 @@ The following models were created to represent the database model structure for 
 * This will fork the repositry.
 
 ## Credits
-* The Code Institute Love running project for the guidance with connecting the terminal to a googal sheet through gspread.
-* [Tech with Tim](https://www.youtube.com/watch?v=DLn3jOsNRVE) For the inspiration to create a password manager.
-* [Tech with Tim](https://www.youtube.com/watch?v=u51Zjlnui4Y) For the guidance on how to use colorama.
-* [Geeks for geeks](geeksforgeeks.org) For the guidance on validating & checking that a strong password is created.
-* [Otu Michael](https://dev.to/otumianempire/custom-password-validation-in-python-unit-test-the-function-for-password-validation-4l7b) For the guidance with unit testing the password validator.
+* The Code Institute sections.
+    * Buiding with Bootstrap - Used for insperation on the bootstrap code, and the home page,
+    * Hello Django - Used for insperation for the password manager,
+    * I Think Therefore I Blog - Used for insperation for the blog & contact page,
+* [Tech with Tim](https://www.youtube.com/watch?v=Z4D3M-NSN58&list=PLzMcBGfZo4-kQkZp-j9PNyKq7Yw5VYjq9) For the inspiration to create a password manager.
+* [Freepix](https://www.freepik.com/) Used for the images in the blog posts and error pages,
+* [Chat GPT](https://openai.com/blog/chatgpt/) Used for the content in the blog posts,
+* [Richard Taujenis](https://python.plainenglish.io/build-a-password-storage-app-with-django-part-i-c6991e97e320) For the guidance on the password manager.
+* [Securecoding](https://www.securecoding.com/blog/cryptography-for-security-in-django-app/) For guidance on password encryption.
 
 ## Acknowledgements
 I would like to take the opertunity to thank:
 * My Mentor Mo Shami for the great feedback productive meetings and guiding me to finishing this project.
 * I would also like to thank the Code institute team for all the support and material to assist with this project.
 * The code institute Tutors for being available when ever guidance was required.
+* I would like to thank Nick Coles & Chris Browning for the help with problem solving and independant reviews.
 
 [Back to Table Of Contents](#table-of-contents)
