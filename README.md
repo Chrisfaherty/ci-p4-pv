@@ -640,78 +640,82 @@ The following models were created to represent the database model structure for 
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
-| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
-| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
-| Login Function screen | Input username & password | User is given 5 options to choose from along with information on what should be done first | Works as expected |
-| Login Function screen | Input option 3 for user password & 4 for master password | User is presented with the stored passwords | Works as expected |
-| Adding a website screen | Input the name & password | notice password updated displayed | Works as expected |
+| Main screen | Scroll to the top of the page | User is presented with a Nav Bar and all the page links and a call to action | Works as expected |
+| Login | click the login link | User is taken to the login screen | Works as expected |
+| Login screen | Input username & password | User is taken back to the home page | Works as expected |
+| Main screen | Click view accounts in the call to action | User is taken to the view accounts page | Works as expected |
+| View Accounts | Click on the account to view | User is taken to the account details | Works as expected |
+| Account Details | Click on the delete or edit button | The user is taken to the delete or edit account page | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/testing/user_story_1_1.png">
-<img src="docs/testing/user_story_1_2.png">
-<img src="docs/testing/user_story_1_3.png">
-<img src="docs/testing/user_story_1_4.png">
-<img src="docs/testing/user_story_6_1.png">
-<img src="docs/testing/user_story_6_2.png">
+<img src="static/image/readme/manual-testing/user-story-4-1.png">
+<img src="static/image/readme/manual-testing/user-story-4-2.png">
+<img src="static/image/readme/manual-testing/user-story-4-3.png">
+<img src="static/image/readme/manual-testing/user-story-4-4.png">
+<img src="static/image/readme/manual-testing/user-story-5-1.png">
+<img src="static/image/readme/manual-testing/user-story-6-1.png">
 </details>
 
 7. I want to be able to contact admin if i need to change my user details,  
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
-| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
-| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
-| Login Function screen | Input username & incorrct password | User is told it did not match our records and prompted to try again | Works as expected |
-
+| Main screen | Scroll to the top of the page | User is presented with a Nav Bar and all the page links and a call to action | Works as expected |
+| Contact | Click the contact link | User is taken to the contact screen | Works as expected |
+| Contact | Fill out the form and press send | A success message is displayed | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/testing/user_story_1_1.png">
-<img src="docs/testing/user_story_1_2.png">
-<img src="docs/testing/user_story_7_1.png">
+<img src="static/image/readme/manual-testing/user-story-7-1.png">
+<img src="static/image/readme/manual-testing/user-story-7-2.png">
+<img src="static/image/readme/manual-testing/user-story-7-3.png">
 </details>
 
 8. I want to be able to contact admin with blog suggestions,
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
-| Main screen | Input your name | User is  welcomed and presented with options on how to proceed | Works as expected |
+| Main screen | Scroll to the top of the page | User is presented with a Nav Bar and all the page links and a call to action | Works as expected |
+| Contact | Click the contact link | User is taken to the contact screen | Works as expected |
+| Contact | Fill out the form and press send | A success message is displayed | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/testing/user_story_1_1.png">
-<img src="docs/testing/user_story_1_2.png">
+<img src="static/image/readme/manual-testing/user-story-7-1.png">
+<img src="static/image/readme/manual-testing/user-story-7-2.png">
+<img src="static/image/readme/manual-testing/user-story-7-3.png">
 </details>
 
 9. I want to be able to read like and comment on the security blogs.
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
-| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
-| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
-| Login Function screen | Input username & password | User is given 5 options to choose from along with information on what should be done first | Works as expected |
+| Main screen | Scroll to the top of the page | User is presented with a Nav Bar and all the page links | Works as expected |
+| Navbar| Clock on the blog link | User is taken to the blog page | Works as expected |
+| Blog | click on the blog post title | User is taken to the blog posts page | Works as expected |
+| Blog Post | click on the link heart to like or input a comment and press submit to send it for approval | The heart annimates or a success message is displayed for the comment | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/testing/user_story_1_1.png">
-<img src="docs/testing/user_story_1_2.png">
-<img src="docs/testing/user_story_1_3.png">
-<img src="docs/testing/user_story_1_4.png">
+<img src="static/image/readme/manual-testing/user-story-9-1.png">
+<img src="static/image/readme/manual-testing/user-story-9-2.png">
+<img src="static/image/readme/manual-testing/user-story-9-3.png">
 </details>
 
 10. I want users to enjoy the experience while visiting the Password Vault,
 
 | **Feature** | **Action** | **Expected Results** | **Actual Result** |
 |-------------|------------|----------------------|-------------------|
-| Main screen | Input your name | User is presented with options on how to proceed | Works as expected |
-| Login Function screen | Input login | User is asked to input their user name and password | Works as expected |
-| Login Function screen | Input username & password | User is given 5 options to choose from along with information on what should be done first | Works as expected |
-| Login Function screen | Input option 2 | User is presented with the stored passwords | Works as expected |
-| Adding a website screen | Input a website already stored | Notice the website is already stored and a sugestion to avoid this error | Works as expected |
+| Main screen | Scroll to the top of the page | User is presented with a Nav Bar and all the page links | Works as expected |
+| Nav bar| Click register | The user is taken to the registeration page | Works as expected |
+| Registeration page | The user inputs their details and clicks sign up | The user is loged in and taken back to the main page | Works as expected |
+| Nav bar | The user views the navbar | Nav bar has changed with the new revelent links | Works as expected |
+| Main page | Scroll through | The user is presented with all the features of the site in bite size view | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/testing/user_story_1_1.png">
-<img src="docs/testing/user_story_1_2.png">
-<img src="docs/testing/user_story_1_3.png">
-<img src="docs/testing/user_story_1_4.png">
-<img src="docs/testing/user_story_10_1.png">
+<img src="static/image/readme/manual-testing/user-story-1-1.png">
+<img src="static/image/readme/manual-testing/user-story-1-2.png">
+<img src="static/image/readme/manual-testing/user-story-1-3.png">
+<img src="static/image/readme/manual-testing/user-story-10-1.png">
+<img src="static/image/readme/manual-testing/user-story-10-2.png">
+<img src="static/image/readme/manual-testing/user-story-10-3.png">
 </details>
 
 11. I want users to easily navigate the site,
