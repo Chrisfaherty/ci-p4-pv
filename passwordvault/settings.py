@@ -108,6 +108,10 @@ DATABASES = {
      'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
+CLOUDINARY_STORAGE = {
+   'CLOUDINARY_URL': os.environ.get('CLOUDINARY_URL')
+}
+
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
