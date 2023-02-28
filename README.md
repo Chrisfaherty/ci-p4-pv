@@ -588,6 +588,49 @@ The following models were created to represent the database model structure for 
     <img src="static/image/readme/validation/pip8-validation.png">
     </details>
 
+* Chrome Developet Tools Lighthouse
+
+    <details><summary>Home</summary>
+    <img src="static/image/readme/validation/lighthouse-home.png">
+    </details>
+
+    <details><summary>Blog</summary>
+    <img src="static/image/readme/validation/lighthouse-blog.png">
+    </details>
+
+    <details><summary>Blog Details</summary>
+    <img src="static/image/readme/validation/lighthouse-blog-details.png">
+    </details>
+
+    <details><summary>Contact</summary>
+    <img src="static/image/readme/validation/lighthouse-contact.png">
+    </details>
+
+    <details><summary>Success</summary>
+    <img src="static/image/readme/validation/lighthouse-success.png">
+    </details>
+
+    <details><summary>View</summary>
+    <img src="static/image/readme/validation/lighthouse-view.png">
+    </details>
+
+    <details><summary>Create</summary>
+    <img src="static/image/readme/validation/lighthouse-create.png">
+    </details>
+
+    <details><summary>Register</summary>
+    <img src="static/image/readme/validation/lighthouse-register.png">
+    </details>
+
+    <details><summary>Login</summary>
+    <img src="static/image/readme/validation/lighthouse-login.png">
+    </details>
+
+    <details><summary>Logout</summary>
+    <img src="static/image/readme/validation/lighthouse-logout.png">
+    </details>
+
+
 ### Testing user stories
 1. I want to the password vault product to flow and be easy to follow.
 
