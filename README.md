@@ -532,26 +532,55 @@ The following models were created to represent the database model structure for 
     * Testing the password validation code with unit testing.
 
 ### Validator Testing
-* pycodestyle
-    * No errors were found when passing the site pages through the [pycodestyle validator](https://pypi.org/project/pycodestyle/)
-    * Warnings were noted in the run.py file with the logo. This was due to the code thinking it was an excape sequance when using slashed.
+* The W3C Markup Validation Service was used to validate the HTML of the website.
 
-    <details><summary>pycodestyle</summary>
-    <img src="">
+    <details><summary>Home</summary>
+    <img src="static/image/readme/validation/html-home.png">
     </details>
 
-    <details><summary>run.py</summary>
-    <img src="">
+    <details><summary>Blog</summary>
+    <img src="static/image/readme/validation/html-blog.png">
     </details>
 
-    <details><summary>validate_password.py</summary>
-    <img src="">
+    <details><summary>Contact</summary>
+    <img src="static/image/readme/validation/html-contact.png">
     </details>
 
-    <details><summary>test_validation.py</summary>
-    <img src="">
+    <details><summary>Success</summary>
+    <img src="static/image/readme/validation/html-contact.png">
     </details>
 
+    <details><summary>View</summary>
+    <img src="static/image/readme/validation/view-html.png">
+    </details>
+
+    <details><summary>Create</summary>
+    <img src="static/image/readme/validation/html-create.png">
+    </details>
+
+    <details><summary>Register</summary>
+    <img src="static/image/readme/validation/signup-html.png">
+    </details>
+
+    <details><summary>logout</summary>
+    <img src="static/image/readme/validation/logout-html.png">
+    </details>
+
+    <details><summary>login</summary>
+    <img src="static/image/readme/validation/login-html.png">
+    </details>
+
+* The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website. When validating all website, it passes with no errors.
+
+    <details><summary>CSS Validator</summary>
+    <img src="static/image/readme/validation/css-validation.png">
+    </details>
+
+* JSHint JS Validation Service was used to validate the Javascript files. No errors were found.
+
+    <details><summary>JavaScript Validator</summary>
+    <img src="static/image/readme/validation/js-validation.png">
+    </details>
 
 ### Testing user stories
 1. I want to the password vault product to flow and be easy to follow.
