@@ -38,6 +38,11 @@ def create(request):
             save_form = form.save(commit=False)
             save_form.user = request.user
             save_form.save()
+            messages.add_message(
+                request,
+                messages.SUCCESS,
+                "You have updated your account details have been edited"
+            )
             return redirect('view')
     else:
         form = CreateNewPwAccount()

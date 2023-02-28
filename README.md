@@ -60,7 +60,6 @@ With the pace of everything going digital and everyone having different accounts
 * Provide the ability to recieve feedback from its users,
 * Provide a responsive design.
 
-
 ## User Experience
 
 ### Target Audience
@@ -91,7 +90,6 @@ With the pace of everything going digital and everyone having different accounts
 7. I want to be able to contact admin if i need to change my user details,
 8. I want to be able to contact admin with blog suggestions,
 9. I want to be able to read like and comment on the security blogs.
-
 
 #### Site Owner
 10. I want users to enjoy the experience while visiting the Password Vault,
@@ -291,7 +289,6 @@ The following models were created to represent the database model structure for 
 
 ## Features
 
-
 ### Existing Features
 
 * Logo and Navigation Bar
@@ -307,7 +304,6 @@ The following models were created to represent the database model structure for 
 <img src="docs/readme.md/readme.md/navbar-3.png">
 </details>
 
-
 * Call to Action
     * The call to action gives the user an idea of what the site is about "Security is key",
     * It explains that the user can store passwords for different online accounts,
@@ -320,7 +316,6 @@ The following models were created to represent the database model structure for 
 <img src="docs/readme.md/readme.md/cta-logged-in.png">
 </details>
 
-
 * Blog Highlight
     * This section gives the user a feel for what the blog is about,
     * The three most recent blogs will be displayed here for quick access,
@@ -330,7 +325,6 @@ The following models were created to represent the database model structure for 
 <details><summary>Blog Highilght Image</summary>
 <img src="docs/readme.md/readme.md/blog-highlights.png">
 </details>
-
 
 * Features
     * The features section is used to display the main features of the website (Blog, Password Manager & Contact),
@@ -342,7 +336,6 @@ The following models were created to represent the database model structure for 
 <img src="docs/readme.md/readme.md/features.png">
 </details>
 
-
 * Footer
     * The footer displays the name of the developer,
     * Two links are displayed to go to the github depositry or the developers linkedin page,
@@ -351,7 +344,6 @@ The following models were created to represent the database model structure for 
 <details><summary>Footer Image</summary>
 <img src="docs/readme.md/readme.md/footer.png">
 </details>
-
 
 * Blog Overview Page
     * To get to the blog page you click on the blog link in the nav bar,
@@ -366,7 +358,6 @@ The following models were created to represent the database model structure for 
 <img src="docs/readme.md/readme.md/blog-1.png">
 <img src="docs/readme.md/readme.md/blog-2.png">
 </details>
-
 
  * Blog Post
     * To get to this point the user clicks on blog in the nav bar,
@@ -383,7 +374,6 @@ The following models were created to represent the database model structure for 
 <img src="docs/readme.md/readme.md/blog-post-3.png">
 </details>
 
-
  * Contact Page
     * To get to this point the user selects the contact link in the nav bar,
     * The user is presented with the contact form, 
@@ -395,7 +385,6 @@ The following models were created to represent the database model structure for 
 <img src="docs/readme.md/readme.md/contact-nav.png">
 <img src="docs/readme.md/readme.md/contact-page-1.png">
 </details>
-
 
  * Add Account Page
     * To get to this point the user selects the password manager link dropdown in the nav bar,
@@ -412,7 +401,6 @@ The following models were created to represent the database model structure for 
 <img src="docs/readme.md/readme.md/add-account-page.png">
 </details>
 
-
  * View Account Page
     * To get to this point the user selects the password manager link dropdown in the nav bar,
     * Then select the view account link in the dropdown, 
@@ -425,7 +413,6 @@ The following models were created to represent the database model structure for 
 <img src="docs/readme.md/readme.md/view-account-nav.png">
 <img src="docs/readme.md/readme.md/view-account-1.png">
 </details>
-
 
  * Account Detail Page
     * To get to this point the user selects the password manager link dropdown in the nav bar,
@@ -443,7 +430,6 @@ The following models were created to represent the database model structure for 
 <img src="docs/readme.md/readme.md/account-detail-1.png">
 <img src="docs/readme.md/readme.md/account-detail-2.png">
 </details>
-
 
  * Edit Account Detail Page
     * To get to this point the user selects the password manager link dropdown in the nav bar,
@@ -464,7 +450,6 @@ The following models were created to represent the database model structure for 
 <img src="docs/readme.md/readme.md/edit-account-detail-2.png">
 </details>
 
-
  * Delete Account Detail Page
     * To get to this point the user selects the password manager link dropdown in the nav bar,
     * Then select the view account link in the dropdown, 
@@ -483,7 +468,6 @@ The following models were created to represent the database model structure for 
 <img src="docs/readme.md/readme.md/delete-account-details-2.png">
 </details>
 
-
  * Register Page
     * To get to this point the user selects the register link in the nav bar,
     * The user can then fill in their details to register a new account,
@@ -495,7 +479,6 @@ The following models were created to represent the database model structure for 
 <img src="docs/readme.md/readme.md/reg-nav.png">
 <img src="docs/readme.md/readme.md/reg-1.png">
 </details>
-
 
  * Login Page
     * To get to this point the user will click on the login link in the nav bar,
@@ -522,7 +505,6 @@ The following models were created to represent the database model structure for 
 </details>
 
 [Back to Table Of Contents](#table-of-contents)
-
 
 ## Testing
 
@@ -630,6 +612,7 @@ The following models were created to represent the database model structure for 
     <img src="docs/readme.md/readme.md/validation/lighthouse-logout.png">
     </details>
 
+[Back to Table Of Contents](#table-of-contents)
 
 ### Testing user stories
 1. I want to the password vault product to flow and be easy to follow.
