@@ -1,15 +1,15 @@
 # Password Vault
 (Developer: Christopher Faherty)
 
-![This is an screenshot of the responsive design image](docs/readme.md/readme.md/am-i-responsive-image.png)
+![This is an screenshot of the responsive design image](static/image/440.jpg)
 
-[Live Webpage]()
+[Live Webpage](https://password-vault.herokuapp.com/)
 
 ## About
 
-The main focus of the Password Vault is to help users live a more secure life owhile online. This is accomplished by the password manager and blog with its security posts.
+The main focus of the Password Vault is to help users live a more secure life while online. This is accomplished by the password manager and blog with its security posts.
 
-This password manager allows the user to sign up and store their account details. It then allows that users to view, add and edit their account details. It also allows users to read our monthly security blogs where we will be posting a blog about a n important security topic each month.
+This password manager allows the user to sign up and store their account details. It then allows that users to view, add and edit their account details. It also allows users to read our monthly security blogs where we will be posting a blog about an important security topic each month.
 
 With the pace of everything going digital and everyone having different accounts for everything, its human nature to take the easy route and use the same password for every account. This has a huge impact on your security and shows why password managers are vital today more than ever.
 
