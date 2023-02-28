@@ -8,12 +8,7 @@ body {
     font-weight: 700;
     color: #E63946;
 }
-.red-o {
-    color: #1D3557;
-}
-.thin {
-    font-weight: 300;
-}
+
 .light-bg {
     background-color: #ffffff;
 }
@@ -172,4 +167,3 @@ a {
 .crud-form{
     display: inline-block;
 }
-

@@ -13,6 +13,6 @@
             <p><a href="{% url 'index' pw.id %}">{{ pw.name }}</a></p>
         {% endfor %}
             <p>If you havent added an account yet click the link below</p>
-            <button type="button" class="btn btn-success btn-lg"><a href="{% url 'create' %}">Add Account</a></button>
+            <a class="btn btn-success btn-lg" href="{% url 'create' %}" role="button">Add Accounts</a>
 </div>
 {% endblock %}
