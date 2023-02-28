@@ -582,6 +582,12 @@ The following models were created to represent the database model structure for 
     <img src="static/image/readme/validation/js-validation.png">
     </details>
 
+* Note - PEP8 no longer offers their validation services 'pycodestyle' installed in my workspace to validate the code
+
+    <details><summary>PEP8 Validator</summary>
+    <img src="static/image/readme/validation/pip8-validation.png">
+    </details>
+
 ### Testing user stories
 1. I want to the password vault product to flow and be easy to follow.
 
