@@ -6,6 +6,8 @@ from django.contrib import messages
 
 # Tech with Tim dejango course was used as insperation for the password manager
 # This view is to save the password items to the database
+
+
 def index(request, id):
     acc = PwAccount.objects.get(id=id)
     if acc in request.user.pwaccount.all():
@@ -23,10 +25,12 @@ def index(request, id):
                     acc.item_set.create(text=txt, complete=False)
                 else:
                     print("invalid")
-        return render(request, "pwmanagerapp/list.html", {"acc":acc})
+        return render(request, "pwmanagerapp/list.html", {"acc": acc})
     return render(request, "home.html", {})
 
 # This view is create a new account instance and save it to the db
+
+
 def create(request):
     if request.method == "POST":
         form = CreateNewPwAccount(request.POST)
@@ -37,9 +41,11 @@ def create(request):
             return redirect('view')
     else:
         form = CreateNewPwAccount()
-    return render(request, "pwmanagerapp/createpw.html", {"form":form})
+    return render(request, "pwmanagerapp/createpw.html", {"form": form})
 
 # This view is to edit the fields in a stored account
+
+
 def edit(request, acc_id):
     acc = get_object_or_404(PwAccount, id=acc_id)
     if request.method == 'POST':
@@ -65,6 +71,8 @@ def edit(request, acc_id):
     return render(request, 'pwmanagerapp/edit_password.html', context)
 
 # This view is to delete a stored account
+
+
 def delete(request, acc_id):
     acc = get_object_or_404(PwAccount, id=acc_id)
     acc.delete()
@@ -75,5 +83,7 @@ def delete(request, acc_id):
     return redirect('view')
 
 # this view is to render the stored account
+
+
 def view(request):
     return render(request, "pwmanagerapp/viewpw.html", {})

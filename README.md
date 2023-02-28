@@ -1,7 +1,7 @@
 # Password Vault
 (Developer: Christopher Faherty)
 
-![This is an screenshot of the responsive design image](static/image/readme/am-i-responsive-image.png)
+![This is an screenshot of the responsive design image](docs/readme.md/readme.md/am-i-responsive-image.png)
 
 [Live Webpage]()
 
@@ -13,10 +13,6 @@ This password manager allows the user to sign up and store their account details
 
 With the pace of everything going digital and everyone having different accounts for everything, its human nature to take the easy route and use the same password for every account. This has a huge impact on your security and shows why password managers are vital today more than ever.
 
-Superuser details: 
-User: superuser
-Password: PasswordVault@2023
-
 ## Table of Contents
 
 1. [Project Goals](#project-goals)
@@ -25,23 +21,26 @@ Password: PasswordVault@2023
 2. [User Experience](#user-experience)
     1. [Target Audience](#target-audience)
     2. [User Requirements and Expectations](#user-requirements-and-expectations)
-    3. [User Manual](#user-manual)
     4. [User Stories](#user-stories)
-3. [Technical Design](#technical-design)
-    1. [Flowchart](#flowchart)
+3. [Design](#design)
+    1. [Colors](#colors)
+    2. [Fonts](#fonts)
+    3. [Structure](#structure)
+    4. [Database](#database)
+    5. [Wireframes](#wireframes)
 4. [Technologies Used](#technologies-used)
-    1. [Languages](#languages)
-    2. [Framework and Tools](#framework-and-tools)
-    3. [libraries](#libraries)
+    1. [Languages and Frameworks](#languages-and-frameworks)
+    2. [Libraries and Tools](#libraries-and-tools)
+    3. [Validation Tools](#validation-tools)
 5. [Features](#features)
 6. [Testing](#testing)
     1. [Validator Testing](#validator-testing)
     2. [Testing user stories](#testing-user-stories)
     3. [Unit Testing](#unit-testing)
-8. [Bugs](#bugs)
-9. [Deployment](#deployment)
-10. [Credits](#credits)
-11. [Acknowledgements](#acknowledgements)
+7. [Bugs](#bugs)
+8. [Deployment](#deployment)
+9. [Credits](#credits)
+10. [Acknowledgements](#acknowledgements)
 
 ## Project Goals
 
@@ -116,7 +115,7 @@ The colour scheme was chosen to be easy on the eye but also highlight the sepera
 The color scheme was created with the use of <a href="https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557">Coolors</a>
 
 <details><summary>Coolor Pallet</summary>
-<img src="static/image/readme/coolor-pallet.png">
+<img src="docs/readme.md/readme.md/coolor-pallet.png">
 </details>
 
 ### Fonts
@@ -140,7 +139,7 @@ The main navigation for the site is at the top of the page. It is on the left ha
   - The blog page will display up to 6 blogs and then after that it will paginate and display the rest on the next page. This is to keep the page user friendly,
   - The user can click into any blog they would like to read. 
   - Once the user is viewing the blog post they can like it and submit a comment to be reviewed by the admin before posting it, they can also read other comments,
-  - Contact page allows the users to contact the admin, The email will get sent to the admin panel and also directly to the admins email address,
+  - Contact page allows the users to contact the admin, The email will get sent to the admin panel,
   - The register page allows new users to sign up for a new account,
   - The login page allows the users that have already registered to log into their accounts.
   - There are two pages to the password manager an accounts page where all fo your accounts are displayed,
@@ -155,13 +154,13 @@ The main navigation for the site is at the top of the page. It is on the left ha
   - Contact page with contact form which allows users to send an email to the admin and provide their feedback.
   - 404 error page.
 
-#### Database
+### Database
 
 - The backend consists of Python built with the Django framework with a database of a Postgres for the deployed version.
 
 The following models were created to represent the database model structure for the website:
 
-##### blog/Post Model
+#### blog/Post Model
 
 - Contains all the fields required for posting on the blog (Char, Slug, DateTime & Text),
 - Contains a field to store blog posts in draft or published,
@@ -170,20 +169,20 @@ The following models were created to represent the database model structure for 
 - Contains a ForeignKey Field to select the author of the blog post.
 
 <details><summary>Show Model</summary>
-<img src="/static/image/readme/post-model.png">
+<img src="docs/readme.md/readme.md/post-model.png">
 </details>
 
-##### blog/Comment Model
+#### blog/Comment Model
 
 - Contains all the input fields required to comment on the blog posts (Char, Email, Text & DateTime),
 - Contains a ForeignKey to send the comment to the admin panel for approval,
 - Contains a BooleanField to see if the comment is approved before it is posted.
 
 <details><summary>Show Model</summary>
-<img src="/static/image/readme/comment-model.png">
+<img src="docs/readme.md/readme.md/comment-model.png">
 </details>
 
-##### pwmanagerapp/PwAccount Model
+#### pwmanagerapp/PwAccount Model
 
 - Contains a User ForeignKey to connect a user to the account being stored,
 - Contains the fields for the details a user would want to store for an account (Char & Email),
@@ -192,57 +191,57 @@ The following models were created to represent the database model structure for 
 - Removed the password field from the admin panel to keep the users passwords secure.
 
 <details><summary>Show Model</summary>
-<img src="/static/image/readme/pwaccount-model.png">
+<img src="docs/readme.md/readme.md/pwaccount-model.png">
 </details>
 
 ### Wireframes
 
-##### Home Page
+#### Home Page
 
 <details><summary>Logged in Page</summary>
-<img src="static/image/readme/loggedin-home-wireframe.png">
+<img src="docs/readme.md/readme.md/loggedin-home-wireframe.png">
 </details>
 <details><summary>Logged out Page</summary>
-<img src="static/image/readme/logged-out-home-wireframe.png">
+<img src="docs/readme.md/readme.md/logged-out-home-wireframe.png">
 </details>
 
-##### Blog
+#### Blog
 
 <details><summary>Main Page</summary>
-<img src="static/image/readme/blog-wireframe.png">
+<img src="docs/readme.md/readme.md/blog-wireframe.png">
 </details>
 <details><summary>Post Page</summary>
-<img src="static/image/readme/blog-post-wireframe.png">
+<img src="docs/readme.md/readme.md/blog-post-wireframe.png">
 </details>
 
-##### Contact
+#### Contact
 
 <details><summary>Contact Page</summary>
-<img src="static/image/readme/contact-wireframe.png">
+<img src="docs/readme.md/readme.md/contact-wireframe.png">
 </details>
 
-##### Password Manager
+#### Password Manager
 
 <details><summary>Add Account</summary>
-<img src="static/image/readme/add-account-wireframe.png">
+<img src="docs/readme.md/readme.md/add-account-wireframe.png">
 </details>
 <details><summary>View Accounts</summary>
-<img src="static/image/readme/view-accounts-wireframe.png">
+<img src="docs/readme.md/readme.md/view-accounts-wireframe.png">
 </details>
 <details><summary>View Account Details</summary>
-<img src="static/image/readme/pwaccount-details.png">
+<img src="docs/readme.md/readme.md/pwaccount-details.png">
 </details>
 
-##### Autentication
+#### Autentication
 
 <details><summary>Register</summary>
-<img src="static/image/readme/register-wireframe.png">
+<img src="docs/readme.md/readme.md/register-wireframe.png">
 </details>
 <details><summary>Login</summary>
-<img src="static/image/readme/login-wireframe.png">
+<img src="docs/readme.md/readme.md/login-wireframe.png">
 </details>
 <details><summary>Logout</summary>
-<img src="static/image/readme/logout-wireframe.png">
+<img src="docs/readme.md/readme.md/logout-wireframe.png">
 </details>
 
 [Back to Table Of Contents](#table-of-contents)
@@ -273,9 +272,10 @@ The following models were created to represent the database model structure for 
 * [Postgres](https://www.postgresql.org) Used as the database for the deployed site.
 * [Summernote](https://summernote.org/) Used for the fields in the Admin panel.
 * [ChatGPT](https://openai.com/blog/chatgpt/) Used to generate the content for the blog posts.
-* [Cryptography](https://django-cryptography.readthedocs.io/en/latest/) Used to encrypt the users account passwords stored in the db.
-* [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) Used to generate the forms.
+* [Cryptography](https://django-cryptography.readthedocs/readme.md.io/en/latest/) Used to encrypt the users account passwords stored in the db.
+* [Crispy Forms](https://django-crispy-forms.readthedocs/readme.md.io/en/latest/) Used to generate the forms.
 * [Freepik](https://www.freepik.com/) Subscription used for the blog and error page images.
+* [Tinypng](https://tinypng.com/) To compress the blog images.
 
 ### Validation Tools
 
@@ -302,9 +302,9 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>Logo & Nav bar Image</summary>
-<img src="static/image/readme/navbar-1.png">
-<img src="static/image/readme/navbar-2.png">
-<img src="static/image/readme/navbar-3.png">
+<img src="docs/readme.md/readme.md/navbar-1.png">
+<img src="docs/readme.md/readme.md/navbar-2.png">
+<img src="docs/readme.md/readme.md/navbar-3.png">
 </details>
 
 
@@ -316,8 +316,8 @@ The following models were created to represent the database model structure for 
     * User stories: 
 
 <details><summary>Call to Action Image</summary>
-<img src="static/image/readme/cta-logged-out.png">
-<img src="static/image/readme/cta-logged-in.png">
+<img src="docs/readme.md/readme.md/cta-logged-out.png">
+<img src="docs/readme.md/readme.md/cta-logged-in.png">
 </details>
 
 
@@ -328,7 +328,7 @@ The following models were created to represent the database model structure for 
     * User stories: 
 
 <details><summary>Blog Highilght Image</summary>
-<img src="static/image/readme/blog-highlights.png">
+<img src="docs/readme.md/readme.md/blog-highlights.png">
 </details>
 
 
@@ -339,7 +339,7 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>Features Image</summary>
-<img src="static/image/readme/features.png">
+<img src="docs/readme.md/readme.md/features.png">
 </details>
 
 
@@ -349,7 +349,7 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>Footer Image</summary>
-<img src="static/image/readme/footer.png">
+<img src="docs/readme.md/readme.md/footer.png">
 </details>
 
 
@@ -362,9 +362,9 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>Blog Image</summary>
-<img src="static/image/readme/blog-nav.png">
-<img src="static/image/readme/blog-1.png">
-<img src="static/image/readme/blog-2.png">
+<img src="docs/readme.md/readme.md/blog-nav.png">
+<img src="docs/readme.md/readme.md/blog-1.png">
+<img src="docs/readme.md/readme.md/blog-2.png">
 </details>
 
 
@@ -377,10 +377,10 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>Blog Post Image</summary>
-<img src="static/image/readme/blog-nav.png">
-<img src="static/image/readme/blog-post-1.png">
-<img src="static/image/readme/blog-post-2.png">
-<img src="static/image/readme/blog-post-3.png">
+<img src="docs/readme.md/readme.md/blog-nav.png">
+<img src="docs/readme.md/readme.md/blog-post-1.png">
+<img src="docs/readme.md/readme.md/blog-post-2.png">
+<img src="docs/readme.md/readme.md/blog-post-3.png">
 </details>
 
 
@@ -392,8 +392,8 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>Contact Image</summary>
-<img src="static/image/readme/contact-nav.png">
-<img src="static/image/readme/contact-page-1.png">
+<img src="docs/readme.md/readme.md/contact-nav.png">
+<img src="docs/readme.md/readme.md/contact-page-1.png">
 </details>
 
 
@@ -407,9 +407,9 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>Add Account Image</summary>
-<img src="static/image/readme/pwmanager-nav.png">
-<img src="static/image/readme/add-account-nav.png">
-<img src="static/image/readme/add-account-page.png">
+<img src="docs/readme.md/readme.md/pwmanager-nav.png">
+<img src="docs/readme.md/readme.md/add-account-nav.png">
+<img src="docs/readme.md/readme.md/add-account-page.png">
 </details>
 
 
@@ -421,9 +421,9 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>View Account Image</summary>
-<img src="static/image/readme/pwmanager-nav.png">
-<img src="static/image/readme/view-account-nav.png">
-<img src="static/image/readme/view-account-1.png">
+<img src="docs/readme.md/readme.md/pwmanager-nav.png">
+<img src="docs/readme.md/readme.md/view-account-nav.png">
+<img src="docs/readme.md/readme.md/view-account-1.png">
 </details>
 
 
@@ -438,10 +438,10 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>Account Detail Image</summary>
-<img src="static/image/readme/pwmanager-nav.png">
-<img src="static/image/readme/view-account-nav.png">
-<img src="static/image/readme/account-detail-1.png">
-<img src="static/image/readme/account-detail-2.png">
+<img src="docs/readme.md/readme.md/pwmanager-nav.png">
+<img src="docs/readme.md/readme.md/view-account-nav.png">
+<img src="docs/readme.md/readme.md/account-detail-1.png">
+<img src="docs/readme.md/readme.md/account-detail-2.png">
 </details>
 
 
@@ -457,11 +457,11 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>Edit Account Detail Image</summary>
-<img src="static/image/readme/pwmanager-nav.png">
-<img src="static/image/readme/view-account-nav.png">
-<img src="static/image/readme/account-detail-1.png">
-<img src="static/image/readme/edit-account-detail-1.png">
-<img src="static/image/readme/edit-account-detail-2.png">
+<img src="docs/readme.md/readme.md/pwmanager-nav.png">
+<img src="docs/readme.md/readme.md/view-account-nav.png">
+<img src="docs/readme.md/readme.md/account-detail-1.png">
+<img src="docs/readme.md/readme.md/edit-account-detail-1.png">
+<img src="docs/readme.md/readme.md/edit-account-detail-2.png">
 </details>
 
 
@@ -476,11 +476,11 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>Delete Account Detail Image</summary>
-<img src="static/image/readme/pwmanager-nav.png">
-<img src="static/image/readme/view-account-nav.png">
-<img src="static/image/readme/account-detail-1.png">
-<img src="static/image/readme/delete-account-details-1.png">
-<img src="static/image/readme/delete-account-details-2.png">
+<img src="docs/readme.md/readme.md/pwmanager-nav.png">
+<img src="docs/readme.md/readme.md/view-account-nav.png">
+<img src="docs/readme.md/readme.md/account-detail-1.png">
+<img src="docs/readme.md/readme.md/delete-account-details-1.png">
+<img src="docs/readme.md/readme.md/delete-account-details-2.png">
 </details>
 
 
@@ -492,8 +492,8 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>Register Image</summary>
-<img src="static/image/readme/reg-nav.png">
-<img src="static/image/readme/reg-1.png">
+<img src="docs/readme.md/readme.md/reg-nav.png">
+<img src="docs/readme.md/readme.md/reg-1.png">
 </details>
 
 
@@ -505,8 +505,8 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>Login Image</summary>
-<img src="static/image/readme/login-nav.png">
-<img src="static/image/readme/login-01.png">
+<img src="docs/readme.md/readme.md/login-nav.png">
+<img src="docs/readme.md/readme.md/login-01.png">
 </details>
 
 * Logout Page
@@ -517,8 +517,8 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>Logout Image</summary>
-<img src="static/image/readme/logout-nav.png">
-<img src="static/image/readme/logout-page.png">
+<img src="docs/readme.md/readme.md/logout-nav.png">
+<img src="docs/readme.md/readme.md/logout-page.png">
 </details>
 
 [Back to Table Of Contents](#table-of-contents)
@@ -527,107 +527,107 @@ The following models were created to represent the database model structure for 
 ## Testing
 
 * Testing was condicted in three ways.
-    * Testing the code with the pycodestyle extension.
+    * Testing with the HTML, CSS, JavaScript & Python with validation tools.
     * Testing the code manually with the user stories.
-    * Testing the password validation code with unit testing.
+    * Testing the password manager views code with unit testing.
 
 ### Validator Testing
 * The W3C Markup Validation Service was used to validate the HTML of the website.
 
     <details><summary>Home</summary>
-    <img src="static/image/readme/validation/html-home.png">
+    <img src="docs/readme.md/readme.md/validation/html-home.png">
     </details>
 
     <details><summary>Blog</summary>
-    <img src="static/image/readme/validation/html-blog.png">
+    <img src="docs/readme.md/readme.md/validation/html-blog.png">
     </details>
 
     <details><summary>Contact</summary>
-    <img src="static/image/readme/validation/html-contact.png">
+    <img src="docs/readme.md/readme.md/validation/html-contact.png">
     </details>
 
     <details><summary>Success</summary>
-    <img src="static/image/readme/validation/html-contact.png">
+    <img src="docs/readme.md/readme.md/validation/html-contact.png">
     </details>
 
     <details><summary>View</summary>
-    <img src="static/image/readme/validation/view-html.png">
+    <img src="docs/readme.md/readme.md/validation/view-html.png">
     </details>
 
     <details><summary>Create</summary>
-    <img src="static/image/readme/validation/html-create.png">
+    <img src="docs/readme.md/readme.md/validation/html-create.png">
     </details>
 
     <details><summary>Register</summary>
-    <img src="static/image/readme/validation/signup-html.png">
+    <img src="docs/readme.md/readme.md/validation/signup-html.png">
     </details>
 
     <details><summary>logout</summary>
-    <img src="static/image/readme/validation/logout-html.png">
+    <img src="docs/readme.md/readme.md/validation/logout-html.png">
     </details>
 
     <details><summary>login</summary>
-    <img src="static/image/readme/validation/login-html.png">
+    <img src="docs/readme.md/readme.md/validation/login-html.png">
     </details>
 
 * The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website. When validating all website, it passes with no errors.
 
     <details><summary>CSS Validator</summary>
-    <img src="static/image/readme/validation/css-validation.png">
+    <img src="docs/readme.md/readme.md/validation/css-validation.png">
     </details>
 
 * JSHint JS Validation Service was used to validate the Javascript files. No errors were found.
 
     <details><summary>JavaScript Validator</summary>
-    <img src="static/image/readme/validation/js-validation.png">
+    <img src="docs/readme.md/readme.md/validation/js-validation.png">
     </details>
 
 * Note - PEP8 no longer offers their validation services 'pycodestyle' installed in my workspace to validate the code
 
     <details><summary>PEP8 Validator</summary>
-    <img src="static/image/readme/validation/pip8-validation.png">
+    <img src="docs/readme.md/readme.md/validation/pip8-validation.png">
     </details>
 
 * Chrome Developet Tools Lighthouse
 
     <details><summary>Home</summary>
-    <img src="static/image/readme/validation/lighthouse-home.png">
+    <img src="docs/readme.md/readme.md/validation/lighthouse-home.png">
     </details>
 
     <details><summary>Blog</summary>
-    <img src="static/image/readme/validation/lighthouse-blog.png">
+    <img src="docs/readme.md/readme.md/validation/lighthouse-blog.png">
     </details>
 
     <details><summary>Blog Details</summary>
-    <img src="static/image/readme/validation/lighthouse-blog-details.png">
+    <img src="docs/readme.md/readme.md/validation/lighthouse-blog-details.png">
     </details>
 
     <details><summary>Contact</summary>
-    <img src="static/image/readme/validation/lighthouse-contact.png">
+    <img src="docs/readme.md/readme.md/validation/lighthouse-contact.png">
     </details>
 
     <details><summary>Success</summary>
-    <img src="static/image/readme/validation/lighthouse-success.png">
+    <img src="docs/readme.md/readme.md/validation/lighthouse-success.png">
     </details>
 
     <details><summary>View</summary>
-    <img src="static/image/readme/validation/lighthouse-view.png">
+    <img src="docs/readme.md/readme.md/validation/lighthouse-view.png">
     </details>
 
     <details><summary>Create</summary>
-    <img src="static/image/readme/validation/lighthouse-create.png">
+    <img src="docs/readme.md/readme.md/validation/lighthouse-create.png">
     </details>
 
     <details><summary>Register</summary>
-    <img src="static/image/readme/validation/lighthouse-register.png">
+    <img src="docs/readme.md/readme.md/validation/lighthouse-register.png">
     </details>
 
     <details><summary>Login</summary>
-    <img src="static/image/readme/validation/lighthouse-login.png">
+    <img src="docs/readme.md/readme.md/validation/lighthouse-login.png">
     </details>
 
     <details><summary>Logout</summary>
-    <img src="static/image/readme/validation/lighthouse-logout.png">
+    <img src="docs/readme.md/readme.md/validation/lighthouse-logout.png">
     </details>
 
 
@@ -642,9 +642,9 @@ The following models were created to represent the database model structure for 
 | Nav bar | The user views the navbar | Nav bar has changed with the new revelent links | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="static/image/readme/manual-testing/user-story-1-1.png">
-<img src="static/image/readme/manual-testing/user-story-1-2.png">
-<img src="static/image/readme/manual-testing/user-story-1-3.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-1-1.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-1-2.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-1-3.png">
 </details>
 
 2. I want to be able to create a user account and store my username & passwords for several online accounts.
@@ -660,12 +660,12 @@ The following models were created to represent the database model structure for 
 | View Accounts | User is redirected to the view accounts | All stored accounts are displayed | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="static/image/readme/manual-testing/user-story-2-1.png">
-<img src="static/image/readme/manual-testing/user-story-2-2.png">
-<img src="static/image/readme/manual-testing/user-story-2-3.png">
-<img src="static/image/readme/manual-testing/user-story-2-4.png">
-<img src="static/image/readme/manual-testing/user-story-2-5.png">
-<img src="static/image/readme/manual-testing/user-story-2-6.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-2-1.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-2-2.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-2-3.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-2-4.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-2-5.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-2-6.png">
 </details>
 
 3. I want to be able to navigate the site with ease and only relevant options being displayed to me,
@@ -678,9 +678,9 @@ The following models were created to represent the database model structure for 
 | Nav bar | The user views the navbar & call to acction | Nav bar  & call to action has changed with the new revelent links | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="static/image/readme/manual-testing/user-story-3-1.png">
-<img src="static/image/readme/manual-testing/user-story-3-2.png">
-<img src="static/image/readme/manual-testing/user-story-3-3.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-3-1.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-3-2.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-3-3.png">
 </details>
 
 4. I want to be able to view a list of all my stored accounts,
@@ -693,10 +693,10 @@ The following models were created to represent the database model structure for 
 | Main screen | Click view accounts in the call to action | User is taken to the view accounts page | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="static/image/readme/manual-testing/user-story-4-1.png">
-<img src="static/image/readme/manual-testing/user-story-4-2.png">
-<img src="static/image/readme/manual-testing/user-story-4-3.png">
-<img src="static/image/readme/manual-testing/user-story-4-4.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-4-1.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-4-2.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-4-3.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-4-4.png">
 </details>
 
 5. I want to be able to access my accounts to get the stored details,
@@ -710,12 +710,12 @@ The following models were created to represent the database model structure for 
 | View Accounts | Click on the account to view | User is taken to the account details | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="static/image/readme/manual-testing/user-story-4-1.png">
-<img src="static/image/readme/manual-testing/user-story-4-2.png">
-<img src="static/image/readme/manual-testing/user-story-4-3.png">
-<img src="static/image/readme/manual-testing/user-story-4-4.png">
-<img src="static/image/readme/manual-testing/user-story-5-1.png">
-<img src="static/image/readme/manual-testing/user-story-5-2.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-4-1.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-4-2.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-4-3.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-4-4.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-5-1.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-5-2.png">
 </details>
 
 6. I want to be able to edit and delete my stored accounts,
@@ -730,12 +730,12 @@ The following models were created to represent the database model structure for 
 | Account Details | Click on the delete or edit button | The user is taken to the delete or edit account page | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="static/image/readme/manual-testing/user-story-4-1.png">
-<img src="static/image/readme/manual-testing/user-story-4-2.png">
-<img src="static/image/readme/manual-testing/user-story-4-3.png">
-<img src="static/image/readme/manual-testing/user-story-4-4.png">
-<img src="static/image/readme/manual-testing/user-story-5-1.png">
-<img src="static/image/readme/manual-testing/user-story-6-1.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-4-1.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-4-2.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-4-3.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-4-4.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-5-1.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-6-1.png">
 </details>
 
 7. I want to be able to contact admin if i need to change my user details,  
@@ -747,9 +747,9 @@ The following models were created to represent the database model structure for 
 | Contact | Fill out the form and press send | A success message is displayed | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="static/image/readme/manual-testing/user-story-7-1.png">
-<img src="static/image/readme/manual-testing/user-story-7-2.png">
-<img src="static/image/readme/manual-testing/user-story-7-3.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-7-1.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-7-2.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-7-3.png">
 </details>
 
 8. I want to be able to contact admin with blog suggestions,
@@ -761,9 +761,9 @@ The following models were created to represent the database model structure for 
 | Contact | Fill out the form and press send | A success message is displayed | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="static/image/readme/manual-testing/user-story-7-1.png">
-<img src="static/image/readme/manual-testing/user-story-7-2.png">
-<img src="static/image/readme/manual-testing/user-story-7-3.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-7-1.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-7-2.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-7-3.png">
 </details>
 
 9. I want to be able to read like and comment on the security blogs.
@@ -776,9 +776,9 @@ The following models were created to represent the database model structure for 
 | Blog Post | Click on the link heart to like or input a comment and press submit to send it for approval | The heart annimates or a success message is displayed for the comment | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="static/image/readme/manual-testing/user-story-9-1.png">
-<img src="static/image/readme/manual-testing/user-story-9-2.png">
-<img src="static/image/readme/manual-testing/user-story-9-3.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-9-1.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-9-2.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-9-3.png">
 </details>
 
 10. I want users to enjoy the experience while visiting the Password Vault,
@@ -792,12 +792,12 @@ The following models were created to represent the database model structure for 
 | Main page | Scroll through | The user is presented with all the features of the site in bite size view | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="static/image/readme/manual-testing/user-story-1-1.png">
-<img src="static/image/readme/manual-testing/user-story-1-2.png">
-<img src="static/image/readme/manual-testing/user-story-1-3.png">
-<img src="static/image/readme/manual-testing/user-story-10-1.png">
-<img src="static/image/readme/manual-testing/user-story-10-2.png">
-<img src="static/image/readme/manual-testing/user-story-10-3.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-1-1.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-1-2.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-1-3.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-10-1.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-10-2.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-10-3.png">
 </details>
 
 11. I want users to easily navigate the site,
@@ -811,12 +811,12 @@ The following models were created to represent the database model structure for 
 | Main page | Scroll through | The user is presented with all the features of the site in bite size view | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="static/image/readme/manual-testing/user-story-1-1.png">
-<img src="static/image/readme/manual-testing/user-story-1-2.png">
-<img src="static/image/readme/manual-testing/user-story-1-3.png">
-<img src="static/image/readme/manual-testing/user-story-10-1.png">
-<img src="static/image/readme/manual-testing/user-story-10-2.png">
-<img src="static/image/readme/manual-testing/user-story-10-3.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-1-1.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-1-2.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-1-3.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-10-1.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-10-2.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-10-3.png">
 </details>
 
 12. I want users to be able to use the functions with out an issue,
@@ -827,8 +827,8 @@ The following models were created to represent the database model structure for 
 | Main page | Scroll through to features | The user is presented with all the features of the and an explanation | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="static/image/readme/manual-testing/user-story-12-1.png">
-<img src="static/image/readme/manual-testing/user-story-12-2.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-12-1.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-12-2.png">
 </details>
 
 13. I want users to know how to contact the admin if there is an issue,
@@ -840,9 +840,9 @@ The following models were created to represent the database model structure for 
 | Contact | Fill out the form and press send | A success message is displayed | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="static/image/readme/manual-testing/user-story-7-1.png">
-<img src="static/image/readme/manual-testing/user-story-7-2.png">
-<img src="static/image/readme/manual-testing/user-story-7-3.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-7-1.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-7-2.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-7-3.png">
 </details>
 
 14. I want users to learn more about online security while on the site,
@@ -854,9 +854,9 @@ The following models were created to represent the database model structure for 
 | Blog | Click on the blog post title | User is taken to the blog posts page | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="static/image/readme/manual-testing/user-story-9-1.png">
-<img src="static/image/readme/manual-testing/user-story-9-2.png">
-<img src="static/image/readme/manual-testing/user-story-14-1.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-9-1.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-9-2.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-14-1.png">
 </details>
 
 15. I want users to be able to interact with the monthly posts,
@@ -869,9 +869,9 @@ The following models were created to represent the database model structure for 
 | Blog Post | Click on the link heart to like or input a comment and press submit to send it for approval | The heart annimates or a success message is displayed for the comment | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="static/image/readme/manual-testing/user-story-9-1.png">
-<img src="static/image/readme/manual-testing/user-story-9-2.png">
-<img src="static/image/readme/manual-testing/user-story-9-3.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-9-1.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-9-2.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-9-3.png">
 </details>
 
 16. I want the site to be responsive,
@@ -881,7 +881,7 @@ The following models were created to represent the database model structure for 
 | Main screen | Open on a mobile | User is presented with a responsice design | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="static/image/readme/manual-testing/user-story-16-1.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-16-1.png">
 </details>
 
 17. I want users passwords to be hidden on the admin panel for security purposes,
@@ -894,9 +894,9 @@ The following models were created to represent the database model structure for 
 | Pw Accounts | Click on an account | User is presented with the account details but the passwortd is not displayed | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="static/image/readme/manual-testing/user-story-17-1.png">
-<img src="static/image/readme/manual-testing/user-story-17-2.png">
-<img src="static/image/readme/manual-testing/user-story-17-3.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-17-1.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-17-2.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-17-3.png">
 </details>
 
 18. I want to be able to get blog post suggestions from users,
@@ -908,9 +908,9 @@ The following models were created to represent the database model structure for 
 | Contact | Fill out the form  with the blog idea and press send | A success message is displayed | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="static/image/readme/manual-testing/user-story-7-1.png">
-<img src="static/image/readme/manual-testing/user-story-7-2.png">
-<img src="static/image/readme/manual-testing/user-story-7-3.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-7-1.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-7-2.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-7-3.png">
 </details>
 
 19. I want to be able to get product feedback from users,
@@ -922,9 +922,9 @@ The following models were created to represent the database model structure for 
 | Contact | Fill out the form with your feedback and press send | A success message is displayed | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="static/image/readme/manual-testing/user-story-7-1.png">
-<img src="static/image/readme/manual-testing/user-story-7-2.png">
-<img src="static/image/readme/manual-testing/user-story-7-3.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-7-1.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-7-2.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-7-3.png">
 </details>
 
 20. I want users to be able to follow my socials.
@@ -935,8 +935,8 @@ The following models were created to represent the database model structure for 
 | Footer | Clicks on a social link | Opens a new page with the social | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="static/image/readme/manual-testing/user-story-20-1.png">
-<img src="static/image/readme/manual-testing/user-story-20-2.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-20-1.png">
+<img src="docs/readme.md/readme.md/manual-testing/user-story-20-2.png">
 
 </details>
 
@@ -944,36 +944,19 @@ The following models were created to represent the database model structure for 
 
 ### Unit Testing
 
-#### Password validator
+#### Password Manager
 
 * These unit tests were writen using the unittest library.
-* They are to check if a password is long enough and if the password is valid.
+* The unit tests are to test the form to see if it works as expected
 
-##### Valid password
+##### Valid form
 
-* This unit test was writed to check if the code below is working correctly and checking if they are valid.
-* A valid password must be 8+ characters and have at least 1 of each of the following:
-    * Uppercase,
-    * Lowercase,
-    * Digit,
-    * Special character "@$_".
-* The unit test inputs in 6 different tests and they app passed.
+* This unit test was writed to check if the form recieved the required fields (name, website, email, username, password),
+* It also tests to see if the correct fields were recieved.
 
 <details><summary>Screenshots</summary>
-<img src="docs/testing/test_valid_password_code.png">
-<img src="docs/testing/test_valid_password_result.png">
-</details>
-
-
-##### Password length
-
-* This unit test was writed to check if the code below is working correctly and checking the length is valid.
-* The valid length password is 8 characters or more.
-* The unit test inputs in 4 different tests and they passed. 
-
-<details><summary>Screenshots</summary>
-<img src="docs/testing/test_password_length_code.png">
-<img src="docs/testing/test_password_length_result.png">
+<img src="docs/readme.md/readme.md/automated-testing/forms-unit-test.png">
+<img src="docs/readme.md/automated-testing/forms-test-result.png">
 </details>
 
 ## Bugs
@@ -993,54 +976,178 @@ The following models were created to represent the database model structure for 
 ### Deploying to Heroku
 * Go to the heroku.com site.
     <details><summary>Screenshots</summary>
-    <img src="docs/deployment/heroku_1.png">
+    <img src="docs/readme.md/readme.md/deployment/heroku_1.png">
+    </details>
 * Click the signup button in the top right.
     <details><summary>Screenshots</summary>
-    <img src="docs/deployment/heroku_2.png">
+    <img src="docs/readme.md/deployment/heroku_2.png">
+    </details>
 * Create an account on heroku.com,
     <details><summary>Screenshots</summary>
-    <img src="docs/deployment/heroku_3.png">
+    <img src="docs/readme.md/deployment/heroku_3.png">
+    </details>
 * Confirm your account in the email heroku sent to your inbox,
     <details><summary>Screenshots</summary>
-    <img src="docs/deployment/heroku_4.png">
+    <img src="docs/readme.md/deployment/heroku_4.png">
+    </details>
 * Create a password,
     <details><summary>Screenshots</summary>
-    <img src="docs/deployment/heroku_5.png">
+    <img src="docs/readme.md/deployment/heroku_5.png">
+    </details>
 * Click and proceed,
     <details><summary>Screenshots</summary>
-    <img src="docs/deployment/heroku_6.png">
+    <img src="docs/readme.md/deployment/heroku_6.png">
+    </details>
 * Accept the terms of service,
     <details><summary>Screenshots</summary>
-    <img src="docs/deployment/heroku_7.png">
+    <img src="docs/readme.md/deployment/heroku_7.png">
+    </details>
 * Create a new app, create a name for your app "ci_pp3_ppm" and choose your region,
     <details><summary>Screenshots</summary>
-    <img src="docs/deployment/heroku_8.png">
+    <img src="docs/readme.md/deployment/heroku_8.png">
+    </details>
 * Go to the settings section,
     <details><summary>Screenshots</summary>
-    <img src="docs/deployment/heroku_9.png">
+    <img src="docs/readme.md/deployment/heroku_9.png">
+    </details>
 * Click Reveal Config Vars,
     <details><summary>Screenshots</summary>
-    <img src="docs/deployment/heroku_10.png">
+    <img src="docs/readme.md/deployment/heroku_10.png">
+    </details>
 * Input your .json file. name in the 'Key' field, copy the .json file and paste it in 'Value' field. Also add a key 'PORT' and value '8000'.
     <details><summary>Screenshots</summary>
-    <img src="docs/deployment/heroku_11.png">
+    <img src="docs/readme.md/deployment/heroku_11.png">
+    </details>
 * In the build packs section click add buildpack. For this project, I added 2 buildpacks 'Python' and 'node.js'. Make sure the Python build pack is above the Nodejs buildpack.
     <details><summary>Screenshots</summary>
-    <img src="docs/deployment/heroku_12.png">
+    <img src="docs/readme.md/deployment/heroku_12.png">
+    </details>
 * Go to "Deploy" in "Deployment method" select "GitHub",
     <details><summary>Screenshots</summary>
-    <img src="docs/deployment/heroku_13.png">
+    <img src="docs/readme.md/deployment/heroku_13.png">
+    </details>
 * Click 'Search' (Enter in your projects name that you have in your github repositry)and then 'Connect'. This project is connected to Chrisfaherty/CI_PP3_PPM.
     <details><summary>Screenshots</summary>
-    <img src="docs/deployment/heroku_14.png">
+    <img src="docs/readme.md/deployment/heroku_14.png">
+    </details>
 * Choose the branch you want to buid your app from "main" .
 * If prefered, click on "Enable Automatic Deploys", which keeps the app up to date when you push to git hub. Automatic deployments is turned on for this project.
     <details><summary>Screenshots</summary>
-    <img src="docs/deployment/heroku_15.png">
+    <img src="docs/readme.md/deployment/heroku_15.png">
+    </details>
 * If the project doesn't deploy after selecting automatic deploy . In the Manual deploy section click Deploy Branch to deploy your code, this is what I had to do.
     <details><summary>Screenshots</summary>
-    <img src="docs/deployment/heroku_16.png">
+    <img src="docs/readme.md/deployment/heroku_16.png">
+    </details>
 * Once the code is deployed it will show a button that you can click to view the deployed site. Then the project has sucessfully been deployed.
+
+### Connecting to ElephantSQL
+* Log in to ElephantSQL.com to access your dashboard
+    <details><summary>Screenshots</summary>
+    <img src="docs/readme.md/deployment/elephantsql-1.png">
+    </details>
+
+* Click "Create New Instance"
+
+* Set up a plan
+    <details><summary>Screenshots</summary>
+    <img src="docs/readme.md/deployment/elephantsql-2.png">
+    </details>
+
+* Click "Select Region"
+
+* Select a data center near you
+    <details><summary>Screenshots</summary>
+    <img src="docs/readme.md/deployment/elephantsql-3.png">
+    </details>
+
+* Then click "Review"
+
+* Check your details are correct and then click "Create Instance"
+    <details><summary>Screenshots</summary>
+    <img src="docs/readme.md/deployment/elephantsql-4.png">
+    </details>
+
+* Return to the ElephantSQL dashboard and click on the database instance name for this project
+    <details><summary>Screenshots</summary>
+    <img src="docs/readme.md/deployment/elephantsql-5.png">
+    </details>
+
+* Copy the database url for your project, as we’ll need it in the next step
+    <details><summary>Screenshots</summary>
+    <img src="docs/readme.md/deployment/elephantsql-6.png">
+    </details>
+
+* Now to connect the database up to heroku
+
+* Log into heroku and go to the app you created earlier
+
+* Go to the Settings tab
+    <details><summary>Screenshots</summary>
+    <img src="docs/readme.md/deployment/heroku-settings-tab.png">
+    </details>
+
+* Click Reveal Config Vars
+    <details><summary>Screenshots</summary>
+    <img src="docs/readme.md/deployment/heroku-reveal-config-vars.png">
+    </details>
+
+* Add a Config Var called DATABASE_URL. Paste your ElephantSQL database URL in as the value
+    <details><summary>Screenshots</summary>
+    <img src="docs/readme.md/deployment/heroku-database_url-config-var.png">
+    </details>
+
+* Back in gitpod in your env.py file add a new key, DATABASE_URL, and give it a value of the copied database URL
+    <details><summary>Screenshots</summary>
+    <img src="docs/readme.md/deployment/gitpod-1.png">
+    </details>
+
+* Install the dj-database-url package version 0.5.0 in the terminal with pip3. This will allow us to parse the URL we got above to a format Django can work with:
+    <details><summary>Screenshots</summary>
+    <img src="docs/readme.md/deployment/gitpod-2.png">
+    </details>
+
+* and remember to add it to your requirements.txt with
+    <details><summary>Screenshots</summary>
+    <img src="docs/readme.md/deployment/gitpod-3.png">
+    </details>
+
+* At the top of settings.py, import the package and the env.py file
+    <details><summary>Screenshots</summary>
+    <img src="docs/readme.md/deployment/gitpod-4.png">
+    </details>
+
+* In settings.py, comment out the default database setting and replace it to use the DATABASE_URL environment variable. Your code should now look like this
+    <details><summary>Screenshots</summary>
+    <img src="docs/readme.md/deployment/gitpod-5.png">
+    </details>
+
+* Run the migrate command in the terminal to build the database according to the model structure we created in earlier videos
+    <details><summary>Screenshots</summary>
+    <img src="docs/readme.md/deployment/gitpod-6.png">
+    </details>
+
+### Connecting to Cloudinary
+
+* Visit https://cloudinary.com
+* Click on the Sign Up For Free button
+* Provide your name, email address and choose a password
+* For Primary interest, you can choose Programmable Media for image and video API
+* Click Create Account
+* Verify your email and you will be brought to the dashboard
+* In your Dashboard copy your "API Environment vairable"
+* Go back to your gitpod and in your env.oy file add a line for your API key and paset it in.
+* os.environ["CLOUDINARY_URL"]="YOUR API KEY"
+* The API is also to be input into Heroku config vars
+* Back in your settings.py file go to the installed apps section and add in the following cloudinary lib'cloudinary_storage','django.contrib.staticfiles','cloudinary',
+* Down at the bottom of the setting py files add these lines of code. 
+    * STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+    * STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+    * STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+* Now to set up the media storage. add this code below the previous code in your settings.py file
+    * MEDIA_URL = '/media/'
+    * DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+* Now your cloudinary is set up.
 
 ### Forking the GitHub Repository
 * Go to the GitHub repository,
