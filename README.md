@@ -1,7 +1,7 @@
 # Password Vault
 (Developer: Christopher Faherty)
 
-![This is an screenshot of the responsive design image](static/image/440.jpg)
+![This is an screenshot of the responsive design image](docs/readme.md/am-i-responsive-image.png)
 
 [Live Webpage](https://password-vault.herokuapp.com/)
 
@@ -113,7 +113,7 @@ The colour scheme was chosen to be easy on the eye but also highlight the sepera
 The color scheme was created with the use of <a href="https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557">Coolors</a>
 
 <details><summary>Coolor Pallet</summary>
-<img src="docs/readme.md/readme.md/coolor-pallet.png">
+<img src="docs/readme.md/coolor-pallet.png">
 </details>
 
 ### Fonts
@@ -167,7 +167,7 @@ The following models were created to represent the database model structure for 
 - Contains a ForeignKey Field to select the author of the blog post.
 
 <details><summary>Show Model</summary>
-<img src="docs/readme.md/readme.md/post-model.png">
+<img src="docs/readme.md/post-model.png">
 </details>
 
 #### blog/Comment Model
@@ -177,7 +177,7 @@ The following models were created to represent the database model structure for 
 - Contains a BooleanField to see if the comment is approved before it is posted.
 
 <details><summary>Show Model</summary>
-<img src="docs/readme.md/readme.md/comment-model.png">
+<img src="docs/readme.md/comment-model.png">
 </details>
 
 #### pwmanagerapp/PwAccount Model
@@ -189,7 +189,7 @@ The following models were created to represent the database model structure for 
 - Removed the password field from the admin panel to keep the users passwords secure.
 
 <details><summary>Show Model</summary>
-<img src="docs/readme.md/readme.md/pwaccount-model.png">
+<img src="docs/readme.md/pwaccount-model.png">
 </details>
 
 ### Wireframes
@@ -197,49 +197,49 @@ The following models were created to represent the database model structure for 
 #### Home Page
 
 <details><summary>Logged in Page</summary>
-<img src="docs/readme.md/readme.md/loggedin-home-wireframe.png">
+<img src="docs/readme.md/loggedin-home-wireframe.png">
 </details>
 <details><summary>Logged out Page</summary>
-<img src="docs/readme.md/readme.md/logged-out-home-wireframe.png">
+<img src="docs/readme.md/logged-out-home-wireframe.png">
 </details>
 
 #### Blog
 
 <details><summary>Main Page</summary>
-<img src="docs/readme.md/readme.md/blog-wireframe.png">
+<img src="docs/readme.md/blog-wireframe.png">
 </details>
 <details><summary>Post Page</summary>
-<img src="docs/readme.md/readme.md/blog-post-wireframe.png">
+<img src="docs/readme.md/blog-post-wireframe.png">
 </details>
 
 #### Contact
 
 <details><summary>Contact Page</summary>
-<img src="docs/readme.md/readme.md/contact-wireframe.png">
+<img src="docs/readme.md/contact-wireframe.png">
 </details>
 
 #### Password Manager
 
 <details><summary>Add Account</summary>
-<img src="docs/readme.md/readme.md/add-account-wireframe.png">
+<img src="docs/readme.md/add-account-wireframe.png">
 </details>
 <details><summary>View Accounts</summary>
-<img src="docs/readme.md/readme.md/view-accounts-wireframe.png">
+<img src="docs/readme.md/view-accounts-wireframe.png">
 </details>
 <details><summary>View Account Details</summary>
-<img src="docs/readme.md/readme.md/pwaccount-details.png">
+<img src="docs/readme.md/pwaccount-details.png">
 </details>
 
 #### Autentication
 
 <details><summary>Register</summary>
-<img src="docs/readme.md/readme.md/register-wireframe.png">
+<img src="docs/readme.md/register-wireframe.png">
 </details>
 <details><summary>Login</summary>
-<img src="docs/readme.md/readme.md/login-wireframe.png">
+<img src="docs/readme.md/login-wireframe.png">
 </details>
 <details><summary>Logout</summary>
-<img src="docs/readme.md/readme.md/logout-wireframe.png">
+<img src="docs/readme.md/logout-wireframe.png">
 </details>
 
 [Back to Table Of Contents](#table-of-contents)
@@ -299,9 +299,9 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>Logo & Nav bar Image</summary>
-<img src="docs/readme.md/readme.md/navbar-1.png">
-<img src="docs/readme.md/readme.md/navbar-2.png">
-<img src="docs/readme.md/readme.md/navbar-3.png">
+<img src="docs/readme.md/navbar-1.png">
+<img src="docs/readme.md/navbar-2.png">
+<img src="docs/readme.md/navbar-3.png">
 </details>
 
 * Call to Action
@@ -312,8 +312,8 @@ The following models were created to represent the database model structure for 
     * User stories: 
 
 <details><summary>Call to Action Image</summary>
-<img src="docs/readme.md/readme.md/cta-logged-out.png">
-<img src="docs/readme.md/readme.md/cta-logged-in.png">
+<img src="docs/readme.md/cta-logged-out.png">
+<img src="docs/readme.md/cta-logged-in.png">
 </details>
 
 * Blog Highlight
@@ -323,7 +323,7 @@ The following models were created to represent the database model structure for 
     * User stories: 
 
 <details><summary>Blog Highilght Image</summary>
-<img src="docs/readme.md/readme.md/blog-highlights.png">
+<img src="docs/readme.md/blog-highlights.png">
 </details>
 
 * Features
@@ -333,7 +333,7 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>Features Image</summary>
-<img src="docs/readme.md/readme.md/features.png">
+<img src="docs/readme.md/features.png">
 </details>
 
 * Footer
@@ -342,7 +342,7 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>Footer Image</summary>
-<img src="docs/readme.md/readme.md/footer.png">
+<img src="docs/readme.md/footer.png">
 </details>
 
 * Blog Overview Page
@@ -354,9 +354,9 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>Blog Image</summary>
-<img src="docs/readme.md/readme.md/blog-nav.png">
-<img src="docs/readme.md/readme.md/blog-1.png">
-<img src="docs/readme.md/readme.md/blog-2.png">
+<img src="docs/readme.md/blog-nav.png">
+<img src="docs/readme.md/blog-1.png">
+<img src="docs/readme.md/blog-2.png">
 </details>
 
  * Blog Post
@@ -368,10 +368,10 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>Blog Post Image</summary>
-<img src="docs/readme.md/readme.md/blog-nav.png">
-<img src="docs/readme.md/readme.md/blog-post-1.png">
-<img src="docs/readme.md/readme.md/blog-post-2.png">
-<img src="docs/readme.md/readme.md/blog-post-3.png">
+<img src="docs/readme.md/blog-nav.png">
+<img src="docs/readme.md/blog-post-1.png">
+<img src="docs/readme.md/blog-post-2.png">
+<img src="docs/readme.md/blog-post-3.png">
 </details>
 
  * Contact Page
@@ -382,8 +382,8 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>Contact Image</summary>
-<img src="docs/readme.md/readme.md/contact-nav.png">
-<img src="docs/readme.md/readme.md/contact-page-1.png">
+<img src="docs/readme.md/contact-nav.png">
+<img src="docs/readme.md/contact-page-1.png">
 </details>
 
  * Add Account Page
@@ -396,9 +396,9 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>Add Account Image</summary>
-<img src="docs/readme.md/readme.md/pwmanager-nav.png">
-<img src="docs/readme.md/readme.md/add-account-nav.png">
-<img src="docs/readme.md/readme.md/add-account-page.png">
+<img src="docs/readme.md/pwmanager-nav.png">
+<img src="docs/readme.md/add-account-nav.png">
+<img src="docs/readme.md/add-account-page.png">
 </details>
 
  * View Account Page
@@ -409,9 +409,9 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>View Account Image</summary>
-<img src="docs/readme.md/readme.md/pwmanager-nav.png">
-<img src="docs/readme.md/readme.md/view-account-nav.png">
-<img src="docs/readme.md/readme.md/view-account-1.png">
+<img src="docs/readme.md/pwmanager-nav.png">
+<img src="docs/readme.md/view-account-nav.png">
+<img src="docs/readme.md/view-account-1.png">
 </details>
 
  * Account Detail Page
@@ -425,10 +425,10 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>Account Detail Image</summary>
-<img src="docs/readme.md/readme.md/pwmanager-nav.png">
-<img src="docs/readme.md/readme.md/view-account-nav.png">
-<img src="docs/readme.md/readme.md/account-detail-1.png">
-<img src="docs/readme.md/readme.md/account-detail-2.png">
+<img src="docs/readme.md/pwmanager-nav.png">
+<img src="docs/readme.md/view-account-nav.png">
+<img src="docs/readme.md/account-detail-1.png">
+<img src="docs/readme.md/account-detail-2.png">
 </details>
 
  * Edit Account Detail Page
@@ -443,11 +443,11 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>Edit Account Detail Image</summary>
-<img src="docs/readme.md/readme.md/pwmanager-nav.png">
-<img src="docs/readme.md/readme.md/view-account-nav.png">
-<img src="docs/readme.md/readme.md/account-detail-1.png">
-<img src="docs/readme.md/readme.md/edit-account-detail-1.png">
-<img src="docs/readme.md/readme.md/edit-account-detail-2.png">
+<img src="docs/readme.md/pwmanager-nav.png">
+<img src="docs/readme.md/view-account-nav.png">
+<img src="docs/readme.md/account-detail-1.png">
+<img src="docs/readme.md/edit-account-detail-1.png">
+<img src="docs/readme.md/edit-account-detail-2.png">
 </details>
 
  * Delete Account Detail Page
@@ -461,11 +461,11 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>Delete Account Detail Image</summary>
-<img src="docs/readme.md/readme.md/pwmanager-nav.png">
-<img src="docs/readme.md/readme.md/view-account-nav.png">
-<img src="docs/readme.md/readme.md/account-detail-1.png">
-<img src="docs/readme.md/readme.md/delete-account-details-1.png">
-<img src="docs/readme.md/readme.md/delete-account-details-2.png">
+<img src="docs/readme.md/pwmanager-nav.png">
+<img src="docs/readme.md/view-account-nav.png">
+<img src="docs/readme.md/account-detail-1.png">
+<img src="docs/readme.md/delete-account-details-1.png">
+<img src="docs/readme.md/delete-account-details-2.png">
 </details>
 
  * Register Page
@@ -476,8 +476,8 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>Register Image</summary>
-<img src="docs/readme.md/readme.md/reg-nav.png">
-<img src="docs/readme.md/readme.md/reg-1.png">
+<img src="docs/readme.md/reg-nav.png">
+<img src="docs/readme.md/reg-1.png">
 </details>
 
  * Login Page
@@ -488,8 +488,8 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>Login Image</summary>
-<img src="docs/readme.md/readme.md/login-nav.png">
-<img src="docs/readme.md/readme.md/login-01.png">
+<img src="docs/readme.md/login-nav.png">
+<img src="docs/readme.md/login-01.png">
 </details>
 
 * Logout Page
@@ -500,8 +500,8 @@ The following models were created to represent the database model structure for 
     * User stories:
 
 <details><summary>Logout Image</summary>
-<img src="docs/readme.md/readme.md/logout-nav.png">
-<img src="docs/readme.md/readme.md/logout-page.png">
+<img src="docs/readme.md/logout-nav.png">
+<img src="docs/readme.md/logout-page.png">
 </details>
 
 [Back to Table Of Contents](#table-of-contents)
@@ -517,99 +517,99 @@ The following models were created to represent the database model structure for 
 * The W3C Markup Validation Service was used to validate the HTML of the website.
 
     <details><summary>Home</summary>
-    <img src="docs/readme.md/readme.md/validation/html-home.png">
+    <img src="docs/readme.md/validation/html-home.png">
     </details>
 
     <details><summary>Blog</summary>
-    <img src="docs/readme.md/readme.md/validation/html-blog.png">
+    <img src="docs/readme.md/validation/html-blog.png">
     </details>
 
     <details><summary>Contact</summary>
-    <img src="docs/readme.md/readme.md/validation/html-contact.png">
+    <img src="docs/readme.md/validation/html-contact.png">
     </details>
 
     <details><summary>Success</summary>
-    <img src="docs/readme.md/readme.md/validation/html-contact.png">
+    <img src="docs/readme.md/validation/html-contact.png">
     </details>
 
     <details><summary>View</summary>
-    <img src="docs/readme.md/readme.md/validation/view-html.png">
+    <img src="docs/readme.md/validation/view-html.png">
     </details>
 
     <details><summary>Create</summary>
-    <img src="docs/readme.md/readme.md/validation/html-create.png">
+    <img src="docs/readme.md/validation/html-create.png">
     </details>
 
     <details><summary>Register</summary>
-    <img src="docs/readme.md/readme.md/validation/signup-html.png">
+    <img src="docs/readme.md/validation/signup-html.png">
     </details>
 
     <details><summary>logout</summary>
-    <img src="docs/readme.md/readme.md/validation/logout-html.png">
+    <img src="docs/readme.md/validation/logout-html.png">
     </details>
 
     <details><summary>login</summary>
-    <img src="docs/readme.md/readme.md/validation/login-html.png">
+    <img src="docs/readme.md/validation/login-html.png">
     </details>
 
 * The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website. When validating all website, it passes with no errors.
 
     <details><summary>CSS Validator</summary>
-    <img src="docs/readme.md/readme.md/validation/css-validation.png">
+    <img src="docs/readme.md/validation/css-validation.png">
     </details>
 
 * JSHint JS Validation Service was used to validate the Javascript files. No errors were found.
 
     <details><summary>JavaScript Validator</summary>
-    <img src="docs/readme.md/readme.md/validation/js-validation.png">
+    <img src="docs/readme.md/validation/js-validation.png">
     </details>
 
 * Note - PEP8 no longer offers their validation services 'pycodestyle' installed in my workspace to validate the code
 
     <details><summary>PEP8 Validator</summary>
-    <img src="docs/readme.md/readme.md/validation/pip8-validation.png">
+    <img src="docs/readme.md/validation/pip8-validation.png">
     </details>
 
 * Chrome Developet Tools Lighthouse
 
     <details><summary>Home</summary>
-    <img src="docs/readme.md/readme.md/validation/lighthouse-home.png">
+    <img src="docs/readme.md/validation/lighthouse-home.png">
     </details>
 
     <details><summary>Blog</summary>
-    <img src="docs/readme.md/readme.md/validation/lighthouse-blog.png">
+    <img src="docs/readme.md/validation/lighthouse-blog.png">
     </details>
 
     <details><summary>Blog Details</summary>
-    <img src="docs/readme.md/readme.md/validation/lighthouse-blog-details.png">
+    <img src="docs/readme.md/validation/lighthouse-blog-details.png">
     </details>
 
     <details><summary>Contact</summary>
-    <img src="docs/readme.md/readme.md/validation/lighthouse-contact.png">
+    <img src="docs/readme.md/validation/lighthouse-contact.png">
     </details>
 
     <details><summary>Success</summary>
-    <img src="docs/readme.md/readme.md/validation/lighthouse-success.png">
+    <img src="docs/readme.md/validation/lighthouse-success.png">
     </details>
 
     <details><summary>View</summary>
-    <img src="docs/readme.md/readme.md/validation/lighthouse-view.png">
+    <img src="docs/readme.md/validation/lighthouse-view.png">
     </details>
 
     <details><summary>Create</summary>
-    <img src="docs/readme.md/readme.md/validation/lighthouse-create.png">
+    <img src="docs/readme.md/validation/lighthouse-create.png">
     </details>
 
     <details><summary>Register</summary>
-    <img src="docs/readme.md/readme.md/validation/lighthouse-register.png">
+    <img src="docs/readme.md/validation/lighthouse-register.png">
     </details>
 
     <details><summary>Login</summary>
-    <img src="docs/readme.md/readme.md/validation/lighthouse-login.png">
+    <img src="docs/readme.md/validation/lighthouse-login.png">
     </details>
 
     <details><summary>Logout</summary>
-    <img src="docs/readme.md/readme.md/validation/lighthouse-logout.png">
+    <img src="docs/readme.md/validation/lighthouse-logout.png">
     </details>
 
 [Back to Table Of Contents](#table-of-contents)
@@ -625,9 +625,9 @@ The following models were created to represent the database model structure for 
 | Nav bar | The user views the navbar | Nav bar has changed with the new revelent links | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/readme.md/readme.md/manual-testing/user-story-1-1.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-1-2.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-1-3.png">
+<img src="docs/readme.md/manual-testing/user-story-1-1.png">
+<img src="docs/readme.md/manual-testing/user-story-1-2.png">
+<img src="docs/readme.md/manual-testing/user-story-1-3.png">
 </details>
 
 2. I want to be able to create a user account and store my username & passwords for several online accounts.
@@ -643,12 +643,12 @@ The following models were created to represent the database model structure for 
 | View Accounts | User is redirected to the view accounts | All stored accounts are displayed | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/readme.md/readme.md/manual-testing/user-story-2-1.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-2-2.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-2-3.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-2-4.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-2-5.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-2-6.png">
+<img src="docs/readme.md/manual-testing/user-story-2-1.png">
+<img src="docs/readme.md/manual-testing/user-story-2-2.png">
+<img src="docs/readme.md/manual-testing/user-story-2-3.png">
+<img src="docs/readme.md/manual-testing/user-story-2-4.png">
+<img src="docs/readme.md/manual-testing/user-story-2-5.png">
+<img src="docs/readme.md/manual-testing/user-story-2-6.png">
 </details>
 
 3. I want to be able to navigate the site with ease and only relevant options being displayed to me,
@@ -661,9 +661,9 @@ The following models were created to represent the database model structure for 
 | Nav bar | The user views the navbar & call to acction | Nav bar  & call to action has changed with the new revelent links | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/readme.md/readme.md/manual-testing/user-story-3-1.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-3-2.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-3-3.png">
+<img src="docs/readme.md/manual-testing/user-story-3-1.png">
+<img src="docs/readme.md/manual-testing/user-story-3-2.png">
+<img src="docs/readme.md/manual-testing/user-story-3-3.png">
 </details>
 
 4. I want to be able to view a list of all my stored accounts,
@@ -676,10 +676,10 @@ The following models were created to represent the database model structure for 
 | Main screen | Click view accounts in the call to action | User is taken to the view accounts page | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/readme.md/readme.md/manual-testing/user-story-4-1.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-4-2.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-4-3.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-4-4.png">
+<img src="docs/readme.md/manual-testing/user-story-4-1.png">
+<img src="docs/readme.md/manual-testing/user-story-4-2.png">
+<img src="docs/readme.md/manual-testing/user-story-4-3.png">
+<img src="docs/readme.md/manual-testing/user-story-4-4.png">
 </details>
 
 5. I want to be able to access my accounts to get the stored details,
@@ -693,12 +693,12 @@ The following models were created to represent the database model structure for 
 | View Accounts | Click on the account to view | User is taken to the account details | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/readme.md/readme.md/manual-testing/user-story-4-1.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-4-2.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-4-3.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-4-4.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-5-1.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-5-2.png">
+<img src="docs/readme.md/manual-testing/user-story-4-1.png">
+<img src="docs/readme.md/manual-testing/user-story-4-2.png">
+<img src="docs/readme.md/manual-testing/user-story-4-3.png">
+<img src="docs/readme.md/manual-testing/user-story-4-4.png">
+<img src="docs/readme.md/manual-testing/user-story-5-1.png">
+<img src="docs/readme.md/manual-testing/user-story-5-2.png">
 </details>
 
 6. I want to be able to edit and delete my stored accounts,
@@ -713,12 +713,12 @@ The following models were created to represent the database model structure for 
 | Account Details | Click on the delete or edit button | The user is taken to the delete or edit account page | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/readme.md/readme.md/manual-testing/user-story-4-1.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-4-2.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-4-3.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-4-4.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-5-1.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-6-1.png">
+<img src="docs/readme.md/manual-testing/user-story-4-1.png">
+<img src="docs/readme.md/manual-testing/user-story-4-2.png">
+<img src="docs/readme.md/manual-testing/user-story-4-3.png">
+<img src="docs/readme.md/manual-testing/user-story-4-4.png">
+<img src="docs/readme.md/manual-testing/user-story-5-1.png">
+<img src="docs/readme.md/manual-testing/user-story-6-1.png">
 </details>
 
 7. I want to be able to contact admin if i need to change my user details,  
@@ -730,9 +730,9 @@ The following models were created to represent the database model structure for 
 | Contact | Fill out the form and press send | A success message is displayed | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/readme.md/readme.md/manual-testing/user-story-7-1.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-7-2.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-7-3.png">
+<img src="docs/readme.md/manual-testing/user-story-7-1.png">
+<img src="docs/readme.md/manual-testing/user-story-7-2.png">
+<img src="docs/readme.md/manual-testing/user-story-7-3.png">
 </details>
 
 8. I want to be able to contact admin with blog suggestions,
@@ -744,9 +744,9 @@ The following models were created to represent the database model structure for 
 | Contact | Fill out the form and press send | A success message is displayed | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/readme.md/readme.md/manual-testing/user-story-7-1.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-7-2.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-7-3.png">
+<img src="docs/readme.md/manual-testing/user-story-7-1.png">
+<img src="docs/readme.md/manual-testing/user-story-7-2.png">
+<img src="docs/readme.md/manual-testing/user-story-7-3.png">
 </details>
 
 9. I want to be able to read like and comment on the security blogs.
@@ -759,9 +759,9 @@ The following models were created to represent the database model structure for 
 | Blog Post | Click on the link heart to like or input a comment and press submit to send it for approval | The heart annimates or a success message is displayed for the comment | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/readme.md/readme.md/manual-testing/user-story-9-1.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-9-2.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-9-3.png">
+<img src="docs/readme.md/manual-testing/user-story-9-1.png">
+<img src="docs/readme.md/manual-testing/user-story-9-2.png">
+<img src="docs/readme.md/manual-testing/user-story-9-3.png">
 </details>
 
 10. I want users to enjoy the experience while visiting the Password Vault,
@@ -775,12 +775,12 @@ The following models were created to represent the database model structure for 
 | Main page | Scroll through | The user is presented with all the features of the site in bite size view | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/readme.md/readme.md/manual-testing/user-story-1-1.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-1-2.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-1-3.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-10-1.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-10-2.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-10-3.png">
+<img src="docs/readme.md/manual-testing/user-story-1-1.png">
+<img src="docs/readme.md/manual-testing/user-story-1-2.png">
+<img src="docs/readme.md/manual-testing/user-story-1-3.png">
+<img src="docs/readme.md/manual-testing/user-story-10-1.png">
+<img src="docs/readme.md/manual-testing/user-story-10-2.png">
+<img src="docs/readme.md/manual-testing/user-story-10-3.png">
 </details>
 
 11. I want users to easily navigate the site,
@@ -794,12 +794,12 @@ The following models were created to represent the database model structure for 
 | Main page | Scroll through | The user is presented with all the features of the site in bite size view | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/readme.md/readme.md/manual-testing/user-story-1-1.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-1-2.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-1-3.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-10-1.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-10-2.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-10-3.png">
+<img src="docs/readme.md/manual-testing/user-story-1-1.png">
+<img src="docs/readme.md/manual-testing/user-story-1-2.png">
+<img src="docs/readme.md/manual-testing/user-story-1-3.png">
+<img src="docs/readme.md/manual-testing/user-story-10-1.png">
+<img src="docs/readme.md/manual-testing/user-story-10-2.png">
+<img src="docs/readme.md/manual-testing/user-story-10-3.png">
 </details>
 
 12. I want users to be able to use the functions with out an issue,
@@ -810,8 +810,8 @@ The following models were created to represent the database model structure for 
 | Main page | Scroll through to features | The user is presented with all the features of the and an explanation | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/readme.md/readme.md/manual-testing/user-story-12-1.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-12-2.png">
+<img src="docs/readme.md/manual-testing/user-story-12-1.png">
+<img src="docs/readme.md/manual-testing/user-story-12-2.png">
 </details>
 
 13. I want users to know how to contact the admin if there is an issue,
@@ -823,9 +823,9 @@ The following models were created to represent the database model structure for 
 | Contact | Fill out the form and press send | A success message is displayed | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/readme.md/readme.md/manual-testing/user-story-7-1.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-7-2.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-7-3.png">
+<img src="docs/readme.md/manual-testing/user-story-7-1.png">
+<img src="docs/readme.md/manual-testing/user-story-7-2.png">
+<img src="docs/readme.md/manual-testing/user-story-7-3.png">
 </details>
 
 14. I want users to learn more about online security while on the site,
@@ -837,9 +837,9 @@ The following models were created to represent the database model structure for 
 | Blog | Click on the blog post title | User is taken to the blog posts page | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/readme.md/readme.md/manual-testing/user-story-9-1.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-9-2.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-14-1.png">
+<img src="docs/readme.md/manual-testing/user-story-9-1.png">
+<img src="docs/readme.md/manual-testing/user-story-9-2.png">
+<img src="docs/readme.md/manual-testing/user-story-14-1.png">
 </details>
 
 15. I want users to be able to interact with the monthly posts,
@@ -852,9 +852,9 @@ The following models were created to represent the database model structure for 
 | Blog Post | Click on the link heart to like or input a comment and press submit to send it for approval | The heart annimates or a success message is displayed for the comment | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/readme.md/readme.md/manual-testing/user-story-9-1.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-9-2.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-9-3.png">
+<img src="docs/readme.md/manual-testing/user-story-9-1.png">
+<img src="docs/readme.md/manual-testing/user-story-9-2.png">
+<img src="docs/readme.md/manual-testing/user-story-9-3.png">
 </details>
 
 16. I want the site to be responsive,
@@ -864,7 +864,7 @@ The following models were created to represent the database model structure for 
 | Main screen | Open on a mobile | User is presented with a responsice design | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/readme.md/readme.md/manual-testing/user-story-16-1.png">
+<img src="docs/readme.md/manual-testing/user-story-16-1.png">
 </details>
 
 17. I want users passwords to be hidden on the admin panel for security purposes,
@@ -877,9 +877,9 @@ The following models were created to represent the database model structure for 
 | Pw Accounts | Click on an account | User is presented with the account details but the passwortd is not displayed | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/readme.md/readme.md/manual-testing/user-story-17-1.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-17-2.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-17-3.png">
+<img src="docs/readme.md/manual-testing/user-story-17-1.png">
+<img src="docs/readme.md/manual-testing/user-story-17-2.png">
+<img src="docs/readme.md/manual-testing/user-story-17-3.png">
 </details>
 
 18. I want to be able to get blog post suggestions from users,
@@ -891,9 +891,9 @@ The following models were created to represent the database model structure for 
 | Contact | Fill out the form  with the blog idea and press send | A success message is displayed | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/readme.md/readme.md/manual-testing/user-story-7-1.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-7-2.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-7-3.png">
+<img src="docs/readme.md/manual-testing/user-story-7-1.png">
+<img src="docs/readme.md/manual-testing/user-story-7-2.png">
+<img src="docs/readme.md/manual-testing/user-story-7-3.png">
 </details>
 
 19. I want to be able to get product feedback from users,
@@ -905,9 +905,9 @@ The following models were created to represent the database model structure for 
 | Contact | Fill out the form with your feedback and press send | A success message is displayed | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/readme.md/readme.md/manual-testing/user-story-7-1.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-7-2.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-7-3.png">
+<img src="docs/readme.md/manual-testing/user-story-7-1.png">
+<img src="docs/readme.md/manual-testing/user-story-7-2.png">
+<img src="docs/readme.md/manual-testing/user-story-7-3.png">
 </details>
 
 20. I want users to be able to follow my socials.
@@ -918,8 +918,8 @@ The following models were created to represent the database model structure for 
 | Footer | Clicks on a social link | Opens a new page with the social | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/readme.md/readme.md/manual-testing/user-story-20-1.png">
-<img src="docs/readme.md/readme.md/manual-testing/user-story-20-2.png">
+<img src="docs/readme.md/manual-testing/user-story-20-1.png">
+<img src="docs/readme.md/manual-testing/user-story-20-2.png">
 
 </details>
 
@@ -938,7 +938,7 @@ The following models were created to represent the database model structure for 
 * It also tests to see if the correct fields were recieved.
 
 <details><summary>Screenshots</summary>
-<img src="docs/readme.md/readme.md/automated-testing/forms-unit-test.png">
+<img src="docs/readme.md/automated-testing/forms-unit-test.png">
 <img src="docs/readme.md/automated-testing/forms-test-result.png">
 </details>
 
@@ -959,7 +959,7 @@ The following models were created to represent the database model structure for 
 ### Deploying to Heroku
 * Go to the heroku.com site.
     <details><summary>Screenshots</summary>
-    <img src="docs/readme.md/readme.md/deployment/heroku_1.png">
+    <img src="docs/readme.md/deployment/heroku_1.png">
     </details>
 * Click the signup button in the top right.
     <details><summary>Screenshots</summary>
